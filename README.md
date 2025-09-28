@@ -33,12 +33,36 @@ A mission-based RPG for kids (ages 6–12). The player starts in a city, receive
 	- Test: Enter Play Mode, move the player, press F5 to save (or use your pause menu), stop, Play again → the player should spawn at the saved position.
 
 ### 1) Mission system
-- [ ] Data model (ScriptableObject):
-  - `id`, `title_ar`, `summary_ar`, `giverNpcId`, `prerequisites`, `rewards`, `goals[]`
-  - Goal types: `ReachArea`, `Interact`, `Collect`, `Quiz`, `MiniGame`
-- [ ] States: `Locked → Available → Active → TurnIn → Completed` (+ optional `Failed`)
-- [ ] Manager: track, persist, and surface the active mission + a small HUD tracker
-- [ ] Triggers: area colliders, interactions, and quiz completion events
+Files added:
+- `Assets/Scripts/Missions/MissionDefinition.cs`
+- `Assets/Scripts/Missions/MissionManager.cs`
+- `Assets/Scripts/Missions/MissionHud.cs`
+- `Assets/Scripts/Missions/ReachAreaTrigger.cs`
+- `Assets/Scripts/Missions/MissionInteractable.cs`
+- `Assets/Scripts/Missions/CollectReporter.cs`
+
+How to use:
+1. Create mission assets
+	- Project → Create → Taallam → Mission Definition
+	- Fill `id`, Arabic title/summary, and add `goals` in order (types: ReachArea, Interact, Collect, Quiz, MiniGame)
+2. Add MissionManager to the scene
+	- On `Systems` GameObject add `MissionManager`
+	- Drag your Mission Definition assets into the `missions` list
+3. Show a simple HUD (optional)
+	- Canvas → TextMeshProUGUI → add `MissionHud` and assign the label field
+4. Place triggers/reporters
+	- Reach area: add `ReachAreaTrigger` to a trigger collider; set `areaId`
+	- Interact: on an NPC, add `MissionInteractable` and call `Interact()` when the player talks
+	- Collect: call `CollectReporter.Report()` after picking up an item
+5. Start and complete missions in code/UI
+	- Accept: `MissionManager.Instance.AcceptMission("your_mission_id")`
+	- After last step, talk to the giver and call: `MissionManager.Instance.TurnInActive()`
+
+Persistence:
+- The mission states are saved/loaded via the existing save system. `MissionSaveData` now includes `subProgress` for counted goals.
+
+States supported:
+- `Locked → Available → Active → TurnIn → Completed`
 
 ### 2) How to present missions (pick at least one for MVP)
 - [ ] NPC Giver: talk to a Teacher/Policeman/Librarian to accept/turn in

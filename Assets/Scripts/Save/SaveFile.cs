@@ -43,6 +43,7 @@ namespace Taallam.Save
         public string id;
         public string state;     // "available", "active", "turnin", "completed"
         public int progress;     // step index or collected count
+        public int subProgress;  // count within the current step (for Collect/repeat goals)
         public string completedAtUtc;
     }
 
