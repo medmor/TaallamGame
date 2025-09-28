@@ -42,12 +42,19 @@
     <UnityVersion>6000.2.5f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Users\mohammed\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Save\SaveHotkey.cs" />
+    <Compile Include="Assets\Scripts\Save\SaveFile.cs" />
+    <Compile Include="Assets\Scripts\Save\ProfileManager.cs" />
     <Compile Include="Assets\Scripts\PlayerInputHandler.cs" />
+    <Compile Include="Assets\Scripts\Save\SaveSystem.cs" />
+    <Compile Include="Assets\Scripts\Save\WebGLFileSystem.cs" />
+    <Compile Include="Assets\Scripts\Save\PlayerPositionSaver.cs" />
     <Compile Include="Assets\Scripts\PlayerController2D.cs" />
   </ItemGroup>
   <ItemGroup>
