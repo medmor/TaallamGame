@@ -58,14 +58,14 @@ namespace Taallam.Missions
         public void SetAvailable(string id)
         {
             if (!defs.ContainsKey(id)) return;
-            ref var s = ref GetState(id);
+            var s = GetState(id);
             if (s.lifecycle == MissionLifecycle.Locked) s.lifecycle = MissionLifecycle.Available;
         }
 
         public bool AcceptMission(string id)
         {
             if (!defs.TryGetValue(id, out var def)) return false;
-            ref var s = ref GetState(id);
+            var s = GetState(id);
             if (s.lifecycle != MissionLifecycle.Available) return false;
 
             s.lifecycle = MissionLifecycle.Active;
@@ -78,7 +78,7 @@ namespace Taallam.Missions
         public void TurnInActive()
         {
             if (ActiveMission == null) return;
-            ref var s = ref GetState(ActiveMissionId);
+            var s = GetState(ActiveMissionId);
             if (s.lifecycle != MissionLifecycle.TurnIn) return;
 
             s.lifecycle = MissionLifecycle.Completed;
@@ -99,7 +99,7 @@ namespace Taallam.Missions
         private void TryAdvance(GoalType type, string targetId, int amount, bool success)
         {
             if (ActiveMission == null) return;
-            ref var s = ref GetState(ActiveMissionId);
+            var s = GetState(ActiveMissionId);
             var def = defs[ActiveMissionId];
 
             if (s.lifecycle != MissionLifecycle.Active) return;
@@ -134,10 +134,10 @@ namespace Taallam.Missions
             }
         }
 
-        private ref MissionRuntime GetState(string id)
+        private MissionRuntime GetState(string id)
         {
             if (!state.ContainsKey(id)) state[id] = new MissionRuntime { id = id };
-            return ref state[id];
+            return state[id];
         }
 
         // Save/Load binding ------------------------------------------------------
@@ -196,7 +196,7 @@ namespace Taallam.Missions
             };
         }
 
-        private struct MissionRuntime
+        private class MissionRuntime
         {
             public string id;
             public MissionLifecycle lifecycle;
