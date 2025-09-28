@@ -14,7 +14,7 @@ A mission-based RPG for kids (ages 6–12). The player starts in a city, receive
 - [*] Player: top-down movement (Grid- or physics-based)
 - [*] Camera: Cinemachine (Framing Transposer) following Player; add Cinemachine Confiner 2D
 - [*] Input: Unity Input System
-- [ ] Save/Load: JSON file (profile per child)
+- [*] Save/Load: JSON file (profile per child)
 	- Files added:
 		- `Assets/Scripts/Save/SaveFile.cs`
 		- `Assets/Scripts/Save/SaveSystem.cs`
