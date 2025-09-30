@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace TaallamGame.Input
+namespace TaallamGame.Player
 {
     // Centralized input handler using Unity's new Input System.
     // Exposes simple properties other systems can poll.
@@ -86,7 +86,9 @@ namespace TaallamGame.Input
         public void OnInteract(InputAction.CallbackContext ctx)
         {
             if (ctx.performed)
+            {
                 InteractPressed = true;
+            }
             if (ctx.canceled)
                 InteractPressed = false;
         }

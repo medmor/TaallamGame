@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Taallam.Missions
+namespace TaallamGame.Missions
 {
     [CreateAssetMenu(menuName = "Taallam/Mission Definition", fileName = "Mission_")]
     public class MissionDefinition : ScriptableObject

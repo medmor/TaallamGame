@@ -15,7 +15,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultItems>false</EnableDefaultItems>
     <LangVersion>9.0</LangVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>TaallamGame</RootNamespace>
     <OutputType>Library</OutputType>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -48,10 +48,11 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Player\PlayerController2D.cs" />
     <Compile Include="Assets\Scripts\Save\SaveHotkey.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerInteraction.cs" />
     <Compile Include="Assets\Scripts\Save\SaveFile.cs" />
     <Compile Include="Assets\Scripts\Save\ProfileManager.cs" />
-    <Compile Include="Assets\Scripts\PlayerInputHandler.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionManager.cs" />
     <Compile Include="Assets\Scripts\Save\SaveSystem.cs" />
     <Compile Include="Assets\Scripts\Save\WebGLFileSystem.cs" />
@@ -60,8 +61,8 @@
     <Compile Include="Assets\Scripts\Missions\MissionInteractable.cs" />
     <Compile Include="Assets\Scripts\Save\PlayerPositionSaver.cs" />
     <Compile Include="Assets\Scripts\Missions\ReachAreaTrigger.cs" />
-    <Compile Include="Assets\Scripts\PlayerController2D.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionHud.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

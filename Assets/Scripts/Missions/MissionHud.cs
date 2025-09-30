@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Taallam.Missions
+namespace TaallamGame.Missions
 {
     public class MissionHud : MonoBehaviour
     {

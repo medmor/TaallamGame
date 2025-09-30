@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 
-namespace Taallam.Save
+namespace TaallamGame.Save
 {
     public static class SaveSystem
     {

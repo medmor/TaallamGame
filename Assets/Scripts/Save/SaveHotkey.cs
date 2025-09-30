@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 #endif
 
-namespace Taallam.Save
+namespace TaallamGame.Save
 {
     /// <summary>
     /// Simple hotkey to trigger a manual save. Attach to any always-present GameObject (e.g., Systems).

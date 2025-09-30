@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Taallam.Save
+namespace TaallamGame.Save
 {
     [RequireComponent(typeof(Transform))]
     public class PlayerPositionSaver : MonoBehaviour

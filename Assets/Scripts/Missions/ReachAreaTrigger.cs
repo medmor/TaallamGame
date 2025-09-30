@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Taallam.Missions
+namespace TaallamGame.Missions
 {
     [RequireComponent(typeof(Collider2D))]
     public class ReachAreaTrigger : MonoBehaviour

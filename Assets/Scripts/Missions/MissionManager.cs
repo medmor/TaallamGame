@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using Taallam.Save;
+using TaallamGame.Save;
 
-namespace Taallam.Missions
+namespace TaallamGame.Missions
 {
     public enum MissionLifecycle { Locked, Available, Active, TurnIn, Completed }
 

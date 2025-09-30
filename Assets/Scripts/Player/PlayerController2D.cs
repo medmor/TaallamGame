@@ -1,7 +1,6 @@
 using UnityEngine;
-using TaallamGame.Input;
 
-namespace TaallamGame.Characters
+namespace TaallamGame.Player
 {
     // Simple top-down 2D character controller using Rigidbody2D for smooth movement.
     // Attach to your Player GameObject with a Rigidbody2D and (optionally) Animator.

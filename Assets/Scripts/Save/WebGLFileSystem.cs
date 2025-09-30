@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 
-namespace Taallam.Save
+namespace TaallamGame.Save
 {
     public static class WebGLFileSystem
     {

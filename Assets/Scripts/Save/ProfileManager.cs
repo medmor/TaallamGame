@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace Taallam.Save
+namespace TaallamGame.Save
 {
     public class ProfileManager : MonoBehaviour
     {
