@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using TaallamGame.Missions;     // for MissionInteractable
+using TaallamGame.Missions;
 
 namespace TaallamGame.Player
 {
