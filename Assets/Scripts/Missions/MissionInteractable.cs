@@ -9,13 +9,18 @@ namespace TaallamGame.Missions
         [Header("Ink")]
         [SerializeField] private TextAsset inkJson; // assign police.ink.json in Inspector
         [SerializeField] private bool reportWhenDialogueEnds = true;
+        [Header("Emote Animator")]
+        [SerializeField] private Animator emoteAnimator;
 
         // Call this from your NPC dialogue when the player selects an interaction option
         public void Interact()
         {
             print($"MissionInteractable.Interact() called for {interactId}");
+            DialogueManager.GetInstance().EnterDialogueMode(inkJson, emoteAnimator);
+
             if (inkJson && InkDialogueRunner.Instance && !InkDialogueRunner.Instance.IsRunning)
-            {print($"Starting dialogue {inkJson.name}...");
+            {
+                print($"Starting dialogue {inkJson.name}...");
                 InkDialogueRunner.Instance.StartDialogue(inkJson, onComplete: () =>
                 {
                     print("Dialogue complete.");
