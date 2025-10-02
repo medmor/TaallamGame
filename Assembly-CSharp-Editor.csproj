@@ -48,7 +48,8 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Ink\Demos\Basic Demo\Scripts\Editor\BasicInkExampleEditor.cs" />
+    <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\Editor\ArabicSupportTool.cs" />
+    <Compile Include="Assets\ThirdParty\Ink\Demos\Basic Demo\Scripts\Editor\BasicInkExampleEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
