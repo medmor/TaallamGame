@@ -1,14 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using TaallamGame.Player;
 
 public class DialogueManager : MonoBehaviour
 {
     [Header("Params")]
     [SerializeField] private float typingSpeed = 0.04f;
+    [SerializeField] private bool debugLogging = false; // enable to print detailed logs
 
     [Header("Load Globals JSON")]
     [SerializeField] private TextAsset loadGlobalsJSON;
@@ -50,6 +54,16 @@ public class DialogueManager : MonoBehaviour
     private DialogueVariables dialogueVariables;
     private InkExternalFunctions inkExternalFunctions;
 
+    [SerializeField] private PlayerInputHandler input;
+
+    // Emits when a dialogue finishes (after UI hides)
+    public event Action DialogueEnded;
+
+    private void DLog(string msg)
+    {
+        if (debugLogging) Debug.Log($"[Dialogue] {msg}");
+    }
+
     private void Awake() 
     {
         if (instance != null)
@@ -63,6 +77,9 @@ public class DialogueManager : MonoBehaviour
 
         audioSource = this.gameObject.AddComponent<AudioSource>();
         currentAudioInfo = defaultAudioInfo;
+
+        if (!input)
+            input = FindFirstObjectByType<PlayerInputHandler>();
     }
 
     public static DialogueManager GetInstance() 
@@ -88,6 +105,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         InitializeAudioInfoDictionary();
+        DLog("Initialized DialogueManager");
     }
 
     private void InitializeAudioInfoDictionary() 
@@ -122,18 +140,31 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        // handle continuing to the next line in the dialogue when submit is pressed
-        // NOTE: The 'currentStory.currentChoiecs.Count == 0' part was to fix a bug after the Youtube video was made
-        if (canContinueToNextLine 
-            && currentStory.currentChoices.Count == 0 
-            && InputManager.GetInstance().GetSubmitPressed())
+        // Only advance when there are no choices on screen
+        if (input != null && input.ConsumeInteractPressed())
         {
-            ContinueStory();
+            int choiceCount = currentStory.currentChoices.Count;
+            DLog($"Interact pressed in Update. canContinue={canContinueToNextLine}, choices={choiceCount}");
+            if (canContinueToNextLine && choiceCount == 0)
+            {
+                DLog("Advancing story from Update");
+                ContinueStory();
+            }
+            else if (choiceCount > 0)
+            {
+                DLog("Choices are present; Interact will not advance. Use Submit/Click to choose.");
+            }
+            else
+            {
+                DLog("Line still typing; input consumed but not advancing.");
+            }
         }
     }
 
     public void EnterDialogueMode(TextAsset inkJSON, Animator emoteAnimator) 
     {
+        if (inkJSON == null) { DLog("EnterDialogueMode called with null inkJSON"); return; }
+        DLog($"EnterDialogueMode: {inkJSON.name}");
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
@@ -146,6 +177,7 @@ public class DialogueManager : MonoBehaviour
         portraitAnimator.Play("default");
         layoutAnimator.Play("right");
 
+        DLog("Starting first line");
         ContinueStory();
     }
 
@@ -162,10 +194,14 @@ public class DialogueManager : MonoBehaviour
 
         // go back to default audio
         SetCurrentAudioInfo(defaultAudioInfo.id);
+
+        // Notify listeners that dialogue ended
+        try { DLog("Dialogue ended"); DialogueEnded?.Invoke(); } catch (Exception ex) { Debug.LogException(ex); }
     }
 
     private void ContinueStory() 
     {
+        DLog("ContinueStory called");
         if (currentStory.canContinue) 
         {
             // set text for the current dialogue line
@@ -174,9 +210,11 @@ public class DialogueManager : MonoBehaviour
                 StopCoroutine(displayLineCoroutine);
             }
             string nextLine = currentStory.Continue();
+            DLog($"Next line length={nextLine?.Length ?? 0}, canContinue(after pull)={currentStory.canContinue}");
             // handle case where the last line is an external function
             if (nextLine.Equals("") && !currentStory.canContinue)
             {
+                DLog("Last step was external function; exiting dialogue");
                 StartCoroutine(ExitDialogueMode());
             }
             // otherwise, handle the normal case for continuing the story
@@ -189,6 +227,7 @@ public class DialogueManager : MonoBehaviour
         }
         else 
         {
+            DLog("No more content; exiting dialogue");
             StartCoroutine(ExitDialogueMode());
         }
     }
@@ -203,18 +242,19 @@ public class DialogueManager : MonoBehaviour
         HideChoices();
 
         canContinueToNextLine = false;
+        DLog($"Typing line length={line?.Length ?? 0}");
 
         bool isAddingRichTextTag = false;
 
         // display each letter one at a time
-        foreach (char letter in line.ToCharArray())
+        foreach (char letter in line)
         {
-            // if the submit button is pressed, finish up displaying the line right away
-            // if (InputManager.GetInstance().GetSubmitPressed()) 
-            // {
-            //     dialogueText.maxVisibleCharacters = line.Length;
-            //     break;
-            // }
+            if (input && input.ConsumeInteractPressed())
+            {
+                dialogueText.maxVisibleCharacters = line.Length;
+                DLog("Reveal full line (skip typewriter)");
+                break;
+            }
 
             // check for rich text tag, if found, add it without waiting
             if (letter == '<' || isAddingRichTextTag) 
@@ -228,8 +268,13 @@ public class DialogueManager : MonoBehaviour
             // if not rich text, add the next letter and wait a small time
             else 
             {
-                PlayDialogueSound(dialogueText.maxVisibleCharacters, dialogueText.text[dialogueText.maxVisibleCharacters]);
-                dialogueText.maxVisibleCharacters++;
+                // Safely compute the next character index to avoid IndexOutOfRange
+                int charIndex = dialogueText.maxVisibleCharacters;
+                if (charIndex < dialogueText.text.Length)
+                {
+                    PlayDialogueSound(charIndex, dialogueText.text[charIndex]);
+                    dialogueText.maxVisibleCharacters = charIndex + 1;
+                }
                 yield return new WaitForSeconds(typingSpeed);
             }
         }
@@ -239,6 +284,7 @@ public class DialogueManager : MonoBehaviour
         DisplayChoices();
 
         canContinueToNextLine = true;
+        DLog($"Line finished. choices={currentStory.currentChoices.Count}; canContinueToNextLine=true");
     }
 
     private void PlayDialogueSound(int currentDisplayedCharacterCount, char currentCharacter)
@@ -285,10 +331,10 @@ public class DialogueManager : MonoBehaviour
             else 
             {
                 // sound clip
-                int randomIndex = Random.Range(0, dialogueTypingSoundClips.Length);
+                int randomIndex = UnityEngine.Random.Range(0, dialogueTypingSoundClips.Length);
                 soundClip = dialogueTypingSoundClips[randomIndex];
                 // pitch
-                audioSource.pitch = Random.Range(minPitch, maxPitch);
+                audioSource.pitch = UnityEngine.Random.Range(minPitch, maxPitch);
             }
             
             // play sound
@@ -357,6 +403,19 @@ public class DialogueManager : MonoBehaviour
         {
             choices[index].gameObject.SetActive(true);
             choicesText[index].text = choice.text;
+            // Auto-bind button click to MakeChoice(index)
+            var btn = choices[index].GetComponent<Button>();
+            if (btn != null)
+            {
+                btn.interactable = true;
+                btn.onClick.RemoveAllListeners();
+                int captured = index;
+                btn.onClick.AddListener(() => MakeChoice(captured));
+            }
+            else
+            {
+                DLog($"Choice object '{choices[index].name}' has no Button component; mouse click won't work.");
+            }
             index++;
         }
         // go through the remaining choices the UI supports and make sure they're hidden
@@ -365,6 +424,7 @@ public class DialogueManager : MonoBehaviour
             choices[i].gameObject.SetActive(false);
         }
 
+        DLog($"DisplayChoices: {currentChoices.Count} choices");
         StartCoroutine(SelectFirstChoice());
     }
 
@@ -372,20 +432,40 @@ public class DialogueManager : MonoBehaviour
     {
         // Event System requires we clear it first, then wait
         // for at least one frame before we set the current selected object.
-        EventSystem.current.SetSelectedGameObject(null);
-        yield return new WaitForEndOfFrame();
-        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+        if (EventSystem.current != null)
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+            yield return new WaitForEndOfFrame();
+
+            // Pick the first active choice button if available
+            GameObject firstActive = null;
+            for (int i = 0; i < choices.Length; i++)
+            {
+                if (choices[i] != null && choices[i].activeSelf)
+                {
+                    firstActive = choices[i];
+                    break;
+                }
+            }
+            if (firstActive != null)
+            {
+                EventSystem.current.SetSelectedGameObject(firstActive);
+                DLog($"Selected first active choice: {firstActive.name}");
+            }
+        }
+        else
+        {
+            yield return null;
+        }
     }
 
     public void MakeChoice(int choiceIndex)
     {
-        if (canContinueToNextLine) 
-        {
-            currentStory.ChooseChoiceIndex(choiceIndex);
-            // NOTE: The below two lines were added to fix a bug after the Youtube video was made
-            InputManager.GetInstance().RegisterSubmitPressed(); // this is specific to my InputManager script
-            ContinueStory();
-        }
+        DLog($"MakeChoice called index={choiceIndex}, canContinue={canContinueToNextLine}");
+        if (!canContinueToNextLine) { DLog("MakeChoice ignored: not ready"); return; }
+        currentStory.ChooseChoiceIndex(choiceIndex);
+        DLog("Choice accepted; continuing story");
+        ContinueStory();
     }
 
     public Ink.Runtime.Object GetVariableState(string variableName) 

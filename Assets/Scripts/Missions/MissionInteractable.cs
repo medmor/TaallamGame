@@ -12,26 +12,45 @@ namespace TaallamGame.Missions
         [Header("Emote Animator")]
         [SerializeField] private Animator emoteAnimator;
 
-        // Call this from your NPC dialogue when the player selects an interaction option
+        private bool _subscribed;
+
+        // Call this when the player interacts
         public void Interact()
         {
             print($"MissionInteractable.Interact() called for {interactId}");
-            DialogueManager.GetInstance().EnterDialogueMode(inkJson, emoteAnimator);
-
-            if (inkJson && InkDialogueRunner.Instance && !InkDialogueRunner.Instance.IsRunning)
+            var dm = DialogueManager.GetInstance();
+            if (dm == null)
             {
-                print($"Starting dialogue {inkJson.name}...");
-                InkDialogueRunner.Instance.StartDialogue(inkJson, onComplete: () =>
-                {
-                    print("Dialogue complete.");
-                    if (reportWhenDialogueEnds)
-                        MissionManager.Instance?.ReportInteract(interactId);
-                });
-            }
-            else
-            {
+                Debug.LogWarning("DialogueManager not found in scene.");
                 MissionManager.Instance?.ReportInteract(interactId);
+                return;
             }
+
+            if (dm.dialogueIsPlaying)
+            {
+                // Already in dialogue; ignore re-entry
+                return;
+            }
+
+            if (reportWhenDialogueEnds && !_subscribed)
+            {
+                dm.DialogueEnded += OnDialogueEnded;
+                _subscribed = true;
+            }
+
+            dm.EnterDialogueMode(inkJson, emoteAnimator);
+        }
+
+        private void OnDialogueEnded()
+        {
+            var dm = DialogueManager.GetInstance();
+            if (dm != null)
+            {
+                dm.DialogueEnded -= OnDialogueEnded;
+                _subscribed = false;
+            }
+            if (reportWhenDialogueEnds)
+                MissionManager.Instance?.ReportInteract(interactId);
         }
     }
 }

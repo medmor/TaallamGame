@@ -20,6 +20,8 @@ namespace TaallamGame.Player
         [Header("References")]
         [SerializeField] private PlayerInputHandler input;
         [SerializeField] private Animator animator; // Optional
+    [Header("Gameplay State")]
+    [SerializeField] private bool pauseMovementWhenDialogue = true;
 
         private Rigidbody2D _rb;
         private Vector2 _currentVelocity;
@@ -38,12 +40,24 @@ namespace TaallamGame.Player
 
         private void Update()
         {
-            HandleDashInput();
+            bool dialogueActive = pauseMovementWhenDialogue && DialogueManager.GetInstance()?.dialogueIsPlaying == true;
+
+            if (!dialogueActive)
+            {
+                HandleDashInput();
+            }
             UpdateAnimator();
         }
 
         private void FixedUpdate()
         {
+            // Pause all movement when dialogue is active so arrows/wasd can navigate choices
+            if (pauseMovementWhenDialogue && DialogueManager.GetInstance()?.dialogueIsPlaying == true)
+            {
+                _rb.linearVelocity = Vector2.zero;
+                return;
+            }
+
             if (_dashTimer > 0f)
             {
                 // During dash, override velocity
