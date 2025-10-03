@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2439222409762190294}
-  - component: {fileID: 3826525491925891656}
+  - component: {fileID: 8727600858038999068}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3826525491925891656
+--- !u!114 &8727600858038999068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,27 +41,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1509250791379517915}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73bffb575d8cdcf42ba34ef7f5c34fae, type: 3}
+  m_Script: {fileID: 11500000, guid: da786ba386edd6045952124505a372e5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaallamGame.Dialogue.DialogueManager
   typingSpeed: 0.04
+  debugLogging: 0
   loadGlobalsJSON: {fileID: 4900000, guid: 887664fee91ae02418ad84c36b9b5e18, type: 3}
   dialoguePanel: {fileID: 0}
   continueIcon: {fileID: 0}
   dialogueText: {fileID: 0}
   displayNameText: {fileID: 0}
   portraitAnimator: {fileID: 0}
-  choices:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  defaultAudioInfo: {fileID: 11400000, guid: 8a55bf03677bf6a4994bed6043fd03bb, type: 2}
-  audioInfos:
-  - {fileID: 11400000, guid: efbab583eb9660546879945633633739, type: 2}
-  - {fileID: 11400000, guid: 40155f59ebfe76d4dae3f973254e6ee0, type: 2}
-  - {fileID: 11400000, guid: 7ec5b480d4f4a904aa776d23b49f742b, type: 2}
-  - {fileID: 11400000, guid: af0e5bb7705944941a6d7cc9dc38de17, type: 2}
-  - {fileID: 11400000, guid: a8bb328890830284b910f8770777d2bb, type: 2}
-  - {fileID: 11400000, guid: 92afdbdd41141c14c80909b5eb68e59d, type: 2}
-  - {fileID: 11400000, guid: cafd91373050aca4c9a4c0937f886e8e, type: 2}
-  makePredictable: 1
+  choices: []
+  defaultAudioInfo: {fileID: 0}
+  audioInfos: []
+  makePredictable: 0
+  input: {fileID: 0}

@@ -72,6 +72,7 @@
     <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\Testing\ArabicSupportTester.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionInteractable.cs" />
     <Compile Include="Assets\InkExemple\Scripts\Dialogue\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Save\PlayerPositionSaver.cs" />
     <Compile Include="Assets\Scripts\Missions\ReachAreaTrigger.cs" />
     <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\Testing\ExpectedFixedText.cs" />

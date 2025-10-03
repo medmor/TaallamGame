@@ -17,11 +17,9 @@ namespace TaallamGame.Missions
         // Call this when the player interacts
         public void Interact()
         {
-            print($"MissionInteractable.Interact() called for {interactId}");
             var dm = DialogueManager.GetInstance();
             if (dm == null)
             {
-                Debug.LogWarning("DialogueManager not found in scene.");
                 MissionManager.Instance?.ReportInteract(interactId);
                 return;
             }
