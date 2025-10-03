@@ -1,3 +1,4 @@
+using TaallamGame.Dialogue;
 using UnityEngine;
 
 namespace TaallamGame.Player
@@ -20,8 +21,8 @@ namespace TaallamGame.Player
         [Header("References")]
         [SerializeField] private PlayerInputHandler input;
         [SerializeField] private Animator animator; // Optional
-    [Header("Gameplay State")]
-    [SerializeField] private bool pauseMovementWhenDialogue = true;
+        [Header("Gameplay State")]
+        [SerializeField] private bool pauseMovementWhenDialogue = true;
 
         private Rigidbody2D _rb;
         private Vector2 _currentVelocity;

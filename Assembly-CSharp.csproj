@@ -53,25 +53,19 @@
     <Compile Include="Assets\Scripts\Save\SaveHotkey.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteraction.cs" />
     <Compile Include="Assets\Scripts\Save\SaveFile.cs" />
+    <Compile Include="Assets\ScriptibalesAssets\Audio\DialogueAudioInfoSO.cs" />
     <Compile Include="Assets\ThirdParty\Ink\Demos\Basic Demo\Scripts\BasicInkExample.cs" />
     <Compile Include="Assets\Scripts\Save\ProfileManager.cs" />
-    <Compile Include="Assets\InkExemple\Scripts\Player\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionManager.cs" />
     <Compile Include="Assets\Scripts\Dialogue\InkDialogueRunner.cs" />
     <Compile Include="Assets\Scripts\Dialogue\InkExternalFunctions.cs" />
-    <Compile Include="Assets\InkExemple\Scripts\Dialogue\DialogueVariables.cs" />
     <Compile Include="Assets\Scripts\Save\SaveSystem.cs" />
-    <Compile Include="Assets\InkExemple\Scripts\Audio\DialogueAudioInfoSO.cs" />
-    <Compile Include="Assets\InkExemple\Scripts\Dialogue\InkExternalFunctions.cs" />
-    <Compile Include="Assets\InkExemple\Scripts\NPCs\PokemonNPC.cs" />
-    <Compile Include="Assets\InkExemple\Scripts\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\ThirdParty\Ink\Demos\Basic Demo\Scripts\QuitGameOnKeypress.cs" />
     <Compile Include="Assets\Scripts\Save\WebGLFileSystem.cs" />
     <Compile Include="Assets\Scripts\Missions\CollectReporter.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionDefinition.cs" />
     <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\Testing\ArabicSupportTester.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionInteractable.cs" />
-    <Compile Include="Assets\InkExemple\Scripts\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Save\PlayerPositionSaver.cs" />
     <Compile Include="Assets\Scripts\Missions\ReachAreaTrigger.cs" />
@@ -79,7 +73,6 @@
     <Compile Include="Assets\Scripts\Missions\MissionHud.cs" />
     <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\ArabicSupport.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueVariables.cs" />
-    <Compile Include="Assets\InkExemple\Scripts\Input\InputManager.cs" />
     <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\Samples\FixArabic3DText.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
   </ItemGroup>
