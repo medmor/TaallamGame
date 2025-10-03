@@ -48,6 +48,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController2D.cs" />
     <Compile Include="Assets\Scripts\Save\SaveHotkey.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteraction.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="Assets\InkExemple\Scripts\Player\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionManager.cs" />
     <Compile Include="Assets\Scripts\Dialogue\InkDialogueRunner.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\InkExternalFunctions.cs" />
     <Compile Include="Assets\InkExemple\Scripts\Dialogue\DialogueVariables.cs" />
     <Compile Include="Assets\Scripts\Save\SaveSystem.cs" />
     <Compile Include="Assets\InkExemple\Scripts\Audio\DialogueAudioInfoSO.cs" />
@@ -75,6 +77,7 @@
     <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\Testing\ExpectedFixedText.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionHud.cs" />
     <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\ArabicSupport.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueVariables.cs" />
     <Compile Include="Assets\InkExemple\Scripts\Input\InputManager.cs" />
     <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\Samples\FixArabic3DText.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
