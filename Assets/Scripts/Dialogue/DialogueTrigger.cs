@@ -76,5 +76,13 @@ namespace TaallamGame.Dialogue
                 _playerInRange = false;
             }
         }
+
+        // Public helper so external systems can trigger dialogue (e.g. PlayerInteraction)
+        public void Interact()
+        {
+            var dm = DialogueManager.GetInstance();
+            if (dm == null) return;
+            dm.EnterDialogueMode(inkJSON, emoteAnimator);
+        }
     }
 }

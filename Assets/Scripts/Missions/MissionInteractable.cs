@@ -1,54 +1,25 @@
 using UnityEngine;
-using TaallamGame.Dialogue;
 
 namespace TaallamGame.Missions
 {
+    // Simple mission reporter component.
+    // Keeps only mission-related data and exposes Interact()/ReportInteract() for other systems to call.
     public class MissionInteractable : MonoBehaviour
     {
         [SerializeField] private string interactId = "npc_police";
-        [Header("Ink")]
-        [SerializeField] private TextAsset inkJson; // assign police.ink.json in Inspector
-        [SerializeField] private bool reportWhenDialogueEnds = true;
-        [Header("Emote Animator")]
-        [SerializeField] private Animator emoteAnimator;
+        [SerializeField] private bool reportWhenInteracted = true;
 
-        private bool _subscribed;
-
-        // Call this when the player interacts
+        // Call this when the player interacts. Kept for compatibility with existing PlayerInteraction code.
         public void Interact()
         {
-            var dm = DialogueManager.GetInstance();
-            if (dm == null)
-            {
-                MissionManager.Instance?.ReportInteract(interactId);
-                return;
-            }
-
-            if (dm.dialogueIsPlaying)
-            {
-                // Already in dialogue; ignore re-entry
-                return;
-            }
-
-            if (reportWhenDialogueEnds && !_subscribed)
-            {
-                dm.DialogueEnded += OnDialogueEnded;
-                _subscribed = true;
-            }
-
-            dm.EnterDialogueMode(inkJson, emoteAnimator);
+            if (reportWhenInteracted)
+                ReportInteract();
         }
 
-        private void OnDialogueEnded()
+        // Public API to report this interaction to the mission system.
+        public void ReportInteract()
         {
-            var dm = DialogueManager.GetInstance();
-            if (dm != null)
-            {
-                dm.DialogueEnded -= OnDialogueEnded;
-                _subscribed = false;
-            }
-            if (reportWhenDialogueEnds)
-                MissionManager.Instance?.ReportInteract(interactId);
+            MissionManager.Instance?.ReportInteract(interactId);
         }
     }
 }

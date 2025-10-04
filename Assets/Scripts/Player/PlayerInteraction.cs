@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TaallamGame.Missions;
+using TaallamGame.Dialogue;
 
 namespace TaallamGame.Player
 {
@@ -15,7 +16,9 @@ namespace TaallamGame.Player
         [SerializeField] private GameObject promptUI;
 
     private readonly List<MissionInteractable> _inRange = new List<MissionInteractable>();
+        private readonly List<DialogueTrigger> _dialogueInRange = new List<DialogueTrigger>();
         private MissionInteractable _current;
+        private DialogueTrigger _currentDialogue;
         private bool _interactPressed; // set by Send Messages or manually
 
         private void Reset()
@@ -42,11 +45,18 @@ namespace TaallamGame.Player
 
             // Prompt visibility
             if (promptUI)
-                promptUI.SetActive(_current != null);
+                promptUI.SetActive(_current != null || _currentDialogue != null);
         }
 
         private void TryInteract()
         {
+            // Prefer dialogue triggers when available
+            if (_currentDialogue != null)
+            {
+                _currentDialogue.Interact();
+                return;
+            }
+
             if (_current != null)
             {
                 _current.Interact();
@@ -56,6 +66,13 @@ namespace TaallamGame.Player
         // Track nearest interactable inside the trigger
         private void OnTriggerEnter2D(Collider2D other)
         {
+            var dt = other.GetComponentInParent<DialogueTrigger>();
+            if (dt && !_dialogueInRange.Contains(dt))
+            {
+                _dialogueInRange.Add(dt);
+                RecomputeCurrent();
+            }
+
             var mi = other.GetComponentInParent<MissionInteractable>();
             if (mi && !_inRange.Contains(mi))
             {
@@ -66,6 +83,13 @@ namespace TaallamGame.Player
 
         private void OnTriggerExit2D(Collider2D other)
         {
+            var dt = other.GetComponentInParent<DialogueTrigger>();
+            if (dt && _dialogueInRange.Remove(dt))
+            {
+                if (_currentDialogue == dt) _currentDialogue = null;
+                RecomputeCurrent();
+            }
+
             var mi = other.GetComponentInParent<MissionInteractable>();
             if (mi && _inRange.Remove(mi))
             {
@@ -76,10 +100,25 @@ namespace TaallamGame.Player
 
         private void RecomputeCurrent()
         {
+            // Prefer nearest DialogueTrigger if any; otherwise nearest MissionInteractable
+            _currentDialogue = null;
             _current = null;
-            float best = float.MaxValue;
+
             var me = transform.position;
 
+            float best = float.MaxValue;
+            for (int i = _dialogueInRange.Count - 1; i >= 0; i--)
+            {
+                var t = _dialogueInRange[i] ? _dialogueInRange[i].transform : null;
+                if (!t) { _dialogueInRange.RemoveAt(i); continue; }
+
+                float d = (t.position - me).sqrMagnitude;
+                if (d < best) { best = d; _currentDialogue = _dialogueInRange[i]; }
+            }
+
+            if (_currentDialogue != null) return;
+
+            best = float.MaxValue;
             for (int i = _inRange.Count - 1; i >= 0; i--)
             {
                 var t = _inRange[i] ? _inRange[i].transform : null;
