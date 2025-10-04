@@ -52,10 +52,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerController2D.cs" />
     <Compile Include="Assets\Scripts\Save\SaveHotkey.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteraction.cs" />
-    <Compile Include="Assets\ThirdParties\ArabicSupport\Scripts\Testing\ArabicSupportTester.cs" />
     <Compile Include="Assets\Scripts\Save\SaveFile.cs" />
-    <Compile Include="Assets\ThirdParties\ArabicSupport\Scripts\ArabicSupport.cs" />
-    <Compile Include="Assets\ThirdParties\ArabicSupport\Scripts\Samples\FixArabic3DText.cs" />
     <Compile Include="Assets\ScriptibalesAssets\Audio\DialogueAudioInfoSO.cs" />
     <Compile Include="Assets\Scripts\Save\ProfileManager.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionManager.cs" />
@@ -71,32 +68,48 @@
     <Compile Include="Assets\Scripts\Missions\ReachAreaTrigger.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionHud.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueVariables.cs" />
-    <Compile Include="Assets\ThirdParties\ArabicSupport\Scripts\Testing\ExpectedFixedText.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Resources\Shaders\TMP_SDF Overlay Fixed.shader" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Resources\Shaders\TMP_SDF-Surface-Mobile Fixed.shader" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Resources\Shaders\TMPro_SurfaceOutline.cginc" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Resources\Shaders\TMP_SDF-Surface Fixed.shader" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Ranges\ArabicTashkil.txt" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Resources\Shaders\TMP_SDF-Mobile Masking Fixed.shader" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Resources\Shaders\TMP_SDF-Mobile Overlay Fixed.shader" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Ranges\ArabicAll.txt" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Ranges\ArabicLetters.txt" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Resources\Shaders\TMP_SDF-Mobile Fixed.shader" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Ranges\ASCIIDigits.txt" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Ranges\HebrewLetters.txt" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Resources\Shaders\TMP_SDF Fixed.shader" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\ThirdParties\RTLTMPro\Ranges\ArabicDigits.txt" />
     <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
@@ -1378,6 +1391,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="RTLTMPro-Editor.csproj" />
+    <ProjectReference Include="RTLTMPro.csproj" />
     <ProjectReference Include="Ink-Libraries.csproj" />
     <ProjectReference Include="InkEditor.csproj" />
   </ItemGroup>

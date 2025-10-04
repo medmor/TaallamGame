@@ -7,6 +7,8 @@ using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TaallamGame.Player;
+using RTLTMPro;
+using System.Text.RegularExpressions;
 
 namespace TaallamGame.Dialogue
 {
@@ -22,14 +24,14 @@ namespace TaallamGame.Dialogue
         [Header("Dialogue UI")]
         [SerializeField] private GameObject dialoguePanel;
         [SerializeField] private GameObject continueIcon;
-        [SerializeField] private TextMeshProUGUI dialogueText;
-        [SerializeField] private TextMeshProUGUI displayNameText;
+    [SerializeField] private RTLTextMeshPro dialogueText;
+    [SerializeField] private RTLTextMeshPro displayNameText;
         [SerializeField] private Animator portraitAnimator;
         private Animator layoutAnimator;
 
         [Header("Choices UI")]
         [SerializeField] private GameObject[] choices;
-        private TextMeshProUGUI[] choicesText;
+    private RTLTextMeshPro[] choicesText;
 
         [Header("Audio")]
         [SerializeField] private DialogueAudioInfoSO defaultAudioInfo;
@@ -95,11 +97,11 @@ namespace TaallamGame.Dialogue
             layoutAnimator = dialoguePanel.GetComponent<Animator>();
 
             // get all of the choices text
-            choicesText = new TextMeshProUGUI[choices.Length];
+            choicesText = new RTLTextMeshPro[choices.Length];
             int index = 0;
             foreach (GameObject choice in choices)
             {
-                choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
+                choicesText[index] = choice.GetComponentInChildren<RTLTextMeshPro>();
                 index++;
             }
 
@@ -370,7 +372,7 @@ namespace TaallamGame.Dialogue
             foreach (Choice choice in currentChoices)
             {
                 choices[index].gameObject.SetActive(true);
-                choicesText[index].text = choice.text;
+                choicesText[index].text = WrapLatinIfNeeded(choice.text);
                 var btn = choices[index].GetComponent<Button>();
                 if (btn != null)
                 {
@@ -445,6 +447,14 @@ namespace TaallamGame.Dialogue
         public void OnApplicationQuit()
         {
             dialogueVariables.SaveVariables();
+        }
+
+        private static readonly Regex LatinRun = new Regex("[A-Za-z0-9]", RegexOptions.Compiled);
+        private static string WrapLatinIfNeeded(string s)
+        {
+            if (string.IsNullOrEmpty(s)) return s;
+            // If the string contains Latin, wrap to keep LTR inside RTL context.
+            return LatinRun.IsMatch(s) ? "\u2066" + s + "\u2069" : s; // LRI ... PDI
         }
     }
 }
