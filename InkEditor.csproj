@@ -42,34 +42,34 @@
     <UnityVersion>6000.2.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\medmor\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\mohammed\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Core\Ink Settings\InkSettings.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Core\Compiler\InkCompiler.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Core\Ink Settings\InkSettingsEditor.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Tools\Ink Inspector\DefaultAssetEditor.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Tools\File Icons\InkBrowserIcons.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Core\InkDefineSymbols.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Tools\Startup Window\InkUnityIntegrationStartupWindow.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Core\Compiler\UnityInkFileHandler.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Tools\Ink Inspector\InkInspector.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Tools\Player Window\InkPlayerWindow.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Tools\Build Validation\InkPreBuildValidationCheck.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Core\Ink Library\InkCompilerLog.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Core\Ink Library\InkLibrary.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Tools\Player Window\InkHistoryContentItem.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Tools\Ink Inspector\DefaultAssetInspector.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Core\Compiler\Auto Compiler\InkPostProcessor.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Core\InkEditorUtils.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Editor\Core\Ink Library\InkFile.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Tools\Player Window\InkPlayerWindow.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Core\Compiler\UnityInkFileHandler.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Core\Compiler\Auto Compiler\InkPostProcessor.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Core\Ink Library\InkFile.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Core\Ink Library\InkLibrary.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Tools\Startup Window\InkUnityIntegrationStartupWindow.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Core\Ink Settings\InkSettings.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Core\Ink Settings\InkSettingsEditor.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Tools\Ink Inspector\DefaultAssetEditor.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Tools\Player Window\InkHistoryContentItem.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Core\Compiler\InkCompiler.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Core\InkDefineSymbols.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Core\InkEditorUtils.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Core\Ink Library\InkCompilerLog.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Tools\File Icons\InkBrowserIcons.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Tools\Ink Inspector\DefaultAssetInspector.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Tools\Build Validation\InkPreBuildValidationCheck.cs" />
+    <Compile Include="Assets\ThirdParties\Ink\Editor\Tools\Ink Inspector\InkInspector.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\ThirdParty\Ink\Editor\InkEditor.asmdef" />
-    <None Include="Assets\ThirdParty\Ink\Editor\Tools\File Icons\Resources\InkDefaultTemplate.txt" />
+    <None Include="Assets\ThirdParties\Ink\Editor\InkEditor.asmdef" />
+    <None Include="Assets\ThirdParties\Ink\Editor\Tools\File Icons\Resources\InkDefaultTemplate.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

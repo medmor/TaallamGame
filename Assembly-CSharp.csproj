@@ -42,7 +42,7 @@
     <UnityVersion>6000.2.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\medmor\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\mohammed\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -52,54 +52,52 @@
     <Compile Include="Assets\Scripts\Player\PlayerController2D.cs" />
     <Compile Include="Assets\Scripts\Save\SaveHotkey.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteraction.cs" />
+    <Compile Include="Assets\ThirdParties\ArabicSupport\Scripts\Testing\ArabicSupportTester.cs" />
     <Compile Include="Assets\Scripts\Save\SaveFile.cs" />
+    <Compile Include="Assets\ThirdParties\ArabicSupport\Scripts\ArabicSupport.cs" />
+    <Compile Include="Assets\ThirdParties\ArabicSupport\Scripts\Samples\FixArabic3DText.cs" />
     <Compile Include="Assets\ScriptibalesAssets\Audio\DialogueAudioInfoSO.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Demos\Basic Demo\Scripts\BasicInkExample.cs" />
     <Compile Include="Assets\Scripts\Save\ProfileManager.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionManager.cs" />
     <Compile Include="Assets\Scripts\Dialogue\InkDialogueRunner.cs" />
     <Compile Include="Assets\Scripts\Dialogue\InkExternalFunctions.cs" />
     <Compile Include="Assets\Scripts\Save\SaveSystem.cs" />
-    <Compile Include="Assets\ThirdParty\Ink\Demos\Basic Demo\Scripts\QuitGameOnKeypress.cs" />
     <Compile Include="Assets\Scripts\Save\WebGLFileSystem.cs" />
     <Compile Include="Assets\Scripts\Missions\CollectReporter.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionDefinition.cs" />
-    <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\Testing\ArabicSupportTester.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionInteractable.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Save\PlayerPositionSaver.cs" />
     <Compile Include="Assets\Scripts\Missions\ReachAreaTrigger.cs" />
-    <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\Testing\ExpectedFixedText.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionHud.cs" />
-    <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\ArabicSupport.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueVariables.cs" />
-    <Compile Include="Assets\ThirdParty\ArabicSupport\Scripts\Samples\FixArabic3DText.cs" />
+    <Compile Include="Assets\ThirdParties\ArabicSupport\Scripts\Testing\ExpectedFixedText.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\ThirdParties\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1380,8 +1378,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="InkEditor.csproj" />
     <ProjectReference Include="Ink-Libraries.csproj" />
+    <ProjectReference Include="InkEditor.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
