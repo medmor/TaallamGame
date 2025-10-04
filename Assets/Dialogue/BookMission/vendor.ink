@@ -1,6 +1,6 @@
-INCLUDE "globals.ink"
+INCLUDE  globals.ink
 
-= start =
+== start ==
 #speaker:عادل البائع #portrait:vendor_neutral #layout:right #audio:animal_crossing_mid
 مرحبًا! أبيع الأشياء الصغيرة هنا. هل لديك تفاحة لتبادلها بحرف؟
 { has_apple:

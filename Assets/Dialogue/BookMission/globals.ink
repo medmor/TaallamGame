@@ -7,10 +7,10 @@ VAR has_apple = false // تفاحة (للتبادل عند البائع)
 VAR mission_accepted = false
 VAR mission_completed = false
 
-== is_mission_complete ==
+=== function is_mission_complete ===
 { has_k and has_t and has_a and has_b:
     ~ mission_completed = true
-    true
+    ~ return true
 - else:
-    false
+    ~ return false
 }

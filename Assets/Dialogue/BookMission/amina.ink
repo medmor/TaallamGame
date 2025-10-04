@@ -1,6 +1,7 @@
-INCLUDE "globals.ink"
+# Use quoted include to avoid path parsing issues
+INCLUDE globals.ink
 
-= start =
+== start ==
 #speaker:أمينة #portrait:amina_neutral #layout:left #audio:animal_crossing_mid
 أهلًا بك! هل جمعت الحروف لتكوين كلمة "كتاب"؟
 { is_mission_complete():
