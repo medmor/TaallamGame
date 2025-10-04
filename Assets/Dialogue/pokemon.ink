@@ -4,19 +4,19 @@ INCLUDE globals.ink
 { pokemon_name == "": -> main | -> already_chose }
 
 === main ===
-ما هو البوكيمون الذي تختاره؟
-    + [Charmander]
-        -> chosen("Charmander")
-    + [Bulbasaur]
-        -> chosen("Bulbasaur")
-    + [Squirtle]
-        -> chosen("Squirtle")
+ما هو <b>البوكيمون</b> الذي تختاره؟
+    + [الاختيار الأول]
+        -> chosen("الاختيار الأول")
+    + [الاختيار الثاني]
+        -> chosen("الاختيار الثاني")
+    + [الاختيار الثالث]
+        -> chosen("الاختيار الثالث")
         
 === chosen(pokemon) ===
 ~ pokemon_name = pokemon
-You chose {pokemon}!
+لقد اخترت {pokemon}!
 -> END
 
 === already_chose ===
-You already chose {pokemon_name}!
+لقد اخترت {pokemon_name} بالفعل!
 -> END
