@@ -108,11 +108,42 @@ namespace TaallamGame.Player
         {
             if (animator == null) return;
 
-            Vector2 vel = _rb.linearVelocity;
-            animator.SetFloat("MoveX", vel.x);
-            animator.SetFloat("MoveY", vel.y);
-            animator.SetFloat("Speed", vel.sqrMagnitude);
-            animator.SetBool("IsDashing", _dashTimer > 0f);
+            // Use input movement for smoother animation transitions
+            Vector2 movement = input != null ? input.Move : Vector2.zero;
+            bool isMoving = movement.magnitude > 0.1f;
+            
+            // Set main movement state
+            animator.SetBool("IsMoving", isMoving);
+            
+            // Set directional bools for better state control
+            if (isMoving)
+            {
+                // Determine primary direction based on strongest input
+                if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
+                {
+                    // Horizontal movement is stronger
+                    animator.SetBool("MovingLeft", movement.x < 0);
+                    animator.SetBool("MovingRight", movement.x > 0);
+                    animator.SetBool("MovingUp", false);
+                    animator.SetBool("MovingDown", false);
+                }
+                else
+                {
+                    // Vertical movement is stronger
+                    animator.SetBool("MovingLeft", false);
+                    animator.SetBool("MovingRight", false);
+                    animator.SetBool("MovingUp", movement.y > 0);
+                    animator.SetBool("MovingDown", movement.y < 0);
+                }
+            }
+            else
+            {
+                // Not moving - clear all directional flags
+                animator.SetBool("MovingLeft", false);
+                animator.SetBool("MovingRight", false);
+                animator.SetBool("MovingUp", false);
+                animator.SetBool("MovingDown", false);
+            }
         }
 
         // Public API to change movement properties at runtime if needed
