@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Missions\ReachAreaTrigger.cs" />
     <Compile Include="Assets\Scripts\Missions\MissionHud.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueVariables.cs" />
+    <Compile Include="Assets\Scripts\Npcs\PatrolAI.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
   </ItemGroup>
   <ItemGroup>
