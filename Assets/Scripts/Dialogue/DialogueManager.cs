@@ -60,6 +60,10 @@ namespace TaallamGame.Dialogue
 
         [SerializeField] private PlayerInputHandler input;
 
+        [Header("Re-entry Control")]
+        [SerializeField] private float reentryCooldownSeconds = 0.25f; // block re-open after close
+        private float _reentryBlockUntil = -1f;
+
         // Emits when a dialogue finishes (after UI hides)
         public event Action DialogueEnded;
 
@@ -158,9 +162,19 @@ namespace TaallamGame.Dialogue
             }
         }
 
+        public bool IsInReentryCooldown => Time.time < _reentryBlockUntil;
+
         public void EnterDialogueMode(TextAsset inkJSON, Animator emoteAnimator)
         {
             if (inkJSON == null) { DLog("EnterDialogueMode called with null inkJSON"); return; }
+
+            // Prevent immediate re-open due to the same key press
+            if (IsInReentryCooldown)
+            {
+                DLog($"EnterDialogueMode blocked by cooldown ({_reentryBlockUntil - Time.time:0.00}s left)");
+                return;
+            }
+
             DLog($"EnterDialogueMode: {inkJSON.name}");
             currentStory = new Story(inkJSON.text);
             dialogueIsPlaying = true;
@@ -169,7 +183,6 @@ namespace TaallamGame.Dialogue
             dialogueVariables.StartListening(currentStory);
             inkExternalFunctions.Bind(currentStory, emoteAnimator);
 
-            // reset portrait, layout, and speaker
             displayNameText.text = "???";
             portraitAnimator.Play("default");
             layoutAnimator.Play("right");
@@ -180,6 +193,9 @@ namespace TaallamGame.Dialogue
 
         private IEnumerator ExitDialogueMode()
         {
+            // Start cooldown immediately so re-open is blocked while we close
+            _reentryBlockUntil = Time.time + reentryCooldownSeconds;
+
             yield return new WaitForSeconds(0.2f);
 
             dialogueVariables.StopListening(currentStory);
@@ -189,7 +205,6 @@ namespace TaallamGame.Dialogue
             dialoguePanel.SetActive(false);
             dialogueText.text = "";
 
-            // go back to default audio
             SetCurrentAudioInfo(defaultAudioInfo.id);
 
             try { DLog("Dialogue ended"); DialogueEnded?.Invoke(); } catch (Exception ex) { Debug.LogException(ex); }

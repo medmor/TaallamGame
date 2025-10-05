@@ -11064,6 +11064,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1847518983
       objectReference: {fileID: 0}
+    - target: {fileID: 8212262927144986240, guid: aea4bb20ee5966449907efea174cfcf6, type: 3}
+      propertyPath: inkJSON
+      value: 
+      objectReference: {fileID: 4900000, guid: fea2c01fa63e8bb4d9b9e983db087c4e, type: 3}
     - target: {fileID: 8545260031805279827, guid: aea4bb20ee5966449907efea174cfcf6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6649
@@ -17603,6 +17607,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: af0e5bb7705944941a6d7cc9dc38de17, type: 2}
   makePredictable: 0
   input: {fileID: 1325426865}
+  reentryCooldownSeconds: 0.25
 --- !u!1 &1184808604
 GameObject:
   m_ObjectHideFlags: 0

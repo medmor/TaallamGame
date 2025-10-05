@@ -38,7 +38,10 @@ namespace TaallamGame.Dialogue
             var dm = DialogueManager.GetInstance();
             bool dialogueActive = dm != null && dm.dialogueIsPlaying;
 
-            if (_playerInRange && !dialogueActive)
+            // Also block if manager is in re-entry cooldown
+            bool blockedByCooldown = dm != null && dm.IsInReentryCooldown;
+
+            if (_playerInRange && !dialogueActive && !blockedByCooldown)
             {
                 if (visualCue && !visualCue.activeSelf) visualCue.SetActive(true);
 
