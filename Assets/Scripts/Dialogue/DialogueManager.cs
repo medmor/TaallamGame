@@ -47,6 +47,8 @@ namespace TaallamGame.Dialogue
         private bool canContinueToNextLine = false;
 
         private Coroutine displayLineCoroutine;
+        private Coroutine typingCoroutine;
+        private string currentStoryText = "";
 
         private static DialogueManager instance;
 
@@ -145,7 +147,26 @@ namespace TaallamGame.Dialogue
             if (input != null && input.ConsumeInteractPressed())
             {
                 int choiceCount = currentStory.currentChoices.Count;
-                DLog($"Interact pressed in Update. canContinue={canContinueToNextLine}, choices={choiceCount}");
+                DLog($"Interact pressed in Update. canContinue={canContinueToNextLine}, choices={choiceCount}, typing={(displayLineCoroutine != null)}");
+                
+                // If typing is in progress, complete it immediately
+                if (!canContinueToNextLine && displayLineCoroutine != null)
+                {
+                    DLog("Completing typing immediately");
+                    StopCoroutine(displayLineCoroutine);
+                    displayLineCoroutine = null;
+                    dialogueText.maxVisibleCharacters = currentStoryText.Length;
+                    
+                    // Only show continue icon if there's more content OR choices
+                    bool hasMoreContent = currentStory.canContinue || currentStory.currentChoices.Count > 0;
+                    continueIcon.SetActive(hasMoreContent && currentStory.currentChoices.Count == 0);
+                    DisplayChoices();
+                    canContinueToNextLine = true;
+                    DLog("Typing completed, canContinueToNextLine set to true");
+                    return;
+                }
+                
+                // If line is complete and no choices, advance to next line
                 if (canContinueToNextLine && choiceCount == 0)
                 {
                     DLog("Advancing story from Update");
@@ -157,7 +178,7 @@ namespace TaallamGame.Dialogue
                 }
                 else
                 {
-                    DLog("Line still typing; input consumed but not advancing.");
+                    DLog("Input consumed but conditions not met for advance");
                 }
             }
         }
@@ -172,6 +193,13 @@ namespace TaallamGame.Dialogue
             if (IsInReentryCooldown)
             {
                 DLog($"EnterDialogueMode blocked by cooldown ({_reentryBlockUntil - Time.time:0.00}s left)");
+                return;
+            }
+
+            // If dialogue is already playing, don't restart it
+            if (dialogueIsPlaying)
+            {
+                DLog("EnterDialogueMode called but dialogue is already playing - ignoring");
                 return;
             }
 
@@ -212,7 +240,14 @@ namespace TaallamGame.Dialogue
 
         private void ContinueStory()
         {
-            DLog("ContinueStory called");
+            DLog($"ContinueStory called - canContinue: {currentStory?.canContinue}, currentChoices: {currentStory?.currentChoices?.Count}");
+            
+            if (currentStory == null)
+            {
+                DLog("ERROR: currentStory is null in ContinueStory!");
+                return;
+            }
+            
             if (currentStory.canContinue)
             {
                 if (displayLineCoroutine != null)
@@ -220,10 +255,11 @@ namespace TaallamGame.Dialogue
                     StopCoroutine(displayLineCoroutine);
                 }
                 string nextLine = currentStory.Continue();
-                DLog($"Next line length={nextLine?.Length ?? 0}, canContinue(after pull)={currentStory.canContinue}");
-                if (nextLine.Equals("") && !currentStory.canContinue)
+                DLog($"Retrieved next line: '{nextLine}' (length={nextLine?.Length ?? 0}), canContinue(after pull)={currentStory.canContinue}");
+                
+                if (string.IsNullOrEmpty(nextLine) && !currentStory.canContinue)
                 {
-                    DLog("Last step was external function; exiting dialogue");
+                    DLog("Empty line and no more content; exiting dialogue");
                     StartCoroutine(ExitDialogueMode());
                 }
                 else
@@ -241,6 +277,7 @@ namespace TaallamGame.Dialogue
 
         private IEnumerator DisplayLine(string line)
         {
+            currentStoryText = line; // Store the full text
             dialogueText.text = line;
             dialogueText.maxVisibleCharacters = 0;
             continueIcon.SetActive(false);
@@ -280,11 +317,13 @@ namespace TaallamGame.Dialogue
                 }
             }
 
-            continueIcon.SetActive(true);
+            // Only show continue icon if there's more content OR choices
+            bool hasMoreContent = currentStory.canContinue || currentStory.currentChoices.Count > 0;
+            continueIcon.SetActive(hasMoreContent && currentStory.currentChoices.Count == 0);
             DisplayChoices();
 
             canContinueToNextLine = true;
-            DLog($"Line finished. choices={currentStory.currentChoices.Count}; canContinueToNextLine=true");
+            DLog($"Line finished. choices={currentStory.currentChoices.Count}; canContinueToNextLine=true; hasMoreContent={hasMoreContent}");
         }
 
         private void PlayDialogueSound(int currentDisplayedCharacterCount, char currentCharacter)
