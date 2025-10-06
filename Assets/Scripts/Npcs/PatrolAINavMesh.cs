@@ -31,8 +31,9 @@ namespace TaallamGame.NPCs
         [Header("Animation")]
         [SerializeField] private Animator animator;
 
-        [Header("Debug")]
-        [SerializeField] private bool showDebugInfo = true;
+    [Header("NavMesh Agent")]
+    [Tooltip("If enabled the NavMeshAgent will not update rotation (useful for 2D sprites)")]
+
 
         private NavMeshAgent agent;
         private int currentWaypointIndex = 0;
@@ -42,9 +43,11 @@ namespace TaallamGame.NPCs
         private Coroutine patrolCoroutine;
 
         // Animation parameter names
-        private const string SPEED = "Speed";
-        private const string IS_MOVING = "IsMoving";
-        private const string IS_IDLE = "IsIdle";
+    private const string IS_MOVING = "IsMoving";
+    private const string MOVING_LEFT = "MovingLeft";
+    private const string MOVING_RIGHT = "MovingRight";
+    private const string MOVING_UP = "MovingUp";
+    private const string MOVING_DOWN = "MovingDown";
 
         public enum PatrolState
         {
@@ -60,9 +63,11 @@ namespace TaallamGame.NPCs
         {
             agent = GetComponent<NavMeshAgent>();
             
-            // Configure NavMeshAgent for 2D
-            agent.updateRotation = false; // Handle rotation manually for 2D
-            agent.updateUpAxis = false;   // For 2D navigation
+
+            // Configure NavMeshAgent for 2D based on inspector toggles
+            agent.updateRotation = false; // if true, agent won't update rotation
+            agent.updateUpAxis = false;    // if true, agent won't modify up axis
+
             agent.speed = patrolSpeed;
             agent.stoppingDistance = stoppingDistance;
         }
@@ -80,7 +85,6 @@ namespace TaallamGame.NPCs
             // Validate waypoints
             if (waypoints == null || waypoints.Length == 0)
             {
-                Debug.LogWarning($"{gameObject.name}: No waypoints assigned! Creating a single waypoint at current position.");
                 waypoints = new Transform[] { transform };
             }
 
@@ -94,8 +98,7 @@ namespace TaallamGame.NPCs
         private void Update()
         {
             HandlePlayerDetection();
-            UpdateAnimation();
-            UpdateRotation();
+            UpdateAnimation();            
         }
 
         public void StartPatrol()
@@ -173,9 +176,6 @@ namespace TaallamGame.NPCs
                 CurrentState = PatrolState.Waiting;
                 isWaiting = true;
                 
-                if (showDebugInfo)
-                    Debug.Log($"{gameObject.name}: Reached waypoint {currentWaypointIndex}, waiting {waitTime}s");
-
                 yield return new WaitForSeconds(waitTime);
                 
                 isWaiting = false;
@@ -238,42 +238,47 @@ namespace TaallamGame.NPCs
             
             playerDetected = distanceToPlayer <= detectionRange;
 
-            // Log detection changes
-            if (playerDetected && !wasDetected && showDebugInfo)
-            {
-                Debug.Log($"{gameObject.name}: Player detected at distance {distanceToPlayer:F1}");
-            }
-            else if (!playerDetected && wasDetected && showDebugInfo)
-            {
-                Debug.Log($"{gameObject.name}: Player lost");
-            }
         }
 
-        private void UpdateRotation()
-        {
-            // Rotate to face movement direction (2D)
-            if (agent.velocity.sqrMagnitude > 0.1f)
-            {
-                Vector3 direction = agent.velocity.normalized;
-                float targetAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-                
-                // Smooth rotation
-                float currentAngle = transform.eulerAngles.z;
-                float newAngle = Mathf.MoveTowardsAngle(currentAngle, targetAngle, 360f * Time.deltaTime);
-                transform.rotation = Quaternion.Euler(0, 0, newAngle);
-            }
-        }
+
 
         private void UpdateAnimation()
         {
-            if (animator == null) return;
+            bool isMoving = agent.velocity.sqrMagnitude > 0.01f;
 
-            bool isMoving = agent.velocity.sqrMagnitude > 0.1f && !isWaiting;
-            float speed = agent.velocity.magnitude;
-
+            // Set main moving flag
             animator.SetBool(IS_MOVING, isMoving);
-            animator.SetBool(IS_IDLE, isWaiting || CurrentState == PatrolState.Waiting);
-            animator.SetFloat(SPEED, speed);
+
+            // Directional flags: only one primary direction is true at a time
+            if (isMoving)
+            {
+                Vector3 velocity = agent.velocity.normalized;
+                if (Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y))
+                {
+                    // Horizontal primary
+                    animator.SetBool(MOVING_LEFT, velocity.x < 0f);
+                    animator.SetBool(MOVING_RIGHT, velocity.x > 0f);
+                    animator.SetBool(MOVING_UP, false);
+                    animator.SetBool(MOVING_DOWN, false);
+                }
+                else
+                {
+                    // Vertical primary
+                    animator.SetBool(MOVING_LEFT, false);
+                    animator.SetBool(MOVING_RIGHT, false);
+                    animator.SetBool(MOVING_UP, velocity.y > 0f);
+                    animator.SetBool(MOVING_DOWN, velocity.y < 0f);
+                }
+            }
+            else
+            {
+                // Clear all directional flags when idle
+                animator.SetBool(MOVING_LEFT, false);
+                animator.SetBool(MOVING_RIGHT, false);
+                animator.SetBool(MOVING_UP, false);
+                animator.SetBool(MOVING_DOWN, false);
+            }
+
         }
 
         // Public API
@@ -334,12 +339,6 @@ namespace TaallamGame.NPCs
                 Gizmos.DrawWireSphere(GetCurrentWaypoint().position, 0.7f);
             }
 
-            // Draw detection range
-            if (showDebugInfo)
-            {
-                Gizmos.color = playerDetected ? Color.red : Color.white;
-                //Gizmos.DrawWireCircle(transform.position, detectionRange);
-            }
 
             // Draw current path
             if (Application.isPlaying && agent != null && agent.hasPath)
