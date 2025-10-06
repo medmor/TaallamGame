@@ -22,6 +22,9 @@ namespace TaallamGame.NPCs
         [SerializeField] private float detectionRange = 5f;
         [SerializeField] private LayerMask playerLayer = 1;
         [SerializeField] private Transform player; // Optional: assign player reference
+    [SerializeField] private bool stopOnPlayerDetection = true;
+    [SerializeField] private bool resumeOnPlayerLost = true;
+    [SerializeField] private float resumeDelay = 2f;
 
         [Header("Behavior")]
         [SerializeField] private float stoppingDistance = 0.5f;
@@ -124,7 +127,9 @@ namespace TaallamGame.NPCs
         {
             if (patrolCoroutine != null)
                 StopCoroutine(patrolCoroutine);
-                
+            
+            // Mark not patrolling so resume logic can restart patrol later
+            isPatrolling = false;
             agent.ResetPath();
             CurrentState = PatrolState.Waiting;
             
@@ -234,10 +239,38 @@ namespace TaallamGame.NPCs
             if (player == null) return;
 
             float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
             bool wasDetected = playerDetected;
-            
             playerDetected = distanceToPlayer <= detectionRange;
 
+            // If detection state changed, handle start/stop behavior
+            if (playerDetected && !wasDetected)
+            {
+                // Player was just detected
+                if (stopOnPlayerDetection)
+                {
+                    // Stop patrolling immediately
+                    PausePatrol();
+                }
+            }
+            else if (!playerDetected && wasDetected)
+            {
+                // Player was just lost
+                if (resumeOnPlayerLost)
+                {
+                    // Resume after a short delay
+                    StartCoroutine(ResumeAfterDelayCoroutine(resumeDelay));
+                }
+            }
+        }
+
+        private IEnumerator ResumeAfterDelayCoroutine(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            if (!playerDetected && !isPatrolling)
+            {
+                StartPatrol();
+            }
         }
 
 

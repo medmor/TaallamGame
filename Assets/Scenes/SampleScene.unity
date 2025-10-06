@@ -957,19 +957,21 @@ MonoBehaviour:
   - {fileID: 509336643}
   - {fileID: 818444775}
   waitTime: 2
-  patrolSpeed: 3
+  patrolSpeed: 0.5
   loopPatrol: 1
   randomizeWaypoints: 1
-  detectionRange: 5
+  detectionRange: 0.3
   playerLayer:
     serializedVersion: 2
     m_Bits: 1
-  player: {fileID: 0}
-  stoppingDistance: 0.5
+  player: {fileID: 1325426861}
+  stopOnPlayerDetection: 1
+  resumeOnPlayerLost: 1
+  resumeDelay: 0.5
+  stoppingDistance: 0.2
   pauseOnPlayerDetection: 1
   playerDetectionPause: 3
-  animator: {fileID: 0}
-  showDebugInfo: 1
+  animator: {fileID: 192585102}
 --- !u!195 &192585107
 NavMeshAgent:
   m_ObjectHideFlags: 0
