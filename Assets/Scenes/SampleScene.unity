@@ -25438,7 +25438,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8368580693764382712, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
   m_PrefabInstance: {fileID: 4202322854900875452}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1966654549}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94e8a30595068bf47a27b4f8d9b89d1a, type: 3}
@@ -27522,6 +27522,57 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2782484248699844609, guid: d8dbef5c7cee6494b93b6d5c74f662da, type: 3}
   m_PrefabInstance: {fileID: 925477864}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1966654549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 431423516411550821, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
+  m_PrefabInstance: {fileID: 4202322854900875452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1966654550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966654549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86051d6248c1245b4d0fc05ed7c206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaallamGame.Player.PlayerController2DNavMesh
+  moveSpeed: 5
+  rotationSpeed: 720
+  useKeyboardMovement: 1
+  useClickToMove: 1
+  inputHandler: {fileID: 0}
+  playerCamera: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  moveTargetPrefab: {fileID: 0}
+  targetIndicatorDuration: 1
+  animator: {fileID: 0}
+--- !u!195 &1966654551
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966654549}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.125
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.30357143
+  m_BaseOffset: 0.15178572
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1978237597
 GameObject:
   m_ObjectHideFlags: 0
@@ -28178,6 +28229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2153487104688331718, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3792559796094537090, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -28249,7 +28304,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 431423516411550821, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1966654551}
+    - targetCorrespondingSourceObject: {fileID: 431423516411550821, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1966654550}
   m_SourcePrefab: {fileID: 100100000, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
