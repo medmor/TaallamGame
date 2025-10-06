@@ -22,9 +22,9 @@ namespace TaallamGame.NPCs
         [SerializeField] private float detectionRange = 5f;
         [SerializeField] private LayerMask playerLayer = 1;
         [SerializeField] private Transform player; // Optional: assign player reference
-    [SerializeField] private bool stopOnPlayerDetection = true;
-    [SerializeField] private bool resumeOnPlayerLost = true;
-    [SerializeField] private float resumeDelay = 2f;
+        [SerializeField] private bool stopOnPlayerDetection = true;
+        [SerializeField] private bool resumeOnPlayerLost = true;
+        [SerializeField] private float resumeDelay = 2f;
 
         [Header("Behavior")]
         [SerializeField] private float stoppingDistance = 0.5f;
@@ -34,8 +34,8 @@ namespace TaallamGame.NPCs
         [Header("Animation")]
         [SerializeField] private Animator animator;
 
-    [Header("NavMesh Agent")]
-    [Tooltip("If enabled the NavMeshAgent will not update rotation (useful for 2D sprites)")]
+        [Header("NavMesh Agent")]
+        [Tooltip("If enabled the NavMeshAgent will not update rotation (useful for 2D sprites)")]
 
 
         private NavMeshAgent agent;
@@ -48,15 +48,15 @@ namespace TaallamGame.NPCs
         private Facing lastFacing = Facing.Down;
 
         // Animation parameter names
-    private const string IS_MOVING = "IsMoving";
-    private const string MOVING_LEFT = "MovingLeft";
-    private const string MOVING_RIGHT = "MovingRight";
-    private const string MOVING_UP = "MovingUp";
-    private const string MOVING_DOWN = "MovingDown";
-    private const string IDLE_LEFT = "IdleLeft";
-    private const string IDLE_RIGHT = "IdleRight";
-    private const string IDLE_UP = "IdleUp";
-    private const string IDLE_DOWN = "IdleDown";
+        private const string IS_MOVING = "IsMoving";
+        private const string MOVING_LEFT = "MovingLeft";
+        private const string MOVING_RIGHT = "MovingRight";
+        private const string MOVING_UP = "MovingUp";
+        private const string MOVING_DOWN = "MovingDown";
+        private const string IDLE_LEFT = "IdleLeft";
+        private const string IDLE_RIGHT = "IdleRight";
+        private const string IDLE_UP = "IdleUp";
+        private const string IDLE_DOWN = "IdleDown";
 
         public enum PatrolState
         {
@@ -71,7 +71,7 @@ namespace TaallamGame.NPCs
         private void Awake()
         {
             agent = GetComponent<NavMeshAgent>();
-            
+
 
             // Configure NavMeshAgent for 2D based on inspector toggles
             agent.updateRotation = false; // if true, agent won't update rotation
@@ -107,14 +107,14 @@ namespace TaallamGame.NPCs
         private void Update()
         {
             HandlePlayerDetection();
-            UpdateAnimation();            
+            UpdateAnimation();
         }
 
         public void StartPatrol()
         {
             if (patrolCoroutine != null)
                 StopCoroutine(patrolCoroutine);
-                
+
             isPatrolling = true;
             patrolCoroutine = StartCoroutine(PatrolRoutine());
         }
@@ -123,7 +123,7 @@ namespace TaallamGame.NPCs
         {
             if (patrolCoroutine != null)
                 StopCoroutine(patrolCoroutine);
-                
+
             isPatrolling = false;
             agent.ResetPath();
             CurrentState = PatrolState.Stopped;
@@ -133,12 +133,12 @@ namespace TaallamGame.NPCs
         {
             if (patrolCoroutine != null)
                 StopCoroutine(patrolCoroutine);
-            
+
             // Mark not patrolling so resume logic can restart patrol later
             isPatrolling = false;
             agent.ResetPath();
             CurrentState = PatrolState.Waiting;
-            
+
             if (duration > 0)
             {
                 StartCoroutine(ResumePatrolAfterDelay(duration));
@@ -186,9 +186,9 @@ namespace TaallamGame.NPCs
                 // Wait at waypoint
                 CurrentState = PatrolState.Waiting;
                 isWaiting = true;
-                
+
                 yield return new WaitForSeconds(waitTime);
-                
+
                 isWaiting = false;
 
                 // Move to next waypoint
@@ -199,7 +199,7 @@ namespace TaallamGame.NPCs
         private Transform GetCurrentWaypoint()
         {
             if (waypoints == null || waypoints.Length == 0) return null;
-            
+
             // Clamp index to valid range
             currentWaypointIndex = Mathf.Clamp(currentWaypointIndex, 0, waypoints.Length - 1);
             return waypoints[currentWaypointIndex];
@@ -217,14 +217,14 @@ namespace TaallamGame.NPCs
                 {
                     newIndex = Random.Range(0, waypoints.Length);
                 } while (newIndex == currentWaypointIndex && waypoints.Length > 1);
-                
+
                 currentWaypointIndex = newIndex;
             }
             else
             {
                 // Move to next waypoint in sequence
                 currentWaypointIndex++;
-                
+
                 if (currentWaypointIndex >= waypoints.Length)
                 {
                     if (loopPatrol)
@@ -370,10 +370,10 @@ namespace TaallamGame.NPCs
                 for (int i = 0; i < waypoints.Length; i++)
                 {
                     if (waypoints[i] == null) continue;
-                    
+
                     // Draw waypoint
                     Gizmos.DrawWireSphere(waypoints[i].position, 0.5f);
-                    
+
                     // Draw path to next waypoint
                     if (loopPatrol || i < waypoints.Length - 1)
                     {
