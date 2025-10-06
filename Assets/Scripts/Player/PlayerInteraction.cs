@@ -35,6 +35,10 @@ namespace TaallamGame.Player
 
         private void Update()
         {
+            // Skip interaction input when dialogue is active - let DialogueManager handle it
+            if (TaallamGame.Dialogue.DialogueManager.GetInstance()?.dialogueIsPlaying == true)
+                return;
+
             // Option A: using your PlayerInputHandler
             bool pressed = input ? input.ConsumeInteractPressed() : false;
 

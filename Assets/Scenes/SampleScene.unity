@@ -6181,7 +6181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TaallamGame.Dialogue.DialogueManager
   typingSpeed: 0.04
-  debugLogging: 0
+  debugLogging: 1
   loadGlobalsJSON: {fileID: 4900000, guid: f7b859e9c68d6864d8c14b036b106d1e, type: 3}
   dialoguePanel: {fileID: 1953229315}
   continueIcon: {fileID: 1573443337}

@@ -169,7 +169,7 @@ namespace TaallamGame.Dialogue
                 // If line is complete and no choices, advance to next line
                 if (canContinueToNextLine && choiceCount == 0)
                 {
-                    DLog("Advancing story from Update");
+                    DLog($"Advancing story from Update - story.canContinue={currentStory.canContinue}");
                     ContinueStory();
                 }
                 else if (choiceCount > 0)
@@ -178,7 +178,7 @@ namespace TaallamGame.Dialogue
                 }
                 else
                 {
-                    DLog("Input consumed but conditions not met for advance");
+                    DLog($"Input consumed but conditions not met for advance. canContinueToNextLine={canContinueToNextLine}, choiceCount={choiceCount}");
                 }
             }
         }
@@ -270,7 +270,7 @@ namespace TaallamGame.Dialogue
             }
             else
             {
-                DLog("No more content; exiting dialogue");
+                DLog($"No more content; exiting dialogue. currentChoices.Count={currentStory.currentChoices.Count}");
                 StartCoroutine(ExitDialogueMode());
             }
         }
@@ -323,7 +323,7 @@ namespace TaallamGame.Dialogue
             DisplayChoices();
 
             canContinueToNextLine = true;
-            DLog($"Line finished. choices={currentStory.currentChoices.Count}; canContinueToNextLine=true; hasMoreContent={hasMoreContent}");
+            DLog($"Line finished. choices={currentStory.currentChoices.Count}; canContinueToNextLine=true; hasMoreContent={hasMoreContent}; story.canContinue={currentStory.canContinue}");
         }
 
         private void PlayDialogueSound(int currentDisplayedCharacterCount, char currentCharacter)

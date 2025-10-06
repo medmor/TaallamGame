@@ -40,7 +40,6 @@ namespace TaallamGame.NPCs
 
         private NavMeshAgent agent;
         private int currentWaypointIndex = 0;
-        private bool isWaiting = false;
         private bool isPatrolling = true;
         private bool playerDetected = false;
         private Coroutine patrolCoroutine;
@@ -185,11 +184,8 @@ namespace TaallamGame.NPCs
 
                 // Wait at waypoint
                 CurrentState = PatrolState.Waiting;
-                isWaiting = true;
 
                 yield return new WaitForSeconds(waitTime);
-
-                isWaiting = false;
 
                 // Move to next waypoint
                 MoveToNextWaypoint();
