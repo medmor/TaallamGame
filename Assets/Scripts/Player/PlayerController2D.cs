@@ -29,6 +29,10 @@ namespace TaallamGame.Player
         private float _dashTimer;
         private float _dashCooldownTimer;
         private Vector2 _dashDirection;
+        
+    // Keep track of last facing for idle animations
+    private enum Facing { Up, Down, Left, Right }
+    private Facing _lastFacing = Facing.Down;
 
         private void Awake()
         {
@@ -107,42 +111,58 @@ namespace TaallamGame.Player
         private void UpdateAnimator()
         {
             if (animator == null) return;
+            // Use input movement for smoother animation transitions, but fall back to RB velocity
+            Vector2 inputMovement = input != null ? input.Move : Vector2.zero;
+            Vector2 actualVelocity = _dashTimer > 0f ? _dashDirection * dashSpeed : _rb != null ? _rb.linearVelocity : Vector2.zero;
 
-            // Use input movement for smoother animation transitions
-            Vector2 movement = input != null ? input.Move : Vector2.zero;
+            // Prefer input for determining intent, but if input is nearly zero use actual velocity
+            Vector2 movement = inputMovement.sqrMagnitude > 0.01f ? inputMovement : actualVelocity;
             bool isMoving = movement.magnitude > 0.1f;
-            
+
             // Set main movement state
             animator.SetBool("IsMoving", isMoving);
-            
-            // Set directional bools for better state control
+
             if (isMoving)
             {
-                // Determine primary direction based on strongest input
+                // Determine primary direction based on strongest axis and store last facing
                 if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
                 {
-                    // Horizontal movement is stronger
-                    animator.SetBool("MovingLeft", movement.x < 0);
-                    animator.SetBool("MovingRight", movement.x > 0);
+                    bool movingRight = movement.x > 0f;
+                    animator.SetBool("MovingLeft", !movingRight);
+                    animator.SetBool("MovingRight", movingRight);
                     animator.SetBool("MovingUp", false);
                     animator.SetBool("MovingDown", false);
+                    _lastFacing = movingRight ? Facing.Right : Facing.Left;
                 }
                 else
                 {
-                    // Vertical movement is stronger
+                    bool movingUp = movement.y > 0f;
                     animator.SetBool("MovingLeft", false);
                     animator.SetBool("MovingRight", false);
-                    animator.SetBool("MovingUp", movement.y > 0);
-                    animator.SetBool("MovingDown", movement.y < 0);
+                    animator.SetBool("MovingUp", movingUp);
+                    animator.SetBool("MovingDown", !movingUp);
+                    _lastFacing = movingUp ? Facing.Up : Facing.Down;
                 }
+
+                // Clear idle flags while moving
+                animator.SetBool("IdleLeft", false);
+                animator.SetBool("IdleRight", false);
+                animator.SetBool("IdleUp", false);
+                animator.SetBool("IdleDown", false);
             }
             else
             {
-                // Not moving - clear all directional flags
+                // Clear moving flags
                 animator.SetBool("MovingLeft", false);
                 animator.SetBool("MovingRight", false);
                 animator.SetBool("MovingUp", false);
                 animator.SetBool("MovingDown", false);
+
+                // Set idle flag based on last facing
+                animator.SetBool("IdleLeft", _lastFacing == Facing.Left);
+                animator.SetBool("IdleRight", _lastFacing == Facing.Right);
+                animator.SetBool("IdleUp", _lastFacing == Facing.Up);
+                animator.SetBool("IdleDown", _lastFacing == Facing.Down);
             }
         }
 

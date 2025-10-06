@@ -44,6 +44,8 @@ namespace TaallamGame.NPCs
         private bool isPatrolling = true;
         private bool playerDetected = false;
         private Coroutine patrolCoroutine;
+        private enum Facing { Up, Down, Left, Right }
+        private Facing lastFacing = Facing.Down;
 
         // Animation parameter names
     private const string IS_MOVING = "IsMoving";
@@ -51,6 +53,10 @@ namespace TaallamGame.NPCs
     private const string MOVING_RIGHT = "MovingRight";
     private const string MOVING_UP = "MovingUp";
     private const string MOVING_DOWN = "MovingDown";
+    private const string IDLE_LEFT = "IdleLeft";
+    private const string IDLE_RIGHT = "IdleRight";
+    private const string IDLE_UP = "IdleUp";
+    private const string IDLE_DOWN = "IdleDown";
 
         public enum PatrolState
         {
@@ -282,36 +288,51 @@ namespace TaallamGame.NPCs
             // Set main moving flag
             animator.SetBool(IS_MOVING, isMoving);
 
-            // Directional flags: only one primary direction is true at a time
             if (isMoving)
             {
+                // Compute primary facing from velocity and store lastFacing
                 Vector3 velocity = agent.velocity.normalized;
                 if (Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y))
                 {
                     // Horizontal primary
-                    animator.SetBool(MOVING_LEFT, velocity.x < 0f);
-                    animator.SetBool(MOVING_RIGHT, velocity.x > 0f);
+                    bool movingRight = velocity.x > 0f;
+                    animator.SetBool(MOVING_LEFT, !movingRight);
+                    animator.SetBool(MOVING_RIGHT, movingRight);
                     animator.SetBool(MOVING_UP, false);
                     animator.SetBool(MOVING_DOWN, false);
+                    lastFacing = movingRight ? Facing.Right : Facing.Left;
                 }
                 else
                 {
                     // Vertical primary
+                    bool movingUp = velocity.y > 0f;
                     animator.SetBool(MOVING_LEFT, false);
                     animator.SetBool(MOVING_RIGHT, false);
-                    animator.SetBool(MOVING_UP, velocity.y > 0f);
-                    animator.SetBool(MOVING_DOWN, velocity.y < 0f);
+                    animator.SetBool(MOVING_UP, movingUp);
+                    animator.SetBool(MOVING_DOWN, !movingUp);
+                    lastFacing = movingUp ? Facing.Up : Facing.Down;
                 }
+
+                // Clear idle flags while moving
+                animator.SetBool(IDLE_LEFT, false);
+                animator.SetBool(IDLE_RIGHT, false);
+                animator.SetBool(IDLE_UP, false);
+                animator.SetBool(IDLE_DOWN, false);
             }
             else
             {
-                // Clear all directional flags when idle
+                // Clear moving flags
                 animator.SetBool(MOVING_LEFT, false);
                 animator.SetBool(MOVING_RIGHT, false);
                 animator.SetBool(MOVING_UP, false);
                 animator.SetBool(MOVING_DOWN, false);
-            }
 
+                // Set idle flag based on lastFacing
+                animator.SetBool(IDLE_LEFT, lastFacing == Facing.Left);
+                animator.SetBool(IDLE_RIGHT, lastFacing == Facing.Right);
+                animator.SetBool(IDLE_UP, lastFacing == Facing.Up);
+                animator.SetBool(IDLE_DOWN, lastFacing == Facing.Down);
+            }
         }
 
         // Public API
