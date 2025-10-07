@@ -7,6 +7,7 @@ using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TaallamGame.Player;
+using TaallamGame.Missions;
 using RTLTMPro;
 using System.Text.RegularExpressions;
 
@@ -205,6 +206,16 @@ namespace TaallamGame.Dialogue
 
             DLog($"EnterDialogueMode: {inkJSON.name}");
             currentStory = new Story(inkJSON.text);
+            
+            // Bind external functions for mission integration
+            var missionBridge = InkMissionBridge.Instance;
+            if (missionBridge != null)
+            {
+                missionBridge.BindExternalFunctions(currentStory);
+                // Load any saved story state
+                missionBridge.LoadStoryState(currentStory, inkJSON.name);
+            }
+            
             dialogueIsPlaying = true;
             dialoguePanel.SetActive(true);
 

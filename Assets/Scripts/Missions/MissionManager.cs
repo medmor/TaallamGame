@@ -7,6 +7,8 @@ namespace TaallamGame.Missions
 {
     public enum MissionLifecycle { Locked, Available, Active, TurnIn, Completed }
 
+    [System.Obsolete("MissionManager is deprecated. Use InkMissionBridge with Ink-driven missions instead. This class is kept for compatibility during migration.")]
+
     public class MissionManager : MonoBehaviour
     {
         public static MissionManager Instance { get; private set; }
