@@ -4,19 +4,19 @@ INCLUDE globals.ink
 
 === start ===
 #speaker:المعلم سامي #portrait:teacher_neutral #layout:right #audio:animal_crossing_mid
-{
-    - get_mission_status() == "completed":
-        أهلاً! أرى أنك أنجزت مهمة الحروف بنجاح. أحسنت!
-        -> END
-    - get_mission_status() == "in_progress":
-        كيف تسير مهمة جمع الحروف؟
-        -> check_progress
-    - book_mission_started:
-        أهلاً مرة أخرى! هل تحتاج تذكيراً بالمهمة؟
-        -> remind_mission
-    - else:
-        مرحباً! اليوم لدينا لعبة تعليمية ممتعة. هل تستطيع مساعدتي في جمع حروف كلمة "كتاب"؟
-        -> offer_mission
+{get_mission_status():
+- "completed":
+    أهلاً! أرى أنك أنجزت مهمة الحروف بنجاح. أحسنت!
+    -> END
+- "in_progress":
+    كيف تسير مهمة جمع الحروف؟
+    -> check_progress
+- "ready_to_complete":
+    رائع! لقد جمعت كل الحروف. الآن اذهب إلى أمينة المكتبة لتكوين الكتاب!
+    -> END
+- else:
+    مرحباً! اليوم لدينا لعبة تعليمية ممتعة. هل تستطيع مساعدتي في جمع حروف كلمة "كتاب"؟
+    -> offer_mission
 }
 
 === offer_mission ===
