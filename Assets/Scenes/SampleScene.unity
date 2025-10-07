@@ -5646,7 +5646,6 @@ GameObject:
   - component: {fileID: 1046585760}
   - component: {fileID: 1046585759}
   - component: {fileID: 1046585761}
-  - component: {fileID: 1046585762}
   - component: {fileID: 1046585763}
   - component: {fileID: 1046585764}
   m_Layer: 0
@@ -5699,20 +5698,6 @@ MonoBehaviour:
   requireCtrl: 0
   logOnSave: 1
   saveKey: 98
---- !u!114 &1046585762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046585758}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93977c3fda3f2514ea7868440a88d029, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Taallam.Missions.MissionManager
-  missions:
-  - {fileID: 11400000, guid: ad09ff4f911674444b2a8dbf3d50d782, type: 2}
 --- !u!114 &1046585763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9440,6 +9425,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3504767773212558947, guid: 25ea36241d70cd1438e5d495a4a2e0fa, type: 3}
+      propertyPath: inkJSON
+      value: 
+      objectReference: {fileID: 4900000, guid: 4dbb02a49aeaabf4185137749a32c2f9, type: 3}
     - target: {fileID: 3577166390384456127, guid: 25ea36241d70cd1438e5d495a4a2e0fa, type: 3}
       propertyPath: m_Name
       value: Librarian

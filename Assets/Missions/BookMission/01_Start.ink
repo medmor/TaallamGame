@@ -1,7 +1,9 @@
 INCLUDE globals.ink
 
-== start ==
-#speaker:المعلم سامي #portrait:teacher_neutral #layout:left #audio:animal_crossing_mid
+-> start
+
+=== start ===
+#speaker:المعلم سامي #portrait:teacher_neutral #layout:right #audio:animal_crossing_mid
 {
     - get_mission_status() == "completed":
         أهلاً! أرى أنك أنجزت مهمة الحروف بنجاح. أحسنت!
@@ -17,7 +19,7 @@ INCLUDE globals.ink
         -> offer_mission
 }
 
-== offer_mission ==
+=== offer_mission ===
 + [نعم، أقبل المهمة]
     ~ start_book_mission()
     #speaker:المعلم سامي #portrait:teacher_happy
@@ -33,7 +35,7 @@ INCLUDE globals.ink
     فهمت. عد إليّ عندما تكون مستعداً للمغامرة التعليمية!
     -> END
 
-== remind_mission ==
+=== remind_mission ===
 + [نعم، ذكرني بالمهمة]
     #speaker:المعلم سامي #portrait:teacher_neutral
     مهمتك جمع الحروف الأربعة لكلمة "كتاب": "ك"، "ت"، "ا"، "ب".
@@ -45,7 +47,7 @@ INCLUDE globals.ink
     ممتاز! حظاً موفقاً في جمع الحروف.
     -> END
 
-== check_progress ==
+=== check_progress ===
 {
     - is_mission_complete():
         #speaker:المعلم سامي #portrait:teacher_proud
