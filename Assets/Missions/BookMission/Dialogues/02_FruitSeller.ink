@@ -1,62 +1,59 @@
 INCLUDE globals.ink
 
 == start ==
-#speaker:بائعة الفواكه #portrait:fruit_seller_neutral #layout:left #audio:animal_crossing_mid
+#speaker:منظمة الكتب #portrait:librarian_helper_neutral #layout:left #audio:animal_crossing_mid
 {
-    - has_apple:
-        أهلاً مرة أخرى! أرى أن لديك تفاحة. استخدمها بحكمة!
-        -> END
     - has_letter_b:
         أهلاً! أتمنى أن يكون الحرف "ب" مفيداً لك في مهمتك.
         -> END
     - book_mission_started:
-        أهلاً عزيزي! هل تحتاج تفاحة لمهمة الحروف؟
-        -> offer_apple
+        أهلاً عزيزي! أرى كتباً مبعثرة هنا. هل تساعدني في ترتيبها؟
+        -> book_organizing
     - else:
-        أهلاً بك! أبيع الفواكه الطازجة والطيبة.
-        -> casual_shopping
+        أهلاً بك! أساعد في ترتيب وتنظيم كتب المكتبة.
+        -> casual_talk
 }
 
-== offer_apple ==
-+ [نعم، أحتاج تفاحة]
-    #speaker:بائعة الفواكه #portrait:fruit_seller_happy
-    ممتاز! سأعطيك تفاحة مجاناً لأنك تتعلم.
-    لكن أولاً، أجب على سؤال بسيط: ما هو لون التفاح؟
-    -> apple_quiz
-+ [لا شكراً]
-    #speaker:بائعة الفواكه #portrait:fruit_seller_neutral
-    حسناً، عد إذا احتجت أي شيء!
+== book_organizing ==
++ [نعم، سأساعدك في الترتيب]
+    #speaker:منظمة الكتب #portrait:librarian_helper_happy
+    ممتاز! هذه الكتب تحتاج ترتيب حسب الأبجدية.
+    أي كتاب يبدأ بحرف "ب" يجب أن يوضع أولاً؟
+    -> book_quiz
++ [لا أستطيع الآن]
+    #speaker:منظمة الكتب #portrait:librarian_helper_neutral
+    حسناً، لا مشكلة. سأرتبها لاحقاً!
     -> END
 
-== apple_quiz ==
-+ [أحمر]
-    ~ get_apple()
-    #speaker:بائعة الفواكه #portrait:fruit_seller_happy #audio:animal_crossing_low
-    صحيح! تفضل هذه التفاحة الحمراء الجميلة.
-    يمكنك استخدامها للمقايضة مع عادل البائع للحصول على حرف "ت".
-    وكمكافأة إضافية، خذ أيضاً الحرف "ب"!
+== book_quiz ==
++ [كتاب "بطة صغيرة"]
+    #speaker:منظمة الكتب #portrait:librarian_helper_happy #audio:animal_crossing_low
+    صحيح! "بطة صغيرة" يبدأ بحرف "ب".
+    شكراً لمساعدتك! وجدت هذا الحرف بين الكتب، خذه: "ب"!
     ~ collect_letter("b")
     -> END
-+ [أخضر]
-    #speaker:بائعة الفواكه #portrait:fruit_seller_helpful
-    التفاح يمكن أن يكون أخضر أيضاً، لكن هذه التفاحة حمراء.
-    تفضل على أي حال! وخذ أيضاً الحرف "ب".
-    ~ get_apple()
++ [كتاب "أسد الغابة"]
+    #speaker:منظمة الكتب #portrait:librarian_helper_helpful
+    لا، "أسد الغابة" يبدأ بحرف "أ"، لكن محاولة جيدة!
+    على أي حال، خذ هذا الحرف "ب" الذي وجدته بين الكتب.
     ~ collect_letter("b")
     -> END
-+ [أزرق]
-    #speaker:بائعة الفواكه #portrait:fruit_seller_laugh
-    هاها! التفاح الأزرق؟ هذا مضحك!
-    التفاح عادة أحمر أو أخضر. تفضل التفاحة والحرف "ب" على أي حال!
-    ~ get_apple()
++ [كتاب "تمساح النيل"]
+    #speaker:منظمة الكتب #portrait:librarian_helper_helpful
+    لا، "تمساح النيل" يبدأ بحرف "ت". لكن أشكرك على المساعدة!
+    خذ هذا الحرف "ب" الذي وجدته مخبأً بين الكتب.
     ~ collect_letter("b")
     -> END
 
-== casual_shopping ==
-+ [ماذا تبيعين؟]
-    #speaker:بائعة الفواكه #portrait:fruit_seller_happy
-    أبيع أفضل الفواكه في المدينة! تفاح، وبرتقال، وموز طازج.
-    وأحياناً أعطي الحروف للأطفال الذين يتعلمون!
+== casual_talk ==
++ [كيف تنظمين الكتب؟]
+    #speaker:منظمة الكتب #portrait:librarian_helper_happy
+    أرتب الكتب حسب الأبجدية والموضوع!
+    الكتب التي تبدأ بحرف "أ" تأتي قبل التي تبدأ بحرف "ب" وهكذا.
+    -> END
++ [هل تحتاجين مساعدة؟]
+    #speaker:منظمة الكتب #portrait:librarian_helper_excited
+    نعم! إذا بدأت لعبة الحروف مع أمينة المكتبة، تعال وساعدني!
     -> END
 + [أبحث عن الحروف]
     #speaker:بائعة الفواكه #portrait:fruit_seller_helpful
