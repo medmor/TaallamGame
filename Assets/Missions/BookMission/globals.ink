@@ -28,6 +28,7 @@ EXTERNAL external_GiveItem(itemId)
 EXTERNAL external_PlaySound(soundId)
 EXTERNAL external_ShowEffect(effectId)
 EXTERNAL external_SaveProgress()
+EXTERNAL debug_log(message)
 
 === function is_mission_complete ===
 {
@@ -50,6 +51,7 @@ EXTERNAL external_SaveProgress()
 ~ talked_to_teacher = true
 ~ external_StartMission("book_mission")
 ~ external_SaveProgress()
+~ debug_log(book_mission_started)
 
 === function complete_book_mission ===
 {
@@ -60,8 +62,10 @@ EXTERNAL external_SaveProgress()
         ~ external_CompleteMission("book_mission")
         ~ external_PlaySound("mission_complete")
         ~ external_SaveProgress()
+        ~ debug_log("complete_book_mission: completed")
         ~ return true
     - else:
+        ~ debug_log("complete_book_mission: cannot complete yet")
         ~ return false
 }
 
@@ -70,30 +74,38 @@ EXTERNAL external_SaveProgress()
     - letter == "k":
         ~ has_letter_k = true
         ~ external_GiveItem("letter_k")
+        ~ debug_log("collect_letter: k")
     - letter == "t":
         ~ has_letter_t = true
         ~ external_GiveItem("letter_t")
+        ~ debug_log("collect_letter: t")
     - letter == "a":
         ~ has_letter_a = true
         ~ external_GiveItem("letter_a")
+        ~ debug_log("collect_letter: a")
     - letter == "b":
         ~ has_letter_b = true
         ~ external_GiveItem("letter_b")
+        ~ debug_log("collect_letter: b")
 }
 ~ external_PlaySound("collect_item")
 ~ external_SaveProgress()
+~ debug_log("collect_letter: finished (post-play/save)")
 
 === function get_apple ===
 ~ has_apple = true
 ~ external_GiveItem("apple")
 ~ external_SaveProgress()
+~ debug_log("get_apple: given apple")
 
 === function use_apple ===
 {
     - has_apple:
         ~ has_apple = false
+        ~ debug_log("use_apple: success")
         ~ return true
     - else:
+        ~ debug_log("use_apple: no apple to use")
         ~ return false
 }
 
@@ -108,3 +120,13 @@ EXTERNAL external_SaveProgress()
     - else:
         ~ return "not_started"
 }
+
+=== debug_print_state ===
+#speaker:نظام_تصحيح
+حالة المهمة: { get_mission_status() }
+الحروف:
+- ك: { has_letter_k }
+- ت: { has_letter_t }
+- ا: { has_letter_a }
+- ب: { has_letter_b }
+-> END

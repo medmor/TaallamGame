@@ -53,6 +53,15 @@ namespace TaallamGame.Missions
             {
                 Log($"Ink -> StartMission: {missionId}");
                 CurrentMissionId = missionId;
+                // Log full story state for debugging
+                try
+                {
+                    Log("Story state JSON: " + story.state.ToJson());
+                }
+                catch (Exception e)
+                {
+                    Log("Failed to get story JSON: " + e.Message);
+                }
                 OnMissionStarted?.Invoke(missionId);
             });
 
@@ -82,6 +91,12 @@ namespace TaallamGame.Missions
             {
                 Log($"Ink -> ShowEffect: {effectId}");
                 OnEffectRequested?.Invoke(effectId);
+            });
+
+            // Debug logger from Ink -> Unity
+            story.BindExternalFunction("debug_log", (string message) =>
+            {
+                Log("[Ink Debug] " + message);
             });
 
             // Save/persistence
