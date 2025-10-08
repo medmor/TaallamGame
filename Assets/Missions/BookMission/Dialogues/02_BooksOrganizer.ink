@@ -1,5 +1,5 @@
 INCLUDE globals.ink
-
+-> start
 == start ==
 #speaker:منظمة الكتب #portrait:librarian_helper_neutral #layout:left #audio:animal_crossing_mid
 {
