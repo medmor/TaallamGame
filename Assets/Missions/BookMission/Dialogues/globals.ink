@@ -11,14 +11,12 @@ VAR has_letter_t = false
 VAR has_letter_a = false
 VAR has_letter_b = false
 
-// Helper items
-VAR has_apple = false
-VAR has_book = false
 
 // NPC interaction flags
 VAR talked_to_teacher = false
 VAR talked_to_leila = false
-VAR talked_to_vendor = false
+VAR talked_to_fatima = false
+VAR talked_to_ahmed  = false
 VAR talked_to_librarian = false
 
 // External functions - Unity will bind these
@@ -51,12 +49,12 @@ EXTERNAL debug_log(message)
 ~ talked_to_teacher = true
 ~ external_StartMission("book_mission")
 ~ external_SaveProgress()
+~ return true
 
 === function complete_book_mission ===
 {
     - can_make_book():
         ~ book_mission_completed = true
-        ~ has_book = true
         ~ external_GiveItem("complete_book")
         ~ external_CompleteMission("book_mission")
         ~ external_PlaySound("mission_complete")
@@ -83,20 +81,7 @@ EXTERNAL debug_log(message)
 }
 ~ external_PlaySound("collect_item")
 ~ external_SaveProgress()
-
-=== function get_apple ===
-~ has_apple = true
-~ external_GiveItem("apple")
-~ external_SaveProgress()
-
-=== function use_apple ===
-{
-    - has_apple:
-        ~ has_apple = false
-        ~ return true
-    - else:
-        ~ return false
-}
+~ return true
 
 === function get_mission_status ===
 {
