@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
@@ -31,8 +32,11 @@ namespace TaallamGame.Dialogue
         private Animator layoutAnimator;
 
         [Header("Choices UI")]
-        [SerializeField] private GameObject[] choices;
-    private RTLTextMeshPro[] choicesText;
+        [SerializeField] private GameObject choicePrefab; // Prefab for creating choices dynamically
+        [SerializeField] private Transform choiceContainer; // Parent container for choices (e.g., VerticalLayoutGroup)
+        [SerializeField] private int maxChoices = 10; // Optional limit for safety
+        
+        private List<GameObject> activeChoices = new List<GameObject>(); // Track created choices
 
         [Header("Audio")]
         [SerializeField] private DialogueAudioInfoSO defaultAudioInfo;
@@ -103,13 +107,14 @@ namespace TaallamGame.Dialogue
             // get the layout animator
             layoutAnimator = dialoguePanel.GetComponent<Animator>();
 
-            // get all of the choices text
-            choicesText = new RTLTextMeshPro[choices.Length];
-            int index = 0;
-            foreach (GameObject choice in choices)
+            // Validate choice setup
+            if (choicePrefab == null)
             {
-                choicesText[index] = choice.GetComponentInChildren<RTLTextMeshPro>();
-                index++;
+                Debug.LogError("DialogueManager: choicePrefab is not assigned!");
+            }
+            if (choiceContainer == null)
+            {
+                Debug.LogError("DialogueManager: choiceContainer is not assigned!");
             }
 
             InitializeAudioInfoDictionary();
@@ -239,6 +244,16 @@ namespace TaallamGame.Dialogue
 
             dialogueVariables.StopListening(currentStory);
             inkExternalFunctions.Unbind(currentStory);
+
+            // Clean up dynamic choices
+            foreach (GameObject choice in activeChoices)
+            {
+                if (choice != null)
+                {
+                    Destroy(choice);
+                }
+            }
+            activeChoices.Clear();
 
             dialogueIsPlaying = false;
             dialoguePanel.SetActive(false);
@@ -384,9 +399,12 @@ namespace TaallamGame.Dialogue
 
         private void HideChoices()
         {
-            foreach (GameObject choiceButton in choices)
+            foreach (GameObject choiceButton in activeChoices)
             {
-                choiceButton.SetActive(false);
+                if (choiceButton != null)
+                {
+                    choiceButton.SetActive(false);
+                }
             }
         }
 
@@ -427,37 +445,62 @@ namespace TaallamGame.Dialogue
         {
             List<Choice> currentChoices = currentStory.currentChoices;
 
-            if (currentChoices.Count > choices.Length)
+            // Check if we exceed our safety limit
+            if (currentChoices.Count > maxChoices)
             {
-                Debug.LogError("More choices were given than the UI can support. Number of choices given: "
-                    + currentChoices.Count);
+                Debug.LogError($"More choices ({currentChoices.Count}) than max allowed ({maxChoices}). Consider increasing maxChoices or reducing dialogue choices.");
+                // Truncate to max choices to prevent issues
+                currentChoices = currentChoices.Take(maxChoices).ToList();
             }
 
-            int index = 0;
-            foreach (Choice choice in currentChoices)
+            // Clear existing choices
+            foreach (GameObject choice in activeChoices)
             {
-                choices[index].gameObject.SetActive(true);
-                choicesText[index].text = WrapLatinIfNeeded(choice.text);
-                var btn = choices[index].GetComponent<Button>();
+                if (choice != null)
+                {
+                    Destroy(choice);
+                }
+            }
+            activeChoices.Clear();
+
+            // Create new choices dynamically
+            for (int i = 0; i < currentChoices.Count; i++)
+            {
+                Choice choice = currentChoices[i];
+                
+                // Instantiate choice from prefab
+                GameObject choiceObj = Instantiate(choicePrefab, choiceContainer);
+                activeChoices.Add(choiceObj);
+                
+                // Set choice text
+                RTLTextMeshPro choiceText = choiceObj.GetComponentInChildren<RTLTextMeshPro>();
+                if (choiceText != null)
+                {
+                    choiceText.text = WrapLatinIfNeeded(choice.text);
+                }
+                else
+                {
+                    Debug.LogError($"Choice prefab missing RTLTextMeshPro component!");
+                }
+                
+                // Set up button functionality
+                Button btn = choiceObj.GetComponent<Button>();
                 if (btn != null)
                 {
                     btn.interactable = true;
                     btn.onClick.RemoveAllListeners();
-                    int captured = index;
-                    btn.onClick.AddListener(() => MakeChoice(captured));
+                    int choiceIndex = i; // Capture for closure
+                    btn.onClick.AddListener(() => MakeChoice(choiceIndex));
                 }
                 else
                 {
-                    DLog($"Choice object '{choices[index].name}' has no Button component; mouse click won't work.");
+                    DLog($"Choice object '{choiceObj.name}' has no Button component; mouse click won't work.");
                 }
-                index++;
-            }
-            for (int i = index; i < choices.Length; i++)
-            {
-                choices[i].gameObject.SetActive(false);
+                
+                choiceObj.SetActive(true);
             }
 
-            DLog($"DisplayChoices: {currentChoices.Count} choices");
+            DLog($"DisplayChoices: {currentChoices.Count} choices created dynamically");
             StartCoroutine(SelectFirstChoice());
         }
 
@@ -469,14 +512,15 @@ namespace TaallamGame.Dialogue
                 yield return new WaitForEndOfFrame();
 
                 GameObject firstActive = null;
-                for (int i = 0; i < choices.Length; i++)
+                foreach (GameObject choice in activeChoices)
                 {
-                    if (choices[i] != null && choices[i].activeSelf)
+                    if (choice != null && choice.activeSelf)
                     {
-                        firstActive = choices[i];
+                        firstActive = choice;
                         break;
                     }
                 }
+                
                 if (firstActive != null)
                 {
                     EventSystem.current.SetSelectedGameObject(firstActive);

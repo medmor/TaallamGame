@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: IdleDown
+  m_Name: IdleLeft
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -508559515292579403, guid: 8533690cd73813d489c847fd5c8aa8f1, type: 3}
+      value: {fileID: -7316466039999371223, guid: 8533690cd73813d489c847fd5c8aa8f1, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,7 +44,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -508559515292579403, guid: 8533690cd73813d489c847fd5c8aa8f1, type: 3}
+    - {fileID: -7316466039999371223, guid: 8533690cd73813d489c847fd5c8aa8f1, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
