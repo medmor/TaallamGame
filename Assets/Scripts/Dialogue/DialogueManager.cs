@@ -26,16 +26,15 @@ namespace TaallamGame.Dialogue
         [Header("Dialogue UI")]
         [SerializeField] private GameObject dialoguePanel;
         [SerializeField] private GameObject continueIcon;
-    [SerializeField] private RTLTextMeshPro dialogueText;
-    [SerializeField] private RTLTextMeshPro displayNameText;
-        [SerializeField] private Animator portraitAnimator;
+        [SerializeField] private RTLTextMeshPro dialogueText;
+        [SerializeField] private RTLTextMeshPro displayNameText;
         private Animator layoutAnimator;
 
         [Header("Choices UI")]
         [SerializeField] private GameObject choicePrefab; // Prefab for creating choices dynamically
         [SerializeField] private Transform choiceContainer; // Parent container for choices (e.g., VerticalLayoutGroup)
         [SerializeField] private int maxChoices = 10; // Optional limit for safety
-        
+
         private List<GameObject> activeChoices = new List<GameObject>(); // Track created choices
 
         [Header("Audio")]
@@ -66,6 +65,7 @@ namespace TaallamGame.Dialogue
         private InkExternalFunctions inkExternalFunctions;
 
         [SerializeField] private PlayerInputHandler input;
+        [SerializeField] private PortraitController portraitController;
 
         [Header("Re-entry Control")]
         [SerializeField] private float reentryCooldownSeconds = 0.25f; // block re-open after close
@@ -154,7 +154,7 @@ namespace TaallamGame.Dialogue
             {
                 int choiceCount = currentStory.currentChoices.Count;
                 DLog($"Interact pressed in Update. canContinue={canContinueToNextLine}, choices={choiceCount}, typing={(displayLineCoroutine != null)}");
-                
+
                 // If typing is in progress, complete it immediately
                 if (!canContinueToNextLine && displayLineCoroutine != null)
                 {
@@ -162,7 +162,7 @@ namespace TaallamGame.Dialogue
                     StopCoroutine(displayLineCoroutine);
                     displayLineCoroutine = null;
                     dialogueText.maxVisibleCharacters = currentStoryText.Length;
-                    
+
                     // Only show continue icon if there's more content OR choices
                     bool hasMoreContent = currentStory.canContinue || currentStory.currentChoices.Count > 0;
                     continueIcon.SetActive(hasMoreContent && currentStory.currentChoices.Count == 0);
@@ -171,7 +171,7 @@ namespace TaallamGame.Dialogue
                     DLog("Typing completed, canContinueToNextLine set to true");
                     return;
                 }
-                
+
                 // If line is complete and no choices, advance to next line
                 if (canContinueToNextLine && choiceCount == 0)
                 {
@@ -211,7 +211,7 @@ namespace TaallamGame.Dialogue
 
             DLog($"EnterDialogueMode: {inkJSON.name}");
             currentStory = new Story(inkJSON.text);
-            
+
             // Bind external functions for mission integration
             var missionBridge = InkMissionBridge.Instance;
             if (missionBridge != null)
@@ -220,7 +220,7 @@ namespace TaallamGame.Dialogue
                 // Load any saved story state
                 missionBridge.LoadStoryState(currentStory, inkJSON.name);
             }
-            
+
             dialogueIsPlaying = true;
             dialoguePanel.SetActive(true);
 
@@ -228,7 +228,6 @@ namespace TaallamGame.Dialogue
             inkExternalFunctions.Bind(currentStory, emoteAnimator);
 
             displayNameText.text = "???";
-            portraitAnimator.Play("default");
             layoutAnimator.Play("right");
 
             DLog("Starting first line");
@@ -267,13 +266,13 @@ namespace TaallamGame.Dialogue
         private void ContinueStory()
         {
             DLog($"ContinueStory called - canContinue: {currentStory?.canContinue}, currentChoices: {currentStory?.currentChoices?.Count}");
-            
+
             if (currentStory == null)
             {
                 DLog("ERROR: currentStory is null in ContinueStory!");
                 return;
             }
-            
+
             if (currentStory.canContinue)
             {
                 if (displayLineCoroutine != null)
@@ -282,7 +281,7 @@ namespace TaallamGame.Dialogue
                 }
                 string nextLine = currentStory.Continue();
                 DLog($"Retrieved next line: '{nextLine}' (length={nextLine?.Length ?? 0}), canContinue(after pull)={currentStory.canContinue}");
-                
+
                 if (string.IsNullOrEmpty(nextLine) && !currentStory.canContinue)
                 {
                     DLog("Empty line and no more content; exiting dialogue");
@@ -408,34 +407,34 @@ namespace TaallamGame.Dialogue
             }
         }
 
-        private void HandleTags(List<string> currentTags)
+        private void HandleTags(List<string> tags)
         {
-            foreach (string tag in currentTags)
+            foreach (string rawTag in tags)
             {
-                string[] splitTag = tag.Split(':');
-                if (splitTag.Length != 2)
-                {
-                    Debug.LogError("Tag could not be appropriately parsed: " + tag);
-                }
-                string tagKey = splitTag[0].Trim();
-                string tagValue = splitTag[1].Trim();
+                var splitTag = rawTag.Split(':');
+                if (splitTag.Length != 2) continue;
+
+                string tagKey = splitTag[0].Trim().ToLowerInvariant();
+                string tagVal = splitTag[1].Trim();
 
                 switch (tagKey)
                 {
                     case SPEAKER_TAG:
-                        displayNameText.text = tagValue;
+                        displayNameText.text = tagVal;
                         break;
-                    case PORTRAIT_TAG:
-                        portraitAnimator.Play(tagValue);
+                    case "portrait":
+                        // old: portraitAnimator.Play(tagVal);
+                        if (portraitController != null)
+                            portraitController.SetPortrait(tagVal);
                         break;
                     case LAYOUT_TAG:
-                        layoutAnimator.Play(tagValue);
+                        layoutAnimator.Play(tagVal);
                         break;
                     case AUDIO_TAG:
-                        SetCurrentAudioInfo(tagValue);
+                        SetCurrentAudioInfo(tagVal);
                         break;
                     default:
-                        Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
+                        Debug.LogWarning("Tag came in but is not currently being handled: " + rawTag);
                         break;
                 }
             }
@@ -467,11 +466,11 @@ namespace TaallamGame.Dialogue
             for (int i = 0; i < currentChoices.Count; i++)
             {
                 Choice choice = currentChoices[i];
-                
+
                 // Instantiate choice from prefab
                 GameObject choiceObj = Instantiate(choicePrefab, choiceContainer);
                 activeChoices.Add(choiceObj);
-                
+
                 // Set choice text
                 RTLTextMeshPro choiceText = choiceObj.GetComponentInChildren<RTLTextMeshPro>();
                 if (choiceText != null)
@@ -482,7 +481,7 @@ namespace TaallamGame.Dialogue
                 {
                     Debug.LogError($"Choice prefab missing RTLTextMeshPro component!");
                 }
-                
+
                 // Set up button functionality
                 Button btn = choiceObj.GetComponent<Button>();
                 if (btn != null)
@@ -496,7 +495,7 @@ namespace TaallamGame.Dialogue
                 {
                     DLog($"Choice object '{choiceObj.name}' has no Button component; mouse click won't work.");
                 }
-                
+
                 choiceObj.SetActive(true);
             }
 
@@ -520,7 +519,7 @@ namespace TaallamGame.Dialogue
                         break;
                     }
                 }
-                
+
                 if (firstActive != null)
                 {
                     EventSystem.current.SetSelectedGameObject(firstActive);

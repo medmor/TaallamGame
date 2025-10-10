@@ -35,8 +35,6 @@ INCLUDE globals.ink
 === play_sports ===
 رائع! نلعب كرة القدم؟ #speaker:أحمد #portrait:ahmed_excited
 
-*تلعبان كرة القدم قليلاً*
-
 أحسنت! أنت لاعب جيد!
 
 + [شكراً! كان ممتعاً]

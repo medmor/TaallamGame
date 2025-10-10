@@ -262,6 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7748004679050706307}
+  - component: {fileID: 3008647542441312669}
   m_Layer: 5
   m_Name: DialogueChoices
   m_TagString: Untagged
@@ -285,9 +286,35 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 94.70676, y: -95.459854}
-  m_SizeDelta: {x: 189.4095, y: 129.7861}
+  m_AnchoredPosition: {x: 375.6567, y: -141.12756}
+  m_SizeDelta: {x: 704.0301, y: 248.1059}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3008647542441312669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3648290581804433916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.VerticalLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 1
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 1
+  m_ChildScaleHeight: 1
+  m_ReverseArrangement: 0
 --- !u!1 &4307486581955162183
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,7 +761,7 @@ GameObject:
   - component: {fileID: 1423125864593448155}
   - component: {fileID: 3079301857092777406}
   - component: {fileID: 598874134155165836}
-  - component: {fileID: 7689498283482400735}
+  - component: {fileID: 4751435462144336708}
   m_Layer: 5
   m_Name: PortraitImage
   m_TagString: Untagged
@@ -799,25 +826,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &7689498283482400735
-Animator:
-  serializedVersion: 7
+--- !u!114 &4751435462144336708
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8271602578636411602}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ad354730b29ce6d4a836392741d263f0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 789299e5a9020ea4584cee93ad0a888f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TaallamGame.Dialogue.PortraitController
+  portraitImage: {fileID: 598874134155165836}
+  library: {fileID: 11400000, guid: a69769ec10051e74b810b3b0c1a7c1cc, type: 2}
+  crossfadeDuration: 0.15
+  fallbackSprite: {fileID: 21300000, guid: eae4cb8078363d7449ed775f5c8b08d5, type: 3}
