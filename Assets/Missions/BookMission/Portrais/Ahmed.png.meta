@@ -644,10 +644,10 @@ TextureImporter:
       name: Ahmed_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 646
-        width: 152
-        height: 150
+        x: 18
+        y: 16
+        width: 162
+        height: 155
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -666,10 +666,10 @@ TextureImporter:
       name: Ahmed_1
       rect:
         serializedVersion: 2
-        x: 219
-        y: 646
-        width: 177
-        height: 150
+        x: 203
+        y: 15
+        width: 189
+        height: 161
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,10 +688,10 @@ TextureImporter:
       name: Ahmed_2
       rect:
         serializedVersion: 2
-        x: 428
-        y: 646
-        width: 147
-        height: 150
+        x: 413
+        y: 16
+        width: 166
+        height: 216
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -710,10 +710,10 @@ TextureImporter:
       name: Ahmed_3
       rect:
         serializedVersion: 2
-        x: 639
-        y: 646
-        width: 154
-        height: 150
+        x: 607
+        y: 17
+        width: 155
+        height: 169
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -732,10 +732,10 @@ TextureImporter:
       name: Ahmed_4
       rect:
         serializedVersion: 2
-        x: 863
-        y: 646
-        width: 156
-        height: 150
+        x: 774
+        y: 15
+        width: 217
+        height: 169
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -746,336 +746,6 @@ TextureImporter:
       bones: []
       spriteID: 551367b9d1fe4ec70800000000000000
       internalID: 8999580865834398037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 449
-        width: 160
-        height: 148
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 328b84ad23727b250800000000000000
-      internalID: 5960275731212187683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_6
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 449
-        width: 176
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 707c07721f9f3dee0800000000000000
-      internalID: -1237370658452617465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_7
-      rect:
-        serializedVersion: 2
-        x: 403
-        y: 449
-        width: 200
-        height: 155
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d81b68f1a1dca9940800000000000000
-      internalID: 5303777023263945101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_8
-      rect:
-        serializedVersion: 2
-        x: 624
-        y: 449
-        width: 200
-        height: 153
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 20d9b5280086b4dd0800000000000000
-      internalID: -2500790816677847806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_9
-      rect:
-        serializedVersion: 2
-        x: 863
-        y: 449
-        width: 140
-        height: 146
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac89df172b82d9ae0800000000000000
-      internalID: -1541030750609106742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 239
-        width: 192
-        height: 157
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c2f1bb60a693c3f20800000000000000
-      internalID: 3403658545927495468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_11
-      rect:
-        serializedVersion: 2
-        x: 222
-        y: 239
-        width: 149
-        height: 155
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 745ebc8dc842058b0800000000000000
-      internalID: -5165588585242696377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_12
-      rect:
-        serializedVersion: 2
-        x: 433
-        y: 240
-        width: 147
-        height: 157
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e9e79ba41b9b6e950800000000000000
-      internalID: 6478069285133057694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_13
-      rect:
-        serializedVersion: 2
-        x: 626
-        y: 239
-        width: 164
-        height: 151
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03d29c7ac27931f00800000000000000
-      internalID: 1086378153175756080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_14
-      rect:
-        serializedVersion: 2
-        x: 845
-        y: 239
-        width: 159
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8a2cc907a80b0be40800000000000000
-      internalID: 5670226039500751528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 33
-        width: 158
-        height: 159
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dca73ae644c3d8960800000000000000
-      internalID: 7605801610310286029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_16
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 33
-        width: 211
-        height: 161
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1213859c75520f480800000000000000
-      internalID: -8867546607322123999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_17
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 33
-        width: 143
-        height: 157
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 956218d527999a600800000000000000
-      internalID: 480083551765735001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_18
-      rect:
-        serializedVersion: 2
-        x: 646
-        y: 33
-        width: 143
-        height: 159
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bac8555477bda8c50800000000000000
-      internalID: 6668383503586266283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ahmed_19
-      rect:
-        serializedVersion: 2
-        x: 865
-        y: 33
-        width: 142
-        height: 152
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2dd0fa605bb99cb50800000000000000
-      internalID: 6613988729573805522
       vertices: []
       indices: 
       edges: []
@@ -1098,24 +768,9 @@ TextureImporter:
     nameFileIdTable:
       Ahmed_0: -4256638439523828221
       Ahmed_1: 8836850949439998280
-      Ahmed_10: 3403658545927495468
-      Ahmed_11: -5165588585242696377
-      Ahmed_12: 6478069285133057694
-      Ahmed_13: 1086378153175756080
-      Ahmed_14: 5670226039500751528
-      Ahmed_15: 7605801610310286029
-      Ahmed_16: -8867546607322123999
-      Ahmed_17: 480083551765735001
-      Ahmed_18: 6668383503586266283
-      Ahmed_19: 6613988729573805522
       Ahmed_2: 3889233080033478168
       Ahmed_3: -6408536882501694150
       Ahmed_4: 8999580865834398037
-      Ahmed_5: 5960275731212187683
-      Ahmed_6: -1237370658452617465
-      Ahmed_7: 5303777023263945101
-      Ahmed_8: -2500790816677847806
-      Ahmed_9: -1541030750609106742
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

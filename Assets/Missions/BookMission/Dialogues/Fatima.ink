@@ -18,7 +18,7 @@ INCLUDE globals.ink
 }
 
 === fatima_casual_chat ===
-السلام عليكم! أنا فاطمة. #speaker:فاطمة #portrait:fatima_polite #layout:left #audio:student_girl
+السلام عليكم! أنا فاطمة. #speaker:فاطمة #portrait:fatima_happy #layout:left #audio:student_girl
 
 أحب القراءة كثيراً. هل تحب القراءة أيضاً؟
 
@@ -30,7 +30,7 @@ INCLUDE globals.ink
     -> favorite_book
 
 === bond_over_reading ===
-رائع! القراءة تفتح عوالم جديدة. #speaker:فاطمة #portrait:fatima_excited
+رائع! القراءة تفتح عوالم جديدة. #speaker:فاطمة #portrait:fatima_happy
 
 أحب قصص الأطفال والحكايات الشعبية.
 
@@ -40,7 +40,7 @@ INCLUDE globals.ink
     -> story_time
 
 === encourage_reading ===
-لا بأس! الكتب مثل الأصدقاء. #speaker:فاطمة #portrait:fatima_encouraging
+لا بأس! الكتب مثل الأصدقاء. #speaker:فاطمة #portrait:fatima_happy
 
 عندما تجد الكتاب المناسب، ستحب القراءة!
 
@@ -48,7 +48,7 @@ INCLUDE globals.ink
     -> fatima_goodbye_casual
 
 === fatima_help_with_mission ===
-أهلاً وسهلاً! أسمع أنك تساعد المعلمة؟ #speaker:فاطمة #portrait:fatima_curious
+أهلاً وسهلاً! أسمع أنك تساعد المعلمة؟ #speaker:فاطمة #portrait:fatima_thinking
 
 أنا أعرف شيئاً قد يساعدك! لكن أحتاج مساعدتك أولاً.
 
@@ -60,7 +60,7 @@ INCLUDE globals.ink
     -> fatima_understanding
 
 === reveal_letter_hint ===
-لدي حرف خاص جداً! #speaker:فاطمة #portrait:fatima_mysterious
+لدي حرف خاص جداً! #speaker:فاطمة #portrait:fatima_thinking
 
 لكن أولاً، ساعديني في حل هذا اللغز!
 
@@ -68,10 +68,9 @@ INCLUDE globals.ink
     -> fatima_problem
 + [آسف، أنا مشغول]
     -> fatima_understanding
-    -> fatima_problem
 
 === fatima_understanding ===
-أفهم، المهام مهمة. #speaker:فاطمة #portrait:fatima_patient
+أفهم، المهام مهمة. #speaker:فاطمة #portrait:fatima_neutral
 
 لكن مساعدتي بسيطة جداً وسريعة! لن تأخذ وقتاً طويلاً.
 
@@ -97,7 +96,7 @@ INCLUDE globals.ink
     -> give_riddle_hint
 
 === wrong_riddle_chair ===
-قريب! لكن الكرسي للجلوس، ليس للنوم. #speaker:فاطمة #portrait:fatima_patient
+قريب! لكن الكرسي للجلوس، ليس للنوم. #speaker:فاطمة #portrait:fatima_neutral
 
 فكر... أين ننام في البيت؟
 
@@ -107,7 +106,7 @@ INCLUDE globals.ink
     -> give_riddle_hint
 
 === wrong_riddle_table ===
-لا، الطاولة للأكل أو الكتابة. #speaker:فاطمة #portrait:fatima_helpful
+لا، الطاولة للأكل أو الكتابة. #speaker:فاطمة #portrait:fatima_happy
 
 أحتاج شيئاً للنوم عليه...
 
@@ -117,7 +116,7 @@ INCLUDE globals.ink
     -> close_but_not_quite
 
 === close_but_not_quite ===
-قريب جداً! لكن السجادة ليس لها أرجل. #speaker:فاطمة #portrait:fatima_encouraging
+قريب جداً! لكن السجادة ليس لها أرجل. #speaker:فاطمة #portrait:fatima_happy
 
 شيء بأربع أرجل، مريح، للنوم...
 
@@ -125,7 +124,7 @@ INCLUDE globals.ink
     -> correct_riddle
 
 === give_riddle_hint ===
-لا بأس! إليك تلميح آخر: #speaker:فاطمة #portrait:fatima_helping
+لا بأس! إليك تلميح آخر: #speaker:فاطمة #portrait:fatima_thinking
 
 نحن ننام عليه كل ليلة، وأمي تضع عليه الملاءات والوسائد.
 
@@ -135,7 +134,7 @@ INCLUDE globals.ink
     -> give_answer
 
 === give_answer ===
-الجواب هو: سرير! #speaker:فاطمة #portrait:fatima_explaining
+الجواب هو: سرير! #speaker:فاطمة #portrait:fatima_thinking
 
 هل تفهم الآن؟ أرجل، مريح، للنوم... سرير!
 
@@ -143,7 +142,7 @@ INCLUDE globals.ink
     -> understand_riddle
 
 === understand_riddle ===
-رائع! الألغاز تجعل عقلنا أذكى. #speaker:فاطمة #portrait:fatima_proud
+رائع! الألغاز تجعل عقلنا أذكى. #speaker:فاطمة #portrait:fatima_happy
 
 شكراً لمساعدتي! إليك حرف الـ"ت"!
 
@@ -154,7 +153,7 @@ INCLUDE globals.ink
     -> after_getting_letter
 
 === correct_riddle ===
-ممتاز! أحسنت جداً! #speaker:فاطمة #portrait:fatima_very_happy
+ممتاز! أحسنت جداً! #speaker:فاطمة #portrait:fatima_happy
 
 السرير هو الجواب الصحيح! أنت ذكي.
 
@@ -167,7 +166,7 @@ INCLUDE globals.ink
     -> after_getting_letter
 
 === after_getting_letter ===
-عفواً! أحب الألغاز والحروف. #speaker:فاطمة #portrait:fatima_warm
+عفواً! أحب الألغاز والحروف. #speaker:فاطمة #portrait:fatima_happy
 
 أتمنى أن تجد باقي الحروف بسرعة!
 
@@ -177,7 +176,7 @@ INCLUDE globals.ink
     -> fatima_goodbye_happy
 
 === suggest_others ===
-جرب التحدث مع أحمد وليلى وأمينة المكتبة! #speaker:فاطمة #portrait:fatima_helpful
+جرب التحدث مع أحمد وليلى وأمينة المكتبة! #speaker:فاطمة #portrait:fatima_happy
 
 كل واحد منهم لديه حرف مختلف.
 
@@ -185,7 +184,7 @@ INCLUDE globals.ink
     -> fatima_goodbye_happy
 
 === fatima_already_helped ===
-أهلاً مرة أخرى! #speaker:فاطمة #portrait:fatima_friendly
+أهلاً مرة أخرى! #speaker:فاطمة #portrait:fatima_happy
 
 كيف تسير مهمة جمع الحروف؟ هل ساعدك حرف الـ"ت"؟
 
@@ -195,7 +194,7 @@ INCLUDE globals.ink
     -> encourage_more
 
 === progress_check ===
-رائع! كم حرفاً جمعت حتى الآن؟ #speaker:فاطمة #portrait:fatima_curious
+رائع! كم حرفاً جمعت حتى الآن؟ #speaker:فاطمة #portrait:fatima_thinking
 
 {
     - has_letter_k and has_letter_a and has_letter_b:
@@ -208,7 +207,7 @@ INCLUDE globals.ink
     -> fatima_goodbye_happy
 
 === encourage_more ===
-لا تستسلم! أنت قادر على ذلك. #speaker:فاطمة #portrait:fatima_encouraging
+لا تستسلم! أنت قادر على ذلك. #speaker:فاطمة #portrait:fatima_happy
 
 الألغاز تعلمنا الصبر والتفكير!
 
@@ -216,16 +215,15 @@ INCLUDE globals.ink
     -> fatima_goodbye_happy
 
 === fatima_after_mission ===
-مبروك على إكمال المهمة! #speaker:فاطمة #portrait:fatima_congratulating
+مبروك على إكمال المهمة! #speaker:فاطمة #portrait:fatima_happy
 
 أنا فخورة لأنني ساعدتك بحرف الـ"ت" واللغز!
 
 + [أشكرك على المساعدة]
     -> final_appreciation
-    -> final_appreciation
 
 === final_appreciation ===
-عفواً! أحب مساعدة الأصدقاء في التعلم. #speaker:فاطمة #portrait:fatima_content
+عفواً! أحب مساعدة الأصدقاء في التعلم. #speaker:فاطمة #portrait:fatima_happy
 
 إذا أردت ألغازاً أكثر، أنا هنا!
 
@@ -233,25 +231,25 @@ INCLUDE globals.ink
     -> fatima_goodbye_happy
 
 === shared_interest ===
-أصدقاء القراءة الأفضل! #speaker:فاطمة #portrait:fatima_bonding
+أصدقاء القراءة الأفضل! #speaker:فاطمة #portrait:fatima_happy
 -> fatima_goodbye_casual
 
 === story_time ===
-أحب قصة "الأرنب الذكي"! #speaker:فاطمة #portrait:fatima_storytelling
+أحب قصة "الأرنب الذكي"! #speaker:فاطمة #portrait:fatima_happy
 -> fatima_goodbye_casual
 
 === favorite_book ===
-أحب كتب الألغاز والحكايات! #speaker:فاطمة #portrait:fatima_books
+أحب كتب الألغاز والحكايات! #speaker:فاطمة #portrait:fatima_happy
 -> fatima_goodbye_casual
 
 === fatima_goodbye_casual ===
-استمتع بيومك! مع السلامة! #speaker:فاطمة #portrait:fatima_wave
+استمتع بيومك! مع السلامة! #speaker:فاطمة #portrait:fatima_neutral
 -> END
 
 === fatima_goodbye_sad ===
-لا بأس، أتمنى لك التوفيق. مع السلامة. #speaker:فاطمة #portrait:fatima_disappointed
+لا بأس، أتمنى لك التوفيق. مع السلامة. #speaker:فاطمة #portrait:fatima_sad
 -> END
 
 === fatima_goodbye_happy ===
-مع السلامة! حظ موفق! #speaker:فاطمة #portrait:fatima_cheerful
+مع السلامة! حظ موفق! #speaker:فاطمة #portrait:fatima_happy
 -> END

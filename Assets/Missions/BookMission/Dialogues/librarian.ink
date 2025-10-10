@@ -18,7 +18,7 @@ INCLUDE globals.ink
 }
 
 === librarian_casual_visit ===
-أهلاً وسهلاً بك في المكتبة! #speaker:أمينة المكتبة #portrait:librarian_welcoming #layout:left #audio:librarian
+أهلاً وسهلاً بك في المكتبة! #speaker:أمينة المكتبة #portrait:librarian_happy #layout:left #audio:librarian
 
 أنا أمينة المكتبة. هل تبحث عن كتاب معين؟
 
@@ -27,13 +27,13 @@ INCLUDE globals.ink
 + [هل يمكنك اقتراح كتاب؟]
     -> suggest_book
 + [أبحث عن شيء خاص]
-    ما هو هذا الشيء الخاص؟ ربما أستطيع المساعدة. #speaker:أمينة المكتبة #portrait:librarian_curious
+    ما هو هذا الشيء الخاص؟ ربما أستطيع المساعدة. #speaker:أمينة المكتبة #portrait:librarian_thinking
     -> librarian_goodbye_casual
 + [أستطلع المكان فقط]
     -> just_browsing
 
 === explore_library ===
-ممتاز! المكتبة مليئة بالكنوز. #speaker:أمينة المكتبة #portrait:librarian_enthusiastic
+ممتاز! المكتبة مليئة بالكنوز. #speaker:أمينة المكتبة #portrait:librarian_happy
 
 لدينا كتب قصص، وعلوم، وتاريخ، وشعر!
 
@@ -41,7 +41,7 @@ INCLUDE globals.ink
     -> librarian_goodbye_casual
 
 === suggest_book ===
-لديّ كتب جميلة للأطفال! #speaker:أمينة المكتبة #portrait:librarian_helpful
+لديّ كتب جميلة للأطفال! #speaker:أمينة المكتبة #portrait:librarian_happy
 
 ما رأيك في قصص الحيوانات أو المغامرات؟
 
@@ -51,15 +51,15 @@ INCLUDE globals.ink
     -> animal_books
 
 === adventure_books ===
-إذن ستحب كتاب "رحلة سندباد"! #speaker:أمينة المكتبة #portrait:librarian_recommending
+إذن ستحب كتاب "رحلة سندباد"! #speaker:أمينة المكتبة #portrait:librarian_thinking
 -> librarian_goodbye_casual
 
 === animal_books ===
-لدي كتاب رائع عن "أصدقاء الغابة"! #speaker:أمينة المكتبة #portrait:librarian_recommending
+لدي كتاب رائع عن "أصدقاء الغابة"! #speaker:أمينة المكتبة #portrait:librarian_thinking
 -> librarian_goodbye_casual
 
 === just_browsing ===
-تفضل! استكشف بحرية. #speaker:أمينة المكتبة #portrait:librarian_permissive
+تفضل! استكشف بحرية. #speaker:أمينة المكتبة #portrait:librarian_neutral
 
 إذا احتجت مساعدة، أنا هنا.
 
@@ -67,7 +67,7 @@ INCLUDE globals.ink
     -> librarian_goodbye_casual
 
 === librarian_help_with_mission ===
-أهلاً مرة أخرى! #speaker:أمينة المكتبة #portrait:librarian_recognition
+أهلاً مرة أخرى! #speaker:أمينة المكتبة #portrait:librarian_neutral
 
 سمعت من المعلمة أنك تعمل على مهمة خاصة. أليس كذلك؟
 
@@ -79,7 +79,7 @@ INCLUDE globals.ink
     -> offer_help
 
 === explain_knowledge ===
-المعلمة أخبرتني! #speaker:أمينة المكتبة #portrait:librarian_informed
+المعلمة أخبرتني! #speaker:أمينة المكتبة #portrait:librarian_thinking
 
 قالت أن طالباً ذكياً يجمع حروفاً لتكوين كلمة مهمة.
 
@@ -87,7 +87,7 @@ INCLUDE globals.ink
     -> confirm_mission
 
 === confirm_mission ===
-رائع! أنا أحب هذه المهام التعليمية. #speaker:أمينة المكتبة #portrait:librarian_approving
+رائع! أنا أحب هذه المهام التعليمية. #speaker:أمينة المكتبة #portrait:librarian_happy
 
 لدي حرف خاص يمكنني إعطاؤك إياه!
 
@@ -99,7 +99,7 @@ INCLUDE globals.ink
     -> offer_help
 
 === reveal_letter ===
-حرف الـ"ب"! #speaker:أمينة المكتبة #portrait:librarian_revealing
+حرف الـ"ب"! #speaker:أمينة المكتبة #portrait:librarian_surprised
 
 إنه حرف مهم جداً، أول حرف في كلمة "بيت" و "باب"!
 
@@ -109,7 +109,7 @@ INCLUDE globals.ink
     -> explain_task
 
 === offer_help ===
-بالطبع يمكنني المساعدة! #speaker:أمينة المكتبة #portrait:librarian_eager
+بالطبع يمكنني المساعدة! #speaker:أمينة المكتبة #portrait:librarian_happy
 
 لكن أولاً، هل يمكنك مساعدتي في المكتبة؟
 
@@ -119,7 +119,7 @@ INCLUDE globals.ink
     -> librarian_understanding
 
 === librarian_understanding ===
-أفهم أن لديك مهام كثيرة. #speaker:أمينة المكتبة #portrait:librarian_patient
+أفهم أن لديك مهام كثيرة. #speaker:أمينة المكتبة #portrait:librarian_sad
 
 لكن مساعدتي بسيطة جداً ولن تأخذ وقتاً طويلاً!
 
@@ -129,7 +129,7 @@ INCLUDE globals.ink
     -> librarian_goodbye_disappointed
 
 === explain_task ===
-ممتاز! المهمة بسيطة جداً. #speaker:أمينة المكتبة #portrait:librarian_explaining
+ممتاز! المهمة بسيطة جداً. #speaker:أمينة المكتبة #portrait:librarian_thinking
 
 أريدك أن تساعدني في ترتيب هذه الكتب. ضع كتب القصص على الرف الأزرق، وكتب العلوم على الرف الأحمر.
 
@@ -141,7 +141,7 @@ INCLUDE globals.ink
     -> explain_categories
 
 === explain_categories ===
-نظرة جيدة! #speaker:أمينة المكتبة #portrait:librarian_teaching
+نظرة جيدة! #speaker:أمينة المكتبة #portrait:librarian_thinking
 
 كتب العلوم عليها صور نجوم أو حيوانات أو نباتات. كتب القصص عليها صور أطفال أو أبطال خياليين.
 
@@ -151,7 +151,7 @@ INCLUDE globals.ink
 === start_organizing ===
 *تبدأ في فحص الكتب وترتيبها*
 
-رائع! هذا كتاب عن النجوم - إذن هو للعلوم! #speaker:أمينة المكتبة #portrait:librarian_observing
+رائع! هذا كتاب عن النجوم - إذن هو للعلوم! #speaker:أمينة المكتبة #portrait:librarian_thinking
 
 + [وهذا كتاب عن أميرة - للقصص!]
     -> continue_organizing
@@ -159,7 +159,7 @@ INCLUDE globals.ink
     -> ask_for_help
 
 === ask_for_help ===
-أين المشكلة؟ #speaker:أمينة المكتبة #portrait:librarian_helpful
+أين المشكلة؟ #speaker:أمينة المكتبة #portrait:librarian_thinking
 
 *تنظر أمينة المكتبة إلى الكتاب معك*
 
@@ -171,7 +171,7 @@ INCLUDE globals.ink
 === continue_organizing ===
 *تواصل ترتيب الكتب بعناية*
 
-ممتاز! أنت منظم جداً! #speaker:أمينة المكتبة #portrait:librarian_impressed
+ممتاز! أنت منظم جداً! #speaker:أمينة المكتبة #portrait:librarian_happy
 
 + [انتهيت! كيف يبدو؟]
     -> check_work
@@ -179,7 +179,7 @@ INCLUDE globals.ink
     -> finish_task
 
 === check_work ===
-دعني أتفحص عملك... #speaker:أمينة المكتبة #portrait:librarian_inspecting
+دعني أتفحص عملك... #speaker:أمينة المكتبة #portrait:librarian_thinking
 
 ممتاز! كل شيء في مكانه الصحيح! أحسنت جداً!
 
@@ -187,7 +187,7 @@ INCLUDE globals.ink
     -> give_reward
 
 === finish_task ===
-رائع! انتهيت من كل شيء! #speaker:أمينة المكتبة #portrait:librarian_delighted
+رائع! انتهيت من كل شيء! #speaker:أمينة المكتبة #portrait:librarian_happy
 
 المكتبة تبدو منظمة ونظيفة الآن. شكراً جزيلاً!
 
@@ -195,7 +195,7 @@ INCLUDE globals.ink
     -> give_reward
 
 === give_reward ===
-كما وعدتك، إليك حرف الـ"ب"! #speaker:أمينة المكتبة #portrait:librarian_rewarding
+كما وعدتك، إليك حرف الـ"ب"! #speaker:أمينة المكتبة #portrait:librarian_happy
 
 أنت تستحقه لأنك ساعدت بصدق وعمل جاد!
 
@@ -206,7 +206,7 @@ INCLUDE globals.ink
     -> after_helping
 
 === after_helping ===
-عفواً! أحب الطلاب المجتهدين مثلك. #speaker:أمينة المكتبة #portrait:librarian_proud
+عفواً! أحب الطلاب المجتهدين مثلك. #speaker:أمينة المكتبة #portrait:librarian_happy
 
 الآن عليك إيجاد باقي الحروف لإكمال مهمتك!
 
@@ -216,7 +216,7 @@ INCLUDE globals.ink
     -> librarian_goodbye_happy
 
 === suggest_others ===
-تحدث مع الطلاب الآخرين! #speaker:أمينة المكتبة #portrait:librarian_guiding
+تحدث مع الطلاب الآخرين! #speaker:أمينة المكتبة #portrait:librarian_thinking
 
 ليلى وفاطمة وأحمد كلهم لطفاء ومفيدون!
 
@@ -224,7 +224,7 @@ INCLUDE globals.ink
     -> librarian_goodbye_happy
 
 === librarian_already_helped ===
-أهلاً بك مرة أخرى! #speaker:أمينة المكتبة #portrait:librarian_warm
+أهلاً بك مرة أخرى! #speaker:أمينة المكتبة #portrait:librarian_happy
 
 كيف تسير مهمة جمع الحروف؟ أتمنى أن يكون حرف الـ"ب" مفيداً!
 
@@ -234,7 +234,7 @@ INCLUDE globals.ink
     -> encourage_student
 
 === progress_discussion ===
-ممتاز! كم حرفاً جمعت حتى الآن؟ #speaker:أمينة المكتبة #portrait:librarian_interested
+ممتاز! كم حرفاً جمعت حتى الآن؟ #speaker:أمينة المكتبة #portrait:librarian_thinking
 
 {
     - has_letter_k and has_letter_t and has_letter_a:
@@ -247,7 +247,7 @@ INCLUDE globals.ink
     -> librarian_goodbye_happy
 
 === encourage_student ===
-الصبر والمثابرة هما سر النجاح! #speaker:أمينة المكتبة #portrait:librarian_wise
+الصبر والمثابرة هما سر النجاح! #speaker:أمينة المكتبة #portrait:librarian_thinking
 
 مثل قراءة الكتب، المهام تحتاج وقت وجهد.
 
@@ -255,7 +255,7 @@ INCLUDE globals.ink
     -> librarian_goodbye_happy
 
 === librarian_after_mission ===
-مبروك على إكمال المهمة بنجاح! #speaker:أمينة المكتبة #portrait:librarian_congratulating
+مبروك على إكمال المهمة بنجاح! #speaker:أمينة المكتبة #portrait:librarian_happy
 
 أنا فخورة بك لأنك أكملت كل شيء بجد واجتهاد!
 
@@ -263,7 +263,7 @@ INCLUDE globals.ink
     -> final_words
 
 === final_words ===
-عفواً! أحب رؤية الطلاب ينجحون. #speaker:أمينة المكتبة #portrait:librarian_motherly
+عفواً! أحب رؤية الطلاب ينجحون. #speaker:أمينة المكتبة #portrait:librarian_happy
 
 المكتبة مفتوحة لك دائماً للقراءة والتعلم!
 
@@ -271,13 +271,13 @@ INCLUDE globals.ink
     -> librarian_goodbye_happy
 
 === librarian_goodbye_casual ===
-استمتع بزيارتك! مع السلامة! #speaker:أمينة المكتبة #portrait:librarian_farewell
+استمتع بزيارتك! مع السلامة! #speaker:أمينة المكتبة #portrait:librarian_neutral
 -> END
 
 === librarian_goodbye_disappointed ===
-لا بأس، أتمنى لك التوفيق في مهامك. #speaker:أمينة المكتبة #portrait:librarian_understanding
+لا بأس، أتمنى لك التوفيق في مهامك. #speaker:أمينة المكتبة #portrait:librarian_sad
 -> END
 
 === librarian_goodbye_happy ===
-مع السلامة! أتطلع لرؤيتك مرة أخرى! #speaker:أمينة المكتبة #portrait:librarian_cheerful
+مع السلامة! أتطلع لرؤيتك مرة أخرى! #speaker:أمينة المكتبة #portrait:librarian_happy
 -> END

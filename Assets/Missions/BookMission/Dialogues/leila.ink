@@ -27,11 +27,11 @@ INCLUDE globals.ink
 + [ربما لاحقاً]
     -> leila_goodbye_casual
 + [هل تعرفين شيئاً عن الحروف؟]
-    ما الحروف؟ لا أفهم... ربما تقصد المعلمة؟ #speaker:ليلى #portrait:leila_confused
+    ما الحروف؟ لا أفهم... ربما تقصد المعلمة؟ #speaker:ليلى #portrait:leila_thinking
     -> leila_goodbye_casual
 
 === play_together ===
-رائع! نلعب لعبة العد. #speaker:ليلى #portrait:leila_excited
+رائع! نلعب لعبة العد. #speaker:ليلى #portrait:leila_happy
 
 عدّ معي: واحد، اثنان، ثلاثة...
 
@@ -40,7 +40,7 @@ INCLUDE globals.ink
     -> leila_goodbye_casual
 
 === leila_help_with_mission ===
-أهلاً! سمعت أنك تجمع حروفاً للمعلمة؟ #speaker:ليلى #portrait:leila_curious
+أهلاً! سمعت أنك تجمع حروفاً للمعلمة؟ #speaker:ليلى #portrait:leila_thinking
 
 أنا أعرف حرفاً واحداً! لكن أولاً، هل يمكنك مساعدتي؟
 
@@ -52,7 +52,7 @@ INCLUDE globals.ink
     -> leila_disappointed
 
 === reveal_letter_first ===
-إنه حرف الـ"ك"! #speaker:ليلى #portrait:leila_proud
+إنه حرف الـ"ك"! #speaker:ليلى #portrait:leila_happy
 
 لكن لن أعطيك إياه إلا إذا ساعدتني أولاً!
 
@@ -72,7 +72,7 @@ INCLUDE globals.ink
     -> leila_goodbye_sad
 
 === leila_challenge ===
-ممتاز! المساعدة بسيطة جداً. #speaker:ليلى #portrait:leila_explaining
+ممتاز! المساعدة بسيطة جداً. #speaker:ليلى #portrait:leila_thinking
 
 أريدك أن تعدّ الكرات الحمراء في هذه الصندوق. كم عددها؟
 
@@ -86,7 +86,7 @@ INCLUDE globals.ink
     -> wrong_count_low
 
 === wrong_count_high ===
-أوه، لا. عدّ مرة أخرى بعناية أكثر! #speaker:ليلى #portrait:leila_encouraging
+أوه، لا. عدّ مرة أخرى بعناية أكثر! #speaker:ليلى #portrait:leila_happy
 
 انظر فقط للكرات الحمراء، ليس الزرقاء أو الخضراء.
 
@@ -96,7 +96,7 @@ INCLUDE globals.ink
     -> wrong_again
 
 === wrong_count_low ===
-قريب! لكن عدّ مرة أخرى. #speaker:ليلى #portrait:leila_patient
+قريب! لكن عدّ مرة أخرى. #speaker:ليلى #portrait:leila_neutral
 
 خذ وقتك وعدّ بإصبعك.
 
@@ -106,7 +106,7 @@ INCLUDE globals.ink
     -> wrong_again
 
 === wrong_again ===
-لا بأس، دعني أساعدك. #speaker:ليلى #portrait:leila_helpful
+لا بأس، دعني أساعدك. #speaker:ليلى #portrait:leila_thinking
 
 *تشير ليلى إلى كل كرة حمراء*
 
@@ -116,7 +116,7 @@ INCLUDE globals.ink
     -> correct_count
 
 === correct_count ===
-ممتاز! أحسنت! #speaker:ليلى #portrait:leila_very_happy
+ممتاز! أحسنت! #speaker:ليلى #portrait:leila_happy
 
 شكراً لمساعدتي. إليك حرف الـ"ك" كما وعدتك!
 
@@ -127,7 +127,7 @@ INCLUDE globals.ink
     -> after_getting_letter
 
 === after_getting_letter ===
-عفواً! آمل أن تجد باقي الحروف بسرعة. #speaker:ليلى #portrait:leila_encouraging
+عفواً! آمل أن تجد باقي الحروف بسرعة. #speaker:ليلى #portrait:leila_happy
 
 تحدث مع فاطمة وأحمد وأمينة المكتبة!
 
@@ -140,14 +140,14 @@ INCLUDE globals.ink
 هل وجدت باقي الحروف؟ أتمنى أن تُكمل المهمة قريباً!
 
 + [ما زلت أبحث]
-    لا تستسلم! أنت قادر على ذلك. #speaker:ليلى #portrait:leila_encouraging
+    لا تستسلم! أنت قادر على ذلك. #speaker:ليلى #portrait:leila_happy
     -> leila_goodbye_happy
 + [نعم، وجدتها كلها!]
-    رائع! اذهب للمعلمة بسرعة! #speaker:ليلى #portrait:leila_excited
+    رائع! اذهب للمعلمة بسرعة! #speaker:ليلى #portrait:leila_happy
     -> leila_goodbye_happy
 
 === leila_after_mission ===
-مبروك! سمعت أنك أكملت المهمة! #speaker:ليلى #portrait:leila_proud
+مبروك! سمعت أنك أكملت المهمة! #speaker:ليلى #portrait:leila_happy
 
 أنا سعيدة لأنني ساعدتك بحرف الـ"ك"!
 
@@ -155,7 +155,7 @@ INCLUDE globals.ink
     -> leila_final_words
 
 === leila_final_words ===
-عفواً! أحب مساعدة الأصدقاء. #speaker:ليلى #portrait:leila_warm
+عفواً! أحب مساعدة الأصدقاء. #speaker:ليلى #portrait:leila_happy
 
 إذا احتجت مساعدة أخرى، أنا هنا دائماً!
 
@@ -163,13 +163,13 @@ INCLUDE globals.ink
     -> leila_goodbye_happy
 
 === leila_goodbye_casual ===
-مع السلامة! استمتع بوقتك! #speaker:ليلى #portrait:leila_wave
+مع السلامة! استمتع بوقتك! #speaker:ليلى #portrait:leila_neutral
 -> END
 
 === leila_goodbye_sad ===
-مع السلامة... #speaker:ليلى #portrait:leila_disappointed
+مع السلامة... #speaker:ليلى #portrait:leila_sad
 -> END
 
 === leila_goodbye_happy ===
-مع السلامة! حظ سعيد! #speaker:ليلى #portrait:leila_cheerful
+مع السلامة! حظ سعيد! #speaker:ليلى #portrait:leila_happy
 -> END

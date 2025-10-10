@@ -30,7 +30,7 @@ INCLUDE globals.ink
     -> encourage_student
 
 === encourage_student ===
-لا تقلق! ستكون مغامرة ممتعة وسهلة. #speaker:المعلمة #portrait:teacher_encouraging
+لا تقلق! ستكون مغامرة ممتعة وسهلة. #speaker:المعلمة #portrait:teacher_happy
 
 ستتعلم حروفاً جديدة وتكوّن كلمة جميلة!
 
@@ -38,7 +38,7 @@ INCLUDE globals.ink
     -> explain_mission
 
 === explain_mission ===
-ممتاز! مهمتك اليوم هي جمع أربعة حروف خاصة. #speaker:المعلمة #portrait:teacher_explaining
+ممتاز! مهمتك اليوم هي جمع أربعة حروف خاصة. #speaker:المعلمة #portrait:teacher_thinking
 
 الحروف هي: ك، ت، ا، ب
 
@@ -62,7 +62,7 @@ INCLUDE globals.ink
     -> hint_about_word
 
 === hint_about_word ===
-هذا سر! ستعرف عندما تجمع كل الحروف. #speaker:المعلمة #portrait:teacher_mysterious
+هذا سر! ستعرف عندما تجمع كل الحروف. #speaker:المعلمة #portrait:teacher_thinking
 
 لكن أستطيع أن أقول لك أنها شيء نقرأ منه ونتعلم!
 
@@ -70,7 +70,7 @@ INCLUDE globals.ink
     -> explain_where
 
 === explain_where ===
-الحروف مع أصدقائك في المدرسة! #speaker:المعلمة #portrait:teacher_pointing
+الحروف مع أصدقائك في المدرسة! #speaker:المعلمة #portrait:teacher_thinking
 
 تحدث مع ليلى، فاطمة، أحمد، وأمينة المكتبة. كل واحد منهم لديه حرف مختلف.
 
@@ -80,7 +80,7 @@ INCLUDE globals.ink
     -> start_mission
 
 === explain_challenges ===
-كل شخص قد يعطيك تحدياً صغيراً أو سؤالاً. #speaker:المعلمة #portrait:teacher_explaining
+كل شخص قد يعطيك تحدياً صغيراً أو سؤالاً. #speaker:المعلمة #portrait:teacher_thinking
 
 أجب عليهم بصدق وساعدهم، وسيعطونك الحرف!
 
@@ -89,7 +89,7 @@ INCLUDE globals.ink
     -> start_mission
 
 === start_mission ===
-رائع! اذهب واجمع الحروف الأربعة. #speaker:المعلمة #portrait:teacher_encouraging
+رائع! اذهب واجمع الحروف الأربعة. #speaker:المعلمة #portrait:teacher_happy
 
 عندما تجمعها كلها، عد إليّ وسنكوّن الكلمة معاً!
 
@@ -99,7 +99,7 @@ INCLUDE globals.ink
     -> teacher_goodbye
 
 === teacher_mission_in_progress ===
-أهلاً مرة أخرى! كيف تسير مهمة جمع الحروف؟ #speaker:المعلمة #portrait:teacher_interested
+أهلاً مرة أخرى! كيف تسير مهمة جمع الحروف؟ #speaker:المعلمة #portrait:teacher_thinking
 
 {
     - has_letter_k and has_letter_t and has_letter_a:
@@ -118,7 +118,7 @@ INCLUDE globals.ink
     -> teacher_goodbye
 
 === remind_npcs ===
-الأصدقاء هم: ليلى، فاطمة، أحمد، وأمينة المكتبة. #speaker:المعلمة #portrait:teacher_explaining
+الأصدقاء هم: ليلى، فاطمة، أحمد، وأمينة المكتبة. #speaker:المعلمة #portrait:teacher_thinking
 
 كل واحد منهم لديه حرف مختلف ينتظرك!
 
@@ -126,7 +126,7 @@ INCLUDE globals.ink
     -> teacher_goodbye
 
 === teacher_ready_to_complete ===
-مذهل! لديك كل الحروف الأربعة! #speaker:المعلمة #portrait:teacher_excited
+مذهل! لديك كل الحروف الأربعة! #speaker:المعلمة #portrait:teacher_happy
 
 الآن دعنا نكوّن الكلمة معاً. هل أنت مستعد؟
 
@@ -136,7 +136,7 @@ INCLUDE globals.ink
     -> explain_formation
 
 === explain_formation ===
-سنضع الحروف بالترتيب الصحيح. #speaker:المعلمة #portrait:teacher_explaining
+سنضع الحروف بالترتيب الصحيح. #speaker:المعلمة #portrait:teacher_thinking
 
 ك + ت + ا + ب = ؟
 
@@ -146,19 +146,19 @@ INCLUDE globals.ink
     -> give_hint
 
 === give_hint ===
-فكر... شيء نقرأ منه، له صفحات، مليء بالكلمات... #speaker:المعلمة #portrait:teacher_hinting
+فكر... شيء نقرأ منه، له صفحات، مليء بالكلمات... #speaker:المعلمة #portrait:teacher_thinking
 
 + [كتاب!]
     -> correct_answer
 
 === reveal_word ===
-ممتاز! الكلمة هي... #speaker:المعلمة #portrait:teacher_dramatic
+ممتاز! الكلمة هي... #speaker:المعلمة #portrait:teacher_surprised
 
 + [أخبريني!]
     -> correct_answer
 
 === correct_answer ===
-كتاب! #speaker:المعلمة #portrait:teacher_very_happy
+كتاب! #speaker:المعلمة #portrait:teacher_happy
 
 أحسنت! لقد تعلمت كلمة جديدة وجمعت كل الحروف!
 
@@ -170,7 +170,7 @@ INCLUDE globals.ink
     -> mission_complete_celebration
 
 === mission_complete_celebration ===
-أنا فخورة بك جداً! #speaker:المعلمة #portrait:teacher_proud
+أنا فخورة بك جداً! #speaker:المعلمة #portrait:teacher_happy
 
 لقد أكملت مهمتك الأولى بنجاح. أتطلع لمغامرات أخرى معك!
 
@@ -178,7 +178,7 @@ INCLUDE globals.ink
     -> teacher_goodbye
 
 === teacher_mission_completed ===
-أهلاً بطلي الصغير! #speaker:المعلمة #portrait:teacher_proud
+أهلاً بطلي الصغير! #speaker:المعلمة #portrait:teacher_happy
 
 أرى أنك ما زلت تحمل كتابك. هذا رائع! اقرأ منه كل يوم.
 
@@ -196,6 +196,6 @@ INCLUDE globals.ink
     -> teacher_goodbye
 
 === teacher_goodbye ===
-مع السلامة! أراك قريباً. #speaker:المعلمة #portrait:teacher_wave
+مع السلامة! أراك قريباً. #speaker:المعلمة #portrait:teacher_neutral
 
 -> END

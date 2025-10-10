@@ -13,53 +13,13 @@ MonoBehaviour:
   m_Name: PortraitLibrary
   m_EditorClassIdentifier: Assembly-CSharp::TaallamGame.Dialogue.PortraitLibrary
   entries:
-  - id: ahmed_energetic
+  - id: ahmed_neutral
     sprite: {fileID: -4256638439523828221, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_confused
+  - id: ahmed_happy
     sprite: {fileID: 8836850949439998280, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_excited
-    sprite: {fileID: 3889233080033478168, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_passionate
-    sprite: {fileID: -6408536882501694150, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_understanding
-    sprite: {fileID: 5960275731212187683, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_interested
-    sprite: {fileID: 5960275731212187683, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_proud
-    sprite: {fileID: 5303777023263945101, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_mysterious
-    sprite: {fileID: -2500790816677847806, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_flexing
-    sprite: {fileID: 5960275731212187683, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
   - id: ahmed_sad
-    sprite: {fileID: -1541030750609106742, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_explaining
-    sprite: {fileID: 3403658545927495468, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_pointing
-    sprite: {fileID: -1237370658452617465, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_instructing
-    sprite: {fileID: 3403658545927495468, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_counting
-    sprite: {fileID: 6478069285133057694, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_checking
-    sprite: {fileID: 3403658545927495468, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_instructing
-    sprite: {fileID: 3403658545927495468, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_warm
-    sprite: {fileID: -5165588585242696377, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_helpful
-    sprite: {fileID: 1086378153175756080, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_friendly
-    sprite: {fileID: 6478069285133057694, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_motivating
-    sprite: {fileID: 480083551765735001, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_celebrating
-    sprite: {fileID: -8867546607322123999, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_brotherhood
-    sprite: {fileID: 5670226039500751528, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_wave
-    sprite: {fileID: 480083551765735001, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_disappointed
-    sprite: {fileID: 480083551765735001, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
-  - id: ahmed_cheerful
-    sprite: {fileID: 6478069285133057694, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
+    sprite: {fileID: -6408536882501694150, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
+  - id: ahmed_thinking
+    sprite: {fileID: 3889233080033478168, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
+  - id: ahmed_surprised
+    sprite: {fileID: 8999580865834398037, guid: a1e04ba1d6715f146a531777c8b2f773, type: 3}
