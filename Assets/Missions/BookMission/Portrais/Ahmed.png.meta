@@ -1,0 +1,4732 @@
+fileFormatVersion: 2
+guid: a1e04ba1d6715f146a531777c8b2f773
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4256638439523828221
+    second: Ahmed_0
+  - first:
+      213: 8836850949439998280
+    second: Ahmed_1
+  - first:
+      213: 3889233080033478168
+    second: Ahmed_2
+  - first:
+      213: -6408536882501694150
+    second: Ahmed_3
+  - first:
+      213: 8999580865834398037
+    second: Ahmed_4
+  - first:
+      213: 5960275731212187683
+    second: Ahmed_5
+  - first:
+      213: -1237370658452617465
+    second: Ahmed_6
+  - first:
+      213: 5303777023263945101
+    second: Ahmed_7
+  - first:
+      213: -2500790816677847806
+    second: Ahmed_8
+  - first:
+      213: -1541030750609106742
+    second: Ahmed_9
+  - first:
+      213: 3403658545927495468
+    second: Ahmed_10
+  - first:
+      213: -5165588585242696377
+    second: Ahmed_11
+  - first:
+      213: 6478069285133057694
+    second: Ahmed_12
+  - first:
+      213: 1086378153175756080
+    second: Ahmed_13
+  - first:
+      213: 5670226039500751528
+    second: Ahmed_14
+  - first:
+      213: 7605801610310286029
+    second: Ahmed_15
+  - first:
+      213: -8867546607322123999
+    second: Ahmed_16
+  - first:
+      213: 480083551765735001
+    second: Ahmed_17
+  - first:
+      213: 6668383503586266283
+    second: Ahmed_18
+  - first:
+      213: 6613988729573805522
+    second: Ahmed_19
+  - first:
+      213: 8119680532522809786
+    second: Ahmed_20
+  - first:
+      213: -8799086165680930249
+    second: Ahmed_21
+  - first:
+      213: -8238156639466316073
+    second: Ahmed_22
+  - first:
+      213: -2172026953902547174
+    second: Ahmed_23
+  - first:
+      213: -7042222042312365347
+    second: Ahmed_24
+  - first:
+      213: -706579767899729564
+    second: Ahmed_25
+  - first:
+      213: 4607908072913220013
+    second: Ahmed_26
+  - first:
+      213: 3119380688940419081
+    second: Ahmed_27
+  - first:
+      213: 1642630710638458529
+    second: Ahmed_28
+  - first:
+      213: 1166517429819148301
+    second: Ahmed_29
+  - first:
+      213: 85803168542656634
+    second: Ahmed_30
+  - first:
+      213: 8742385434689480758
+    second: Ahmed_31
+  - first:
+      213: 7802103643729833068
+    second: Ahmed_32
+  - first:
+      213: 4695208887345826011
+    second: Ahmed_33
+  - first:
+      213: 7192908482991675632
+    second: Ahmed_34
+  - first:
+      213: 7233271976296550727
+    second: Ahmed_35
+  - first:
+      213: -972471797683470017
+    second: Ahmed_36
+  - first:
+      213: 6819565265695574305
+    second: Ahmed_37
+  - first:
+      213: 2431275949281071386
+    second: Ahmed_38
+  - first:
+      213: 4689353660648918205
+    second: Ahmed_39
+  - first:
+      213: -9178808402140043768
+    second: Ahmed_40
+  - first:
+      213: 2012154637459288096
+    second: Ahmed_41
+  - first:
+      213: 8878873074750200996
+    second: Ahmed_42
+  - first:
+      213: -3086925599933657094
+    second: Ahmed_43
+  - first:
+      213: -7329782176245608480
+    second: Ahmed_44
+  - first:
+      213: 2876426524117409021
+    second: Ahmed_45
+  - first:
+      213: 3163532296524376449
+    second: Ahmed_46
+  - first:
+      213: 5890484242619407821
+    second: Ahmed_47
+  - first:
+      213: 4214049657733204798
+    second: Ahmed_48
+  - first:
+      213: -2179001839152736778
+    second: Ahmed_49
+  - first:
+      213: -3771800904886444846
+    second: Ahmed_50
+  - first:
+      213: -7922539897362227062
+    second: Ahmed_51
+  - first:
+      213: 4736217696899956331
+    second: Ahmed_52
+  - first:
+      213: 4306734669886471890
+    second: Ahmed_53
+  - first:
+      213: 6576133161098254899
+    second: Ahmed_54
+  - first:
+      213: -1706213973403769967
+    second: Ahmed_55
+  - first:
+      213: 4768853449739392102
+    second: Ahmed_56
+  - first:
+      213: 5188002853576399849
+    second: Ahmed_57
+  - first:
+      213: -6403838767081760566
+    second: Ahmed_58
+  - first:
+      213: -8872679441689031347
+    second: Ahmed_59
+  - first:
+      213: -6547096199699754853
+    second: Ahmed_60
+  - first:
+      213: 6394228729173740463
+    second: Ahmed_61
+  - first:
+      213: 5049716628362586918
+    second: Ahmed_62
+  - first:
+      213: 2166213630781152508
+    second: Ahmed_63
+  - first:
+      213: -4488002370988335001
+    second: Ahmed_64
+  - first:
+      213: 3249237311444781572
+    second: Ahmed_65
+  - first:
+      213: -6728199338504864506
+    second: Ahmed_66
+  - first:
+      213: 1982489372466843764
+    second: Ahmed_67
+  - first:
+      213: 2437663320657803395
+    second: Ahmed_68
+  - first:
+      213: -2339897170082132382
+    second: Ahmed_69
+  - first:
+      213: 5503193195984847044
+    second: Ahmed_70
+  - first:
+      213: 4741437477733122868
+    second: Ahmed_71
+  - first:
+      213: 8938851330484893517
+    second: Ahmed_72
+  - first:
+      213: -6221784504401726399
+    second: Ahmed_73
+  - first:
+      213: 727374140015085661
+    second: Ahmed_74
+  - first:
+      213: 6461641325412781894
+    second: Ahmed_75
+  - first:
+      213: -3824847624801361639
+    second: Ahmed_76
+  - first:
+      213: -449061584891864237
+    second: Ahmed_77
+  - first:
+      213: 4932326009562900655
+    second: Ahmed_78
+  - first:
+      213: -887916631239774166
+    second: Ahmed_79
+  - first:
+      213: 2674052868886102224
+    second: Ahmed_80
+  - first:
+      213: 4263689678284174364
+    second: Ahmed_81
+  - first:
+      213: 9080106862659363384
+    second: Ahmed_82
+  - first:
+      213: -5193907239526731340
+    second: Ahmed_83
+  - first:
+      213: 1935110813568289948
+    second: Ahmed_84
+  - first:
+      213: -4545962445780619264
+    second: Ahmed_85
+  - first:
+      213: -5774894267236863948
+    second: Ahmed_86
+  - first:
+      213: 2988100100299128694
+    second: Ahmed_87
+  - first:
+      213: 8721961869036137037
+    second: Ahmed_88
+  - first:
+      213: -3327582305085425180
+    second: Ahmed_89
+  - first:
+      213: 984142372727626246
+    second: Ahmed_90
+  - first:
+      213: -4223551701952259753
+    second: Ahmed_91
+  - first:
+      213: -5696230090628036426
+    second: Ahmed_92
+  - first:
+      213: -3811643087113541651
+    second: Ahmed_93
+  - first:
+      213: -3182923025417496786
+    second: Ahmed_94
+  - first:
+      213: 1888380360672635673
+    second: Ahmed_95
+  - first:
+      213: -7073213894934615853
+    second: Ahmed_96
+  - first:
+      213: -2068395848996871454
+    second: Ahmed_97
+  - first:
+      213: 9045935225539169488
+    second: Ahmed_98
+  - first:
+      213: 5377268867349785272
+    second: Ahmed_99
+  - first:
+      213: -1410359309791762330
+    second: Ahmed_100
+  - first:
+      213: 6359641562394618820
+    second: Ahmed_101
+  - first:
+      213: 7102756881909694371
+    second: Ahmed_102
+  - first:
+      213: -6946004282509177817
+    second: Ahmed_103
+  - first:
+      213: -2243463314116662454
+    second: Ahmed_104
+  - first:
+      213: 7629886133267178123
+    second: Ahmed_105
+  - first:
+      213: 2432267126029875528
+    second: Ahmed_106
+  - first:
+      213: 1503056500511459430
+    second: Ahmed_107
+  - first:
+      213: -908237320466549750
+    second: Ahmed_108
+  - first:
+      213: -801564754393462920
+    second: Ahmed_109
+  - first:
+      213: -4143896386291881393
+    second: Ahmed_110
+  - first:
+      213: -4071639366756936507
+    second: Ahmed_111
+  - first:
+      213: -3653141140174523693
+    second: Ahmed_112
+  - first:
+      213: 541360318277324993
+    second: Ahmed_113
+  - first:
+      213: 202915906900470076
+    second: Ahmed_114
+  - first:
+      213: -5188925823353972919
+    second: Ahmed_115
+  - first:
+      213: 2254326341331009033
+    second: Ahmed_116
+  - first:
+      213: 7091534141197918077
+    second: Ahmed_117
+  - first:
+      213: 7620954126269687059
+    second: Ahmed_118
+  - first:
+      213: 8523140632831552457
+    second: Ahmed_119
+  - first:
+      213: -2836689031423189918
+    second: Ahmed_120
+  - first:
+      213: 6306671456447801212
+    second: Ahmed_121
+  - first:
+      213: 3957496594348781634
+    second: Ahmed_122
+  - first:
+      213: -6867202236547307483
+    second: Ahmed_123
+  - first:
+      213: -8425403489555115414
+    second: Ahmed_124
+  - first:
+      213: 8922166035767408906
+    second: Ahmed_125
+  - first:
+      213: 3986555442505706339
+    second: Ahmed_126
+  - first:
+      213: -839794490986989384
+    second: Ahmed_127
+  - first:
+      213: 253540323512886833
+    second: Ahmed_128
+  - first:
+      213: -9013965890202363025
+    second: Ahmed_129
+  - first:
+      213: 8619967361745068372
+    second: Ahmed_130
+  - first:
+      213: -1929368112068926559
+    second: Ahmed_131
+  - first:
+      213: 169460267844827001
+    second: Ahmed_132
+  - first:
+      213: -2641668993625243783
+    second: Ahmed_133
+  - first:
+      213: -8226057513876944242
+    second: Ahmed_134
+  - first:
+      213: 2694597783722263715
+    second: Ahmed_135
+  - first:
+      213: -8359893820511054756
+    second: Ahmed_136
+  - first:
+      213: -3050351225835096650
+    second: Ahmed_137
+  - first:
+      213: -4837873912795702291
+    second: Ahmed_138
+  - first:
+      213: 639814944203408003
+    second: Ahmed_139
+  - first:
+      213: -8598501646057225462
+    second: Ahmed_140
+  - first:
+      213: -2877681360993897970
+    second: Ahmed_141
+  - first:
+      213: -421562172573359855
+    second: Ahmed_142
+  - first:
+      213: 5424234767595310427
+    second: Ahmed_143
+  - first:
+      213: 5488221968777492029
+    second: Ahmed_144
+  - first:
+      213: -367639651994112063
+    second: Ahmed_145
+  - first:
+      213: 3083224007697817530
+    second: Ahmed_146
+  - first:
+      213: 473240781859802718
+    second: Ahmed_147
+  - first:
+      213: 4069551466466443449
+    second: Ahmed_148
+  - first:
+      213: -29065836439828502
+    second: Ahmed_149
+  - first:
+      213: 410055785452200784
+    second: Ahmed_150
+  - first:
+      213: 3495294570297580392
+    second: Ahmed_151
+  - first:
+      213: -9025726002631726011
+    second: Ahmed_152
+  - first:
+      213: -6824552558535151544
+    second: Ahmed_153
+  - first:
+      213: 3259533102404594042
+    second: Ahmed_154
+  - first:
+      213: -1222190966653241241
+    second: Ahmed_155
+  - first:
+      213: -7956412495632015767
+    second: Ahmed_156
+  - first:
+      213: -7181041107026451184
+    second: Ahmed_157
+  - first:
+      213: -667356955338912107
+    second: Ahmed_158
+  - first:
+      213: -2513689135445689259
+    second: Ahmed_159
+  - first:
+      213: 5398627013929650666
+    second: Ahmed_160
+  - first:
+      213: 46171568386830651
+    second: Ahmed_161
+  - first:
+      213: 5614991071084403863
+    second: Ahmed_162
+  - first:
+      213: 61802008762923067
+    second: Ahmed_163
+  - first:
+      213: 513676640015263212
+    second: Ahmed_164
+  - first:
+      213: 1830479759069658410
+    second: Ahmed_165
+  - first:
+      213: 4574031652919014304
+    second: Ahmed_166
+  - first:
+      213: -7889488625464508686
+    second: Ahmed_167
+  - first:
+      213: -3075326312610831385
+    second: Ahmed_168
+  - first:
+      213: -3364477605646398089
+    second: Ahmed_169
+  - first:
+      213: -2940667676053704155
+    second: Ahmed_170
+  - first:
+      213: -6687574601937119576
+    second: Ahmed_171
+  - first:
+      213: 3342597849444253232
+    second: Ahmed_172
+  - first:
+      213: 1976767437026391553
+    second: Ahmed_173
+  - first:
+      213: 5397306751649439757
+    second: Ahmed_174
+  - first:
+      213: 7003593161535720685
+    second: Ahmed_175
+  - first:
+      213: -6463747220761616097
+    second: Ahmed_176
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ahmed_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 645
+        width: 131
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30eb8e254e16de4c0800000000000000
+      internalID: -4256638439523828221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 645
+        width: 158
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849c17e6e1dc2aa70800000000000000
+      internalID: 8836850949439998280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_2
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 645
+        width: 131
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816081851e459f530800000000000000
+      internalID: 3889233080033478168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_3
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 689
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d4f74c8ad4017a0800000000000000
+      internalID: -6408536882501694150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_4
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 645
+        width: 132
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551367b9d1fe4ec70800000000000000
+      internalID: 8999580865834398037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_5
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 645
+        width: 131
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328b84ad23727b250800000000000000
+      internalID: 5960275731212187683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_6
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 683
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 707c07721f9f3dee0800000000000000
+      internalID: -1237370658452617465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 625
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81b68f1a1dca9940800000000000000
+      internalID: 5303777023263945101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 626
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d9b5280086b4dd0800000000000000
+      internalID: -2500790816677847806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 626
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac89df172b82d9ae0800000000000000
+      internalID: -1541030750609106742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_10
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 626
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f1bb60a693c3f20800000000000000
+      internalID: 3403658545927495468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_11
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 625
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745ebc8dc842058b0800000000000000
+      internalID: -5165588585242696377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 621
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e79ba41b9b6e950800000000000000
+      internalID: 6478069285133057694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_13
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 626
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d29c7ac27931f00800000000000000
+      internalID: 1086378153175756080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_14
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 626
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2cc907a80b0be40800000000000000
+      internalID: 5670226039500751528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 625
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca73ae644c3d8960800000000000000
+      internalID: 7605801610310286029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 621
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1213859c75520f480800000000000000
+      internalID: -8867546607322123999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_17
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 625
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956218d527999a600800000000000000
+      internalID: 480083551765735001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_18
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 625
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac8555477bda8c50800000000000000
+      internalID: 6668383503586266283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_19
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 626
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd0fa605bb99cb50800000000000000
+      internalID: 6613988729573805522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_20
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 625
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab93da6ac66eea070800000000000000
+      internalID: 8119680532522809786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_21
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 625
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 732c88a70cd53e580800000000000000
+      internalID: -8799086165680930249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_22
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 626
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de959c1f203cad80800000000000000
+      internalID: -8238156639466316073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_23
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 625
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f901a4ef86bd1e0800000000000000
+      internalID: -2172026953902547174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_24
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 621
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddaab822d50054e90800000000000000
+      internalID: -7042222042312365347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_25
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 626
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461dbd8d179b136f0800000000000000
+      internalID: -706579767899729564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_26
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 626
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1b5a38af392ff30800000000000000
+      internalID: 4607908072913220013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_27
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 626
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908c18b95344a4b20800000000000000
+      internalID: 3119380688940419081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_28
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 625
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6b0c4adebcbc610800000000000000
+      internalID: 1642630710638458529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_29
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 625
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d080ca40c6d403010800000000000000
+      internalID: 1166517429819148301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_30
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 626
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a788695f685d03100800000000000000
+      internalID: 85803168542656634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_31
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 625
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6382734db31335970800000000000000
+      internalID: 8742385434689480758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_32
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 626
+        width: 35
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c2c493de3a64c60800000000000000
+      internalID: 7802103643729833068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_33
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 625
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd841845b9bb82140800000000000000
+      internalID: 4695208887345826011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_34
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 625
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f8dc96d72852d360800000000000000
+      internalID: 7192908482991675632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_35
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 621
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74191f6f98eb16460800000000000000
+      internalID: 7233271976296550727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_36
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 625
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31cdf86d061182f0800000000000000
+      internalID: -972471797683470017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_37
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 625
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12980604a76f3ae50800000000000000
+      internalID: 6819565265695574305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_38
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 625
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1159db2890adb120800000000000000
+      internalID: 2431275949281071386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_39
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 625
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc08212f4ee31140800000000000000
+      internalID: 4689353660648918205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_40
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 626
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8066211c3625e9080800000000000000
+      internalID: -9178808402140043768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_41
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 626
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0207aee5bfb9ceb10800000000000000
+      internalID: 2012154637459288096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_42
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 625
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac144ae408183b70800000000000000
+      internalID: 8878873074750200996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_43
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 625
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff05e7a5890925d0800000000000000
+      internalID: -3086925599933657094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_44
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 626
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef04ef02f1674a90800000000000000
+      internalID: -7329782176245608480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_45
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 625
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc97880fae1be720800000000000000
+      internalID: 2876426524117409021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_46
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 625
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189afc1dcdf17eb20800000000000000
+      internalID: 3163532296524376449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_47
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 626
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd9d54a5343fb150800000000000000
+      internalID: 5890484242619407821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_48
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 626
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b4b0336df4b7a30800000000000000
+      internalID: 4214049657733204798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_49
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 621
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5d0644f51a2c1e0800000000000000
+      internalID: -2179001839152736778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_50
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 445
+        width: 131
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc1fb49f0fd7abc0800000000000000
+      internalID: -3771800904886444846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_51
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 445
+        width: 153
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a806dd250fb7d0290800000000000000
+      internalID: -7922539897362227062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_52
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 445
+        width: 193
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ef3aad6ec6ab140800000000000000
+      internalID: 4736217696899956331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_53
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 426
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de317c3d5894cb30800000000000000
+      internalID: 4306734669886471890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_54
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 446
+        width: 194
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a9de6a44e134b50800000000000000
+      internalID: 6576133161098254899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_55
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 446
+        width: 131
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193e57c5e6f4258e0800000000000000
+      internalID: -1706213973403769967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_56
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 426
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 664dc9132fe5e2240800000000000000
+      internalID: 4768853449739392102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_57
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 426
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb522dab1d7ff740800000000000000
+      internalID: 5188002853576399849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_58
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 426
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac85731029ef027a0800000000000000
+      internalID: -6403838767081760566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_59
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 426
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4dc638ae09edd480800000000000000
+      internalID: -8872679441689031347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_60
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 426
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b901692c1ba0425a0800000000000000
+      internalID: -6547096199699754853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_61
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 426
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab8ffea62ddcb850800000000000000
+      internalID: 6394228729173740463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_62
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 426
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b6fe9d482341640800000000000000
+      internalID: 5049716628362586918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_63
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 426
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfcd152f1dfef0e10800000000000000
+      internalID: 2166213630781152508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_64
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 426
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760212e3f9967b1c0800000000000000
+      internalID: -4488002370988335001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_65
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 426
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a8c9b9e1c971d20800000000000000
+      internalID: 3249237311444781572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_66
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 426
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d36626952a0a2a0800000000000000
+      internalID: -6728199338504864506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_67
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 426
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4709fd0a497338b10800000000000000
+      internalID: 1982489372466843764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_68
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 426
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388bec5ffd154d120800000000000000
+      internalID: 2437663320657803395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_69
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 426
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e005ecbe3078fd0800000000000000
+      internalID: -2339897170082132382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_70
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 422
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c00609fd054f5c40800000000000000
+      internalID: 5503193195984847044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_71
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 422
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433c109c348fcc140800000000000000
+      internalID: 4741437477733122868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_72
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 426
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47749dcced2d0c70800000000000000
+      internalID: 8938851330484893517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_73
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 426
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144fa1a25f7c7a9a0800000000000000
+      internalID: -6221784504401726399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_74
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 426
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5887623de6281a00800000000000000
+      internalID: 727374140015085661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_75
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 426
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f863bdc8c5ca950800000000000000
+      internalID: 6461641325412781894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_76
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 426
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911e7b3a9596beac0800000000000000
+      internalID: -3824847624801361639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_77
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 426
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b1f362edc94c9f0800000000000000
+      internalID: -449061584891864237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_78
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 426
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa8aa648f54237440800000000000000
+      internalID: 4932326009562900655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_79
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 426
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20bacc378c7da3f0800000000000000
+      internalID: -887916631239774166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_80
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 426
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d00290aae42c1520800000000000000
+      internalID: 2674052868886102224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_81
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 426
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14b0a22c2bab2b30800000000000000
+      internalID: 4263689678284174364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_82
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 426
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832e5674515030e70800000000000000
+      internalID: 9080106862659363384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_83
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 422
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1fda752e88be7b0800000000000000
+      internalID: -5193907239526731340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_84
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 426
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c41c34805eada10800000000000000
+      internalID: 1935110813568289948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_85
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 426
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000faf8bd3f79e0c0800000000000000
+      internalID: -4545962445780619264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_86
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 426
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43038e9b2447bdfa0800000000000000
+      internalID: -5774894267236863948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_87
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 240
+        width: 177
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f73a7a53dd77920800000000000000
+      internalID: 2988100100299128694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_88
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 241
+        width: 131
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4aa664eb12aa0970800000000000000
+      internalID: 8721961869036137037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_89
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 241
+        width: 133
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e9f188168d02d1d0800000000000000
+      internalID: -3327582305085425180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_90
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 240
+        width: 154
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a17d6164068ad00800000000000000
+      internalID: 984142372727626246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_91
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 240
+        width: 137
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75993aaba1ee265c0800000000000000
+      internalID: -4223551701952259753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_92
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 220
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8893999ece2f0b0800000000000000
+      internalID: -5696230090628036426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_93
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 220
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de72606aec25a1bc0800000000000000
+      internalID: -3811643087113541651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_94
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 216
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27149a4f5cf3d3d0800000000000000
+      internalID: -3182923025417496786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_95
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 217
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b67b6deefd43a10800000000000000
+      internalID: 1888380360672635673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_96
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 220
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8a0142075e6dd90800000000000000
+      internalID: -7073213894934615853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_97
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 216
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e226a52fe49b43e0800000000000000
+      internalID: -2068395848996871454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_98
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 221
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc8473092e998d70800000000000000
+      internalID: 9045935225539169488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_99
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 221
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8baa62c7b85ef9a40800000000000000
+      internalID: 5377268867349785272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_100
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 221
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668623e1ea56d6ce0800000000000000
+      internalID: -1410359309791762330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_101
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 221
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb67516e4cf14850800000000000000
+      internalID: 6359641562394618820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_102
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 221
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af303880cf029260800000000000000
+      internalID: 7102756881909694371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_103
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 216
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cc2b418e5da9f90800000000000000
+      internalID: -6946004282509177817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_104
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 221
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ba47f800e9dd0e0800000000000000
+      internalID: -2243463314116662454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_105
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 220
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82a11a630dc2e960800000000000000
+      internalID: 7629886133267178123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_106
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 221
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849fedd701621c120800000000000000
+      internalID: 2432267126029875528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_107
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 221
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668c3567cedebd410800000000000000
+      internalID: 1503056500511459430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_108
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 221
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04b6d518fa4563f0800000000000000
+      internalID: -908237320466549750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_109
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 221
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87787ed4a1540e4f0800000000000000
+      internalID: -801564754393462920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_110
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 221
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a2c05213ced76c0800000000000000
+      internalID: -4143896386291881393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_111
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 220
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4d4f28191ae77c0800000000000000
+      internalID: -4071639366756936507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_112
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 221
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d23889fc7f6d4dc0800000000000000
+      internalID: -3653141140174523693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_113
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 221
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0996a575c438700800000000000000
+      internalID: 541360318277324993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_114
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 221
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39241631f6e0d200800000000000000
+      internalID: 202915906900470076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_115
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 221
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947922da47b3df7b0800000000000000
+      internalID: -5188925823353972919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_116
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 221
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e37de0dd9f84f10800000000000000
+      internalID: 2254326341331009033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_117
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 220
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f18a69ab03a6260800000000000000
+      internalID: 7091534141197918077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_118
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 221
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3152ad9766113c960800000000000000
+      internalID: 7620954126269687059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_119
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 216
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb6f9e7f37484670800000000000000
+      internalID: 8523140632831552457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_120
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 221
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c16c7fa5e02a8d0800000000000000
+      internalID: -2836689031423189918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_121
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 220
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77aaa4864cc58750800000000000000
+      internalID: 6306671456447801212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_122
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 221
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2403af15f2adbe630800000000000000
+      internalID: 3957496594348781634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_123
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 221
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52864d923fbc2b0a0800000000000000
+      internalID: -6867202236547307483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_124
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 221
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a621bbb7a24f21b80800000000000000
+      internalID: -8425403489555115414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_125
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 221
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09b8f4ecb6e1db70800000000000000
+      internalID: 8922166035767408906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_126
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 221
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36be3f3ad07135730800000000000000
+      internalID: 3986555442505706339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_127
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 216
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8f3602c537854f0800000000000000
+      internalID: -839794490986989384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 155
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1362937b491c48300800000000000000
+      internalID: 253540323512886833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_129
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 174
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b1009e7c5f7e280800000000000000
+      internalID: -9013965890202363025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_130
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 33
+        width: 161
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451a64c15a640a770800000000000000
+      internalID: 8619967361745068372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_131
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 175
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a36a2f9ce18935e0800000000000000
+      internalID: -1929368112068926559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_132
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 33
+        width: 130
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977fe6c373b0a5200800000000000000
+      internalID: 169460267844827001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_133
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 33
+        width: 131
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97fbdc4eb08e65bd0800000000000000
+      internalID: -2641668993625243783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_134
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 27
+        width: 131
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a8e6f464c27dd80800000000000000
+      internalID: -8226057513876944242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_135
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 145
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4025f5862256520800000000000000
+      internalID: 2694597783722263715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_136
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 138
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c549474ecd0bbfb80800000000000000
+      internalID: -8359893820511054756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_137
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 119
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5fbe7b8b9faa5d0800000000000000
+      internalID: -3050351225835096650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_138
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 119
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: debdea7fe4b6cdcb0800000000000000
+      internalID: -4837873912795702291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_139
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 14
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3820b374d4411e800800000000000000
+      internalID: 639814944203408003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_140
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 14
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03c52a4f4cfba880800000000000000
+      internalID: -8598501646057225462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_141
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 10
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02323d7c0c6018d0800000000000000
+      internalID: -2877681360993897970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_142
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 9
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111e505007f462af0800000000000000
+      internalID: -421562172573359855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_143
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 13
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d87d448c0c64b40800000000000000
+      internalID: 5424234767595310427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_144
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 10
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d363a718dc41a2c40800000000000000
+      internalID: 5488221968777492029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_145
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 10
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cfea813fa1e5eaf0800000000000000
+      internalID: -367639651994112063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_146
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 10
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfd8cd36efc9ca20800000000000000
+      internalID: 3083224007697817530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_147
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 14
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e4bf7dbf9419600800000000000000
+      internalID: 473240781859802718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_148
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 14
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b007e15f73f97830800000000000000
+      internalID: 4069551466466443449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_149
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 14
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae787e796ccb89ff0800000000000000
+      internalID: -29065836439828502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_150
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 14
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053e8f5709fc0b500800000000000000
+      internalID: 410055785452200784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_151
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 14
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b50ff84e7c18030800000000000000
+      internalID: 3495294570297580392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_152
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 14
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c212d550e2eb280800000000000000
+      internalID: -9025726002631726011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_153
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 14
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84077852b915a41a0800000000000000
+      internalID: -6824552558535151544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_154
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 14
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a79e37e36103c3d20800000000000000
+      internalID: 3259533102404594042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_155
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 14
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76831f09ac7e90fe0800000000000000
+      internalID: -1222190966653241241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_156
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 14
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96edf577df4259190800000000000000
+      internalID: -7956412495632015767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_157
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 14
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015e532f821d75c90800000000000000
+      internalID: -7181041107026451184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_158
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 14
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e43aa82621db6f0800000000000000
+      internalID: -667356955338912107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_159
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 14
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c3006ac059d1dd0800000000000000
+      internalID: -2513689135445689259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_160
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 14
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9ca108aa6cbea40800000000000000
+      internalID: 5398627013929650666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_161
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 14
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b317b6cfbc804a000800000000000000
+      internalID: 46171568386830651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_162
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 13
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79cd9f031a47ced40800000000000000
+      internalID: 5614991071084403863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_163
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3838ba79909bd000800000000000000
+      internalID: 61802008762923067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_164
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 14
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5a689be22f02700800000000000000
+      internalID: 513676640015263212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_165
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 14
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2db3ef74ab276910800000000000000
+      internalID: 1830479759069658410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_166
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 14
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a371a7dd893a7f30800000000000000
+      internalID: 4574031652919014304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_167
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 14
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fef3bb35e7e28290800000000000000
+      internalID: -7889488625464508686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_168
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 14
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e36b60330f3255d0800000000000000
+      internalID: -3075326312610831385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_169
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 14
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d80b48179fe41d0800000000000000
+      internalID: -3364477605646398089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_170
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 14
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52278563456a037d0800000000000000
+      internalID: -2940667676053704155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_171
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 14
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a61d92f456f033a0800000000000000
+      internalID: -6687574601937119576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_172
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 14
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03efb13c80b436e20800000000000000
+      internalID: 3342597849444253232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_173
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 14
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1067487b283ee6b10800000000000000
+      internalID: 1976767437026391553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_174
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 14
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00e1ebf4e517ea40800000000000000
+      internalID: 5397306751649439757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_175
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 14
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec01b0bfd2c13160800000000000000
+      internalID: 7003593161535720685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ahmed_176
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 14
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11e59c26282c46a0800000000000000
+      internalID: -6463747220761616097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ahmed_0: -4256638439523828221
+      Ahmed_1: 8836850949439998280
+      Ahmed_10: 3403658545927495468
+      Ahmed_100: -1410359309791762330
+      Ahmed_101: 6359641562394618820
+      Ahmed_102: 7102756881909694371
+      Ahmed_103: -6946004282509177817
+      Ahmed_104: -2243463314116662454
+      Ahmed_105: 7629886133267178123
+      Ahmed_106: 2432267126029875528
+      Ahmed_107: 1503056500511459430
+      Ahmed_108: -908237320466549750
+      Ahmed_109: -801564754393462920
+      Ahmed_11: -5165588585242696377
+      Ahmed_110: -4143896386291881393
+      Ahmed_111: -4071639366756936507
+      Ahmed_112: -3653141140174523693
+      Ahmed_113: 541360318277324993
+      Ahmed_114: 202915906900470076
+      Ahmed_115: -5188925823353972919
+      Ahmed_116: 2254326341331009033
+      Ahmed_117: 7091534141197918077
+      Ahmed_118: 7620954126269687059
+      Ahmed_119: 8523140632831552457
+      Ahmed_12: 6478069285133057694
+      Ahmed_120: -2836689031423189918
+      Ahmed_121: 6306671456447801212
+      Ahmed_122: 3957496594348781634
+      Ahmed_123: -6867202236547307483
+      Ahmed_124: -8425403489555115414
+      Ahmed_125: 8922166035767408906
+      Ahmed_126: 3986555442505706339
+      Ahmed_127: -839794490986989384
+      Ahmed_128: 253540323512886833
+      Ahmed_129: -9013965890202363025
+      Ahmed_13: 1086378153175756080
+      Ahmed_130: 8619967361745068372
+      Ahmed_131: -1929368112068926559
+      Ahmed_132: 169460267844827001
+      Ahmed_133: -2641668993625243783
+      Ahmed_134: -8226057513876944242
+      Ahmed_135: 2694597783722263715
+      Ahmed_136: -8359893820511054756
+      Ahmed_137: -3050351225835096650
+      Ahmed_138: -4837873912795702291
+      Ahmed_139: 639814944203408003
+      Ahmed_14: 5670226039500751528
+      Ahmed_140: -8598501646057225462
+      Ahmed_141: -2877681360993897970
+      Ahmed_142: -421562172573359855
+      Ahmed_143: 5424234767595310427
+      Ahmed_144: 5488221968777492029
+      Ahmed_145: -367639651994112063
+      Ahmed_146: 3083224007697817530
+      Ahmed_147: 473240781859802718
+      Ahmed_148: 4069551466466443449
+      Ahmed_149: -29065836439828502
+      Ahmed_15: 7605801610310286029
+      Ahmed_150: 410055785452200784
+      Ahmed_151: 3495294570297580392
+      Ahmed_152: -9025726002631726011
+      Ahmed_153: -6824552558535151544
+      Ahmed_154: 3259533102404594042
+      Ahmed_155: -1222190966653241241
+      Ahmed_156: -7956412495632015767
+      Ahmed_157: -7181041107026451184
+      Ahmed_158: -667356955338912107
+      Ahmed_159: -2513689135445689259
+      Ahmed_16: -8867546607322123999
+      Ahmed_160: 5398627013929650666
+      Ahmed_161: 46171568386830651
+      Ahmed_162: 5614991071084403863
+      Ahmed_163: 61802008762923067
+      Ahmed_164: 513676640015263212
+      Ahmed_165: 1830479759069658410
+      Ahmed_166: 4574031652919014304
+      Ahmed_167: -7889488625464508686
+      Ahmed_168: -3075326312610831385
+      Ahmed_169: -3364477605646398089
+      Ahmed_17: 480083551765735001
+      Ahmed_170: -2940667676053704155
+      Ahmed_171: -6687574601937119576
+      Ahmed_172: 3342597849444253232
+      Ahmed_173: 1976767437026391553
+      Ahmed_174: 5397306751649439757
+      Ahmed_175: 7003593161535720685
+      Ahmed_176: -6463747220761616097
+      Ahmed_18: 6668383503586266283
+      Ahmed_19: 6613988729573805522
+      Ahmed_2: 3889233080033478168
+      Ahmed_20: 8119680532522809786
+      Ahmed_21: -8799086165680930249
+      Ahmed_22: -8238156639466316073
+      Ahmed_23: -2172026953902547174
+      Ahmed_24: -7042222042312365347
+      Ahmed_25: -706579767899729564
+      Ahmed_26: 4607908072913220013
+      Ahmed_27: 3119380688940419081
+      Ahmed_28: 1642630710638458529
+      Ahmed_29: 1166517429819148301
+      Ahmed_3: -6408536882501694150
+      Ahmed_30: 85803168542656634
+      Ahmed_31: 8742385434689480758
+      Ahmed_32: 7802103643729833068
+      Ahmed_33: 4695208887345826011
+      Ahmed_34: 7192908482991675632
+      Ahmed_35: 7233271976296550727
+      Ahmed_36: -972471797683470017
+      Ahmed_37: 6819565265695574305
+      Ahmed_38: 2431275949281071386
+      Ahmed_39: 4689353660648918205
+      Ahmed_4: 8999580865834398037
+      Ahmed_40: -9178808402140043768
+      Ahmed_41: 2012154637459288096
+      Ahmed_42: 8878873074750200996
+      Ahmed_43: -3086925599933657094
+      Ahmed_44: -7329782176245608480
+      Ahmed_45: 2876426524117409021
+      Ahmed_46: 3163532296524376449
+      Ahmed_47: 5890484242619407821
+      Ahmed_48: 4214049657733204798
+      Ahmed_49: -2179001839152736778
+      Ahmed_5: 5960275731212187683
+      Ahmed_50: -3771800904886444846
+      Ahmed_51: -7922539897362227062
+      Ahmed_52: 4736217696899956331
+      Ahmed_53: 4306734669886471890
+      Ahmed_54: 6576133161098254899
+      Ahmed_55: -1706213973403769967
+      Ahmed_56: 4768853449739392102
+      Ahmed_57: 5188002853576399849
+      Ahmed_58: -6403838767081760566
+      Ahmed_59: -8872679441689031347
+      Ahmed_6: -1237370658452617465
+      Ahmed_60: -6547096199699754853
+      Ahmed_61: 6394228729173740463
+      Ahmed_62: 5049716628362586918
+      Ahmed_63: 2166213630781152508
+      Ahmed_64: -4488002370988335001
+      Ahmed_65: 3249237311444781572
+      Ahmed_66: -6728199338504864506
+      Ahmed_67: 1982489372466843764
+      Ahmed_68: 2437663320657803395
+      Ahmed_69: -2339897170082132382
+      Ahmed_7: 5303777023263945101
+      Ahmed_70: 5503193195984847044
+      Ahmed_71: 4741437477733122868
+      Ahmed_72: 8938851330484893517
+      Ahmed_73: -6221784504401726399
+      Ahmed_74: 727374140015085661
+      Ahmed_75: 6461641325412781894
+      Ahmed_76: -3824847624801361639
+      Ahmed_77: -449061584891864237
+      Ahmed_78: 4932326009562900655
+      Ahmed_79: -887916631239774166
+      Ahmed_8: -2500790816677847806
+      Ahmed_80: 2674052868886102224
+      Ahmed_81: 4263689678284174364
+      Ahmed_82: 9080106862659363384
+      Ahmed_83: -5193907239526731340
+      Ahmed_84: 1935110813568289948
+      Ahmed_85: -4545962445780619264
+      Ahmed_86: -5774894267236863948
+      Ahmed_87: 2988100100299128694
+      Ahmed_88: 8721961869036137037
+      Ahmed_89: -3327582305085425180
+      Ahmed_9: -1541030750609106742
+      Ahmed_90: 984142372727626246
+      Ahmed_91: -4223551701952259753
+      Ahmed_92: -5696230090628036426
+      Ahmed_93: -3811643087113541651
+      Ahmed_94: -3182923025417496786
+      Ahmed_95: 1888380360672635673
+      Ahmed_96: -7073213894934615853
+      Ahmed_97: -2068395848996871454
+      Ahmed_98: 9045935225539169488
+      Ahmed_99: 5377268867349785272
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
