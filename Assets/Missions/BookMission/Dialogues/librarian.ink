@@ -134,11 +134,11 @@ INCLUDE globals.ink
 لدينا صندوق يحتوي على كرات خضراء وكرات حمراء وكرات زرقاء.
 كم مجموع الكرات الحمراء والخضراء؟
 
-+ [المجموع هو 8]
++ [المجموع هو ثمانية]
     -> correct_sum
-+ [المجموع هو 6]
++ [المجموع هو ستة]
     -> wrong_sum_low
-+ [المجموع هو 10]
++ [المجموع هو عشرة]
     -> wrong_sum_high
 
 === wrong_sum_high ===
@@ -146,19 +146,27 @@ INCLUDE globals.ink
 
 حاول جمع العددين معاً خطوة بخطوة.
 
-+ [أعتقد أنه 8]
++ [المجموع هو ثمانية]
     -> correct_sum
++ [المجموع هو ستة]
+    -> wrong_sum_low
++ [المجموع هو عشرة]
+    -> wrong_sum_high
 
 === wrong_sum_low ===
 قريب! لكن عدّ مرة أخرى. #speaker:أمينة المكتبة #portrait:librarian_thinking
 
 خمسة خضراء + ثلاث حمراء = ؟
 
-+ [إذن المجموع 8]
++ [المجموع هو ثمانية]
     -> correct_sum
++ [المجموع هو ستة]
+    -> wrong_sum_low
++ [المجموع هو عشرة]
+    -> wrong_sum_high
 
 === correct_sum ===
-أحسنت! الإجابة الصحيحة هي 8. #speaker:أمينة المكتبة #portrait:librarian_happy
+ثمانية. #speaker:أمينة المكتبة #portrait:librarian_happy
 
 شكراً لمساعدتي في هذا التمرين البسيط!
 
@@ -167,7 +175,7 @@ INCLUDE globals.ink
 // (تم استبدال تحدّي ترتيب الكتب بتمرين جمع بسيط على الكرات)
 
 === give_reward ===
-كما وعدتك، إليك حرف الـ"ب"! #speaker:أمينة المكتبة #portrait:librarian_happy
+كما وعدتك، إليك حرف الـ"ب" #speaker:أمينة المكتبة #portrait:librarian_happy
 
 أنت تستحقه لأنك ساعدت بصدق وعمل جاد!
 

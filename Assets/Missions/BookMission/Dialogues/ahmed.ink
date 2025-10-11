@@ -158,7 +158,7 @@ INCLUDE globals.ink
 === give_reward ===
 كما وعدتك، إليك الحرف الخاص! #speaker:أحمد #portrait:ahmed_happy
 
-إنه حرف الـ"ا"! إنه أول حرف في اسمي - أحمد!
+إنه حرف الـ"ا" إنه أول حرف في اسمي - أحمد!
 
 ~ collect_letter("a")
 ~ talked_to_ahmed = true
