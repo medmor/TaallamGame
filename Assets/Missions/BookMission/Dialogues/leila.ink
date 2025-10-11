@@ -72,11 +72,9 @@ INCLUDE globals.ink
     -> leila_goodbye_sad
 
 === leila_challenge ===
-ممتاز! المساعدة بسيطة جداً. #speaker:ليلى #portrait:leila_thinking
+ممتاز! المساعدة بسيطة جداً. #speaker:ليلى #portrait:leila_problem
 
 أريدك أن تعدّ الكرات الحمراء في هذه الصندوق. كم عددها؟
-
-*تُظهر لك ليلى صندوقاً به كرات ملونة*
 
 + [أرى... ثلاث كرات حمراء]
     -> correct_count

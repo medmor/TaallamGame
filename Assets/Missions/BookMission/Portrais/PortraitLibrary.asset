@@ -53,6 +53,8 @@ MonoBehaviour:
     sprite: {fileID: 8326182203440577928, guid: 658281b6c6ec9d54b9396f08ddd8f885, type: 3}
   - id: leila_surprised
     sprite: {fileID: -78096960565532603, guid: 658281b6c6ec9d54b9396f08ddd8f885, type: 3}
+  - id: leila_problem
+    sprite: {fileID: 1681720186, guid: 658281b6c6ec9d54b9396f08ddd8f885, type: 3}
   - id: librarian_neutral
     sprite: {fileID: 6573256221637143304, guid: e5fa6adc37c7823419d5b702fc31a900, type: 3}
   - id: librarian_happy
