@@ -128,12 +128,12 @@ TextureImporter:
       name: Librarian_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 95
-        height: 96
+        x: 4
+        y: 2
+        width: 93
+        height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: Librarian_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 2
-        width: 104
-        height: 101
+        x: 101
+        y: 3
+        width: 102
+        height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: Librarian_2
       rect:
         serializedVersion: 2
-        x: 214
-        y: 7
-        width: 97
-        height: 92
+        x: 215
+        y: 8
+        width: 95
+        height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: Librarian_3
       rect:
         serializedVersion: 2
-        x: 320
-        y: 8
-        width: 82
-        height: 105
+        x: 321
+        y: 9
+        width: 80
+        height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: Librarian_4
       rect:
         serializedVersion: 2
-        x: 416
-        y: 13
-        width: 84
-        height: 82
+        x: 417
+        y: 14
+        width: 83
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,11 +234,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Librarian_5
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 4
+        width: 106
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21af4924369f0a4ea9837696778a90d
+      internalID: 479618763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 81011abeff101374a90b13f05ada5142
     internalID: 0
     vertices: []
     indices: 
@@ -246,13 +268,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Librarian_0: 6573256221637143304
       Librarian_1: 1148465270101066530
       Librarian_2: -8063679822778856835
       Librarian_3: 6528282829584784433
       Librarian_4: -4337054756857502497
+      Librarian_5: 479618763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

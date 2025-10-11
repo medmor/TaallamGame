@@ -666,7 +666,7 @@ TextureImporter:
       name: Ahmed_1
       rect:
         serializedVersion: 2
-        x: 203
+        x: 204
         y: 15
         width: 189
         height: 161
@@ -750,6 +750,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Ahmed_5
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 18
+        width: 195
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032b059836f40be44b5a35b9c14bbe3f
+      internalID: -1617262725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -771,6 +793,7 @@ TextureImporter:
       Ahmed_2: 3889233080033478168
       Ahmed_3: -6408536882501694150
       Ahmed_4: 8999580865834398037
+      Ahmed_5: -1617262725
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

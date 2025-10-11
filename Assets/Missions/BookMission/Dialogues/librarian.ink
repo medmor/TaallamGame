@@ -129,70 +129,42 @@ INCLUDE globals.ink
     -> librarian_goodbye_disappointed
 
 === explain_task ===
-ممتاز! المهمة بسيطة جداً. #speaker:أمينة المكتبة #portrait:librarian_thinking
+ممتاز! المهمة بسيطة جداً. #speaker:أمينة المكتبة #portrait:librarian_problem
 
-أريدك أن تساعدني في ترتيب هذه الكتب. ضع كتب القصص على الرف الأزرق، وكتب العلوم على الرف الأحمر.
+لدينا صندوق يحتوي على كرات خضراء وكرات حمراء وكرات زرقاء.
+كم مجموع الكرات الحمراء والخضراء؟
 
-*تُظهر لك أمينة المكتبة مجموعة من الكتب المبعثرة*
++ [المجموع هو 8]
+    -> correct_sum
++ [المجموع هو 6]
+    -> wrong_sum_low
++ [المجموع هو 10]
+    -> wrong_sum_high
 
-+ [هذا سهل! سأبدأ]
-    -> start_organizing
-+ [كيف أعرف أي كتاب للعلوم؟]
-    -> explain_categories
+=== wrong_sum_high ===
+أوه، لا. عدّ مرة أخرى بعناية أكثر! #speaker:أمينة المكتبة #portrait:librarian_happy
 
-=== explain_categories ===
-نظرة جيدة! #speaker:أمينة المكتبة #portrait:librarian_thinking
+حاول جمع العددين معاً خطوة بخطوة.
 
-كتب العلوم عليها صور نجوم أو حيوانات أو نباتات. كتب القصص عليها صور أطفال أو أبطال خياليين.
++ [أعتقد أنه 8]
+    -> correct_sum
 
-+ [فهمت! سأرتبها الآن]
-    -> start_organizing
+=== wrong_sum_low ===
+قريب! لكن عدّ مرة أخرى. #speaker:أمينة المكتبة #portrait:librarian_thinking
 
-=== start_organizing ===
-*تبدأ في فحص الكتب وترتيبها*
+خمسة خضراء + ثلاث حمراء = ؟
 
-رائع! هذا كتاب عن النجوم - إذن هو للعلوم! #speaker:أمينة المكتبة #portrait:librarian_thinking
++ [إذن المجموع 8]
+    -> correct_sum
 
-+ [وهذا كتاب عن أميرة - للقصص!]
-    -> continue_organizing
-+ [أحتاج مساعدة في هذا الكتاب]
-    -> ask_for_help
+=== correct_sum ===
+أحسنت! الإجابة الصحيحة هي 8. #speaker:أمينة المكتبة #portrait:librarian_happy
 
-=== ask_for_help ===
-أين المشكلة؟ #speaker:أمينة المكتبة #portrait:librarian_thinking
+شكراً لمساعدتي في هذا التمرين البسيط!
 
-*تنظر أمينة المكتبة إلى الكتاب معك*
+-> give_reward
 
-آه، هذا كتاب عن تاريخ البلدان. ضعه مع كتب العلوم!
-
-+ [شكراً! الآن أفهم]
-    -> continue_organizing
-
-=== continue_organizing ===
-*تواصل ترتيب الكتب بعناية*
-
-ممتاز! أنت منظم جداً! #speaker:أمينة المكتبة #portrait:librarian_happy
-
-+ [انتهيت! كيف يبدو؟]
-    -> check_work
-+ [آخر كتاب!]
-    -> finish_task
-
-=== check_work ===
-دعني أتفحص عملك... #speaker:أمينة المكتبة #portrait:librarian_thinking
-
-ممتاز! كل شيء في مكانه الصحيح! أحسنت جداً!
-
-+ [شكراً!]
-    -> give_reward
-
-=== finish_task ===
-رائع! انتهيت من كل شيء! #speaker:أمينة المكتبة #portrait:librarian_happy
-
-المكتبة تبدو منظمة ونظيفة الآن. شكراً جزيلاً!
-
-+ [كان من دواعي سروري]
-    -> give_reward
+// (تم استبدال تحدّي ترتيب الكتب بتمرين جمع بسيط على الكرات)
 
 === give_reward ===
 كما وعدتك، إليك حرف الـ"ب"! #speaker:أمينة المكتبة #portrait:librarian_happy

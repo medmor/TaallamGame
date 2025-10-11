@@ -119,60 +119,41 @@ INCLUDE globals.ink
     -> ahmed_goodbye_sad
 
 === ahmed_challenge ===
-ممتاز! المساعدة بسيطة جداً. #speaker:أحمد #portrait:ahmed_thinking
+ممتاز! المساعدة بسيطة جداً. #speaker:أحمد #portrait:ahmed_problem
 
-سقطت كراتي من السلة وتبعثرت في كل مكان. هل يمكنك مساعدتي في جمعها؟
+أريدك أن تعدّ الكرات الخضراء في هذا الصندوق. كم عددها؟
 
-+ [بالطبع! كم كرة أجمع؟]
-    -> counting_task
-+ [أين السلة؟]
-    -> show_basket
-+ [هذا سهل!]
-    -> start_collecting
++ [أرى... ست كرات خضراء]
+    -> correct_count
++ [أعتقد... خمس كرات خضراء]
+    -> wrong_count_low
++ [سبع كرات خضراء]
+    -> wrong_count_high
 
-=== show_basket ===
-هذه السلة! #speaker:أحمد #portrait:ahmed_thinking
+=== wrong_count_high ===
+أوه، لا. عدّ مرة أخرى بعناية أكثر! #speaker:أحمد #portrait:ahmed_happy
 
-ضع الكرات كلها بداخلها، من فضلك!
+حاول التركيز على الكرات الخضراء فقط.
 
-+ [فهمت! سأجمعها]
-    -> start_collecting
++ [حسنًا، الرقم الصحيح هو ست كرات]
+    -> correct_count
 
-=== counting_task ===
-اجمع كل الكرات التي تراها! #speaker:أحمد #portrait:ahmed_thinking
+=== wrong_count_low ===
+قريب! لكن عدّ مرة أخرى. #speaker:أحمد #portrait:ahmed_neutral
 
-أعتقد أن هناك ستة كرات تقريباً...
+خذ وقتك وعدّ بإصبعك.
 
-+ [سأجدها كلها!]
-    -> start_collecting
++ [حسنًا، إنها ست كرات]
+    -> correct_count
 
-=== start_collecting ===
-*تبدأ في جمع الكرات من حول الملعب*
+=== correct_count ===
+أحسنت! الإجابة الصحيحة هي: ست كرات خضراء. #speaker:أحمد #portrait:ahmed_happy
 
-رائع! واحدة... اثنتان... ثلاث... #speaker:أحمد #portrait:ahmed_thinking
+شكراً لمساعدتي في العد!
 
-+ [أربع... خمس... ست!]
-    -> all_collected
-+ [هل هذه كلها؟]
-    -> check_if_complete
+-> give_reward
 
-=== check_if_complete ===
-دعني أتأكد... #speaker:أحمد #portrait:ahmed_thinking
-
-نعم! هذه كل الكرات! شكراً جزيلاً!
-
-+ [عفواً!]
-    -> give_reward
-
-=== all_collected ===
-ممتاز! جمعتها كلها! #speaker:أحمد #portrait:ahmed_happy
-
-أنت مساعد رائع! شكراً جزيلاً!
-
-+ [عفواً، كان سهلاً]
-    -> give_reward
-+ [أحب المساعدة]
-    -> give_reward
+// (المسارات القديمة لجمع الكرات أُزيلت واستُبدلت بمهمة العد)
 
 === give_reward ===
 كما وعدتك، إليك الحرف الخاص! #speaker:أحمد #portrait:ahmed_happy
