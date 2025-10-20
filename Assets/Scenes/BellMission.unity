@@ -8409,8 +8409,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1847518983
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 3465286685962602723, guid: 16b1d17974ec0b7469c760b577e72703, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8656,8 +8656,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1847518983
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -6470460504253458178, guid: 18acb55b46f08b248948b542f33c0980, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -10478,8 +10478,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1847518983
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -4178046375966092550, guid: 35a5b6b90b31bdc4ea0df1a411030708, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12756,6 +12756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teacher
       objectReference: {fileID: 0}
+    - target: {fileID: 4696460318134674539, guid: 25ea36241d70cd1438e5d495a4a2e0fa, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.08
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6742284787874968398, guid: 25ea36241d70cd1438e5d495a4a2e0fa, type: 3}
     m_RemovedGameObjects: []
@@ -12841,22 +12845,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7770400040250011566, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
-      propertyPath: m_Size.x
-      value: 0.12911844
-      objectReference: {fileID: 0}
-    - target: {fileID: 7770400040250011566, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
-      propertyPath: m_Size.y
-      value: 0.16880465
-      objectReference: {fileID: 0}
-    - target: {fileID: 7770400040250011566, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0009818077
-      objectReference: {fileID: 0}
-    - target: {fileID: 7770400040250011566, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.045188665
-      objectReference: {fileID: 0}
+    - target: {fileID: 8277949901437121730, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
+      propertyPath: m_Actions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: d4374df5b997fb54d8036b74e1fe9c24, type: 3}
     m_RemovedComponents:
     - {fileID: 603182282442952433, guid: 51cf11a58da0d0d44ad78762b5ffcd40, type: 3}
     m_RemovedGameObjects: []

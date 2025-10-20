@@ -86,7 +86,7 @@ SpriteRenderer:
   m_SortingLayerID: 1847518983
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: -3852214248667618183, guid: df0035fc34b8682499577a6674fcb130, type: 3}
+  m_Sprite: {fileID: 1613158059928123197, guid: df0035fc34b8682499577a6674fcb130, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -180,8 +180,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.08}
-  m_Size: {x: 0.39, y: 0.74}
+  m_Offset: {x: -0.0034966816, y: 0.08451112}
+  m_Size: {x: 0.11380033, y: 0.15575589}
   m_Direction: 0
 --- !u!114 &8277949901437121730
 MonoBehaviour:
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
-  m_Actions: {fileID: -944628639613478452, guid: d4374df5b997fb54d8036b74e1fe9c24, type: 3}
+  m_Actions: {fileID: 0}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:

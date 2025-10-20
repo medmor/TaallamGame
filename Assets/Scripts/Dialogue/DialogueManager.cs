@@ -45,7 +45,8 @@ namespace TaallamGame.Dialogue
         private Dictionary<string, DialogueAudioInfoSO> audioInfoDictionary;
         private AudioSource audioSource;
 
-        private Story currentStory;
+    private Story currentStory;
+    public Story CurrentStory => currentStory; // expose for bridges (read-only)
         public bool dialogueIsPlaying { get; private set; }
 
         private bool canContinueToNextLine = false;
@@ -475,7 +476,7 @@ namespace TaallamGame.Dialogue
                 RTLTextMeshPro choiceText = choiceObj.GetComponentInChildren<RTLTextMeshPro>();
                 if (choiceText != null)
                 {
-                    choiceText.text = WrapLatinIfNeeded(choice.text);
+                    choiceText.text = choice.text;
                 }
                 else
                 {
@@ -557,12 +558,6 @@ namespace TaallamGame.Dialogue
             dialogueVariables.SaveVariables();
         }
 
-        private static readonly Regex LatinRun = new Regex("[A-Za-z0-9]", RegexOptions.Compiled);
-        private static string WrapLatinIfNeeded(string s)
-        {
-            if (string.IsNullOrEmpty(s)) return s;
-            // If the string contains Latin, wrap to keep LTR inside RTL context.
-            return LatinRun.IsMatch(s) ? "\u2066" + s + "\u2069" : s; // LRI ... PDI
-        }
+        // Removed bidi control wrappers to avoid runtime insertion of invisible characters.
     }
 }

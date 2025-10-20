@@ -50,10 +50,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController2D.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\TeleportBridge.cs" />
     <Compile Include="Assets\Scripts\Save\SaveHotkey.cs" />
     <Compile Include="Assets\Scripts\Dialogue\PortraitController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteraction.cs" />
     <Compile Include="Assets\Scripts\Save\SaveFile.cs" />
+    <Compile Include="Assets\Scripts\Interaction\DoorInteract.cs" />
     <Compile Include="Assets\Scripts\Npcs\PatrolAINavMesh.cs" />
     <Compile Include="Assets\ScriptibalesAssets\Audio\DialogueAudioInfoSO.cs" />
     <Compile Include="Assets\Scripts\Save\ProfileManager.cs" />
