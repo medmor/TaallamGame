@@ -8,3 +8,5 @@ VAR roof_unlocked = false
 
 // portraits: use 5 standard ids per character
 // teacher_*, janitor_*, ahmed_*, fatima_*, guard_*
+
+EXTERNAL teleport_to(target)

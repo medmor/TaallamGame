@@ -212,6 +212,25 @@ namespace TaallamGame.Dialogue
 
             DLog($"EnterDialogueMode: {inkJSON.name}");
             currentStory = new Story(inkJSON.text);
+            // Allow externals to fallback and bind teleport_to immediately
+            currentStory.allowExternalFunctionFallbacks = true;
+            try
+            {
+                var tpNow = FindFirstObjectByType<TaallamGame.Dialogue.TeleportBridge>();
+                if (tpNow != null)
+                {
+                    currentStory.BindExternalFunction("teleport_to", new System.Action<string>(tpNow.TeleportTo));
+                }
+                else
+                {
+                    // Bind a placeholder to avoid validation failure; TeleportBridge can rebind later
+                    currentStory.BindExternalFunction("teleport_to", new System.Action<string>((target) =>
+                    {
+                        Debug.LogWarning($"teleport_to called for '{target}' but no TeleportBridge found yet.");
+                    }));
+                }
+            }
+            catch { }
 
             // Bind external functions for mission integration
             var missionBridge = InkMissionBridge.Instance;
@@ -227,6 +246,10 @@ namespace TaallamGame.Dialogue
 
             dialogueVariables.StartListening(currentStory);
             inkExternalFunctions.Bind(currentStory, emoteAnimator);
+
+            // Ensure critical EXTERNALS like teleport_to are bound before first Continue
+            var tp = FindFirstObjectByType<TaallamGame.Dialogue.TeleportBridge>();
+            if (tp != null) tp.BindForStory(currentStory);
 
             displayNameText.text = "???";
             layoutAnimator.Play("right");

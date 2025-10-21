@@ -9,6 +9,7 @@ namespace TaallamGame.Dialogue
         [Header("Refs")]
         [SerializeField] private DialogueManager dialogueManager; // assign
         [SerializeField] private Transform player;                 // assign
+        [SerializeField] private bool debugLogs = false;
 
         [Header("Destinations")] 
         [SerializeField] private List<TeleportPoint> points = new();
@@ -18,6 +19,8 @@ namespace TaallamGame.Dialogue
 
         private void Awake()
         {
+            if (!dialogueManager)
+                dialogueManager = DialogueManager.GetInstance() ?? FindFirstObjectByType<DialogueManager>();
             BuildLookup();
         }
 
@@ -26,19 +29,45 @@ namespace TaallamGame.Dialogue
             TryBind();
         }
 
+        private void OnDisable()
+        {
+            if (story != null)
+            {
+                story.UnbindExternalFunction("teleport_to");
+                if (debugLogs) Debug.Log("[TeleportBridge] Unbound teleport_to on disable");
+            }
+        }
+
         private void Update()
         {
-            if (story == null) TryBind();
+            // Re-check frequently so we rebind when a new Story is started
+            TryBind();
         }
 
         void TryBind()
         {
-            if (!dialogueManager || dialogueManager.CurrentStory == null) return;
+            if (!dialogueManager)
+            {
+                dialogueManager = DialogueManager.GetInstance() ?? FindFirstObjectByType<DialogueManager>();
+                if (!dialogueManager) return;
+            }
+            if (dialogueManager.CurrentStory == null) return;
             if (story == dialogueManager.CurrentStory) return;
             story = dialogueManager.CurrentStory;
             // bind or rebind EXTERNAL
             story.UnbindExternalFunction("teleport_to");
-            story.BindExternalFunction<string>("teleport_to", TeleportTo);
+            story.BindExternalFunction("teleport_to", new System.Action<string>(TeleportTo));
+            if (debugLogs) Debug.Log("[TeleportBridge] Bound EXTERNAL teleport_to to current Story");
+        }
+
+        // Allow DialogueManager to bind immediately upon Story creation
+        public void BindForStory(Story s)
+        {
+            if (s == null) return;
+            story = s;
+            story.UnbindExternalFunction("teleport_to");
+            story.BindExternalFunction("teleport_to", new System.Action<string>(TeleportTo));
+            if (debugLogs) Debug.Log("[TeleportBridge] Force-bound EXTERNAL teleport_to to new Story");
         }
 
         void BuildLookup()
@@ -66,6 +95,7 @@ namespace TaallamGame.Dialogue
             // Optional: align facing
             var rb = player.GetComponent<Rigidbody2D>();
             if (rb) { rb.linearVelocity = Vector2.zero; }
+            if (debugLogs) Debug.Log($"[TeleportBridge] Teleported player to '{id}' at {t.position}");
         }
     }
 
