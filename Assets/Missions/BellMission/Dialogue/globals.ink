@@ -10,3 +10,4 @@ VAR roof_unlocked = false
 // teacher_*, janitor_*, ahmed_*, fatima_*, guard_*
 
 EXTERNAL teleport_to(target)
+EXTERNAL fade_to_black(duration)

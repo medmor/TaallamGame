@@ -1,6 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using Ink.Runtime;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace TaallamGame.Dialogue
 {
@@ -11,6 +13,12 @@ namespace TaallamGame.Dialogue
         [SerializeField] private Transform player;                 // assign
         [SerializeField] private bool debugLogs = false;
 
+        [Header("Fade Effect")]
+        [SerializeField] private CanvasGroup fadePanel;           // assign a black Image with CanvasGroup
+        [SerializeField] private float fadeInSpeed = 2f;          // How fast to fade to black (higher = faster)
+        [SerializeField] private float fadeOutSpeed = 2f;         // How fast to fade back in (higher = faster)
+        [SerializeField] private float holdAtBlackTime = 0.5f;    // How long to stay fully black (seconds)
+        
         [Header("Destinations")] 
         [SerializeField] private List<TeleportPoint> points = new();
 
@@ -33,8 +41,17 @@ namespace TaallamGame.Dialogue
         {
             if (story != null)
             {
-                story.UnbindExternalFunction("teleport_to");
-                if (debugLogs) Debug.Log("[TeleportBridge] Unbound teleport_to on disable");
+                try 
+                { 
+                    story.UnbindExternalFunction("teleport_to"); 
+                }
+                catch { }
+                try 
+                { 
+                    story.UnbindExternalFunction("fade_to_black"); 
+                }
+                catch { }
+                if (debugLogs) Debug.Log("[TeleportBridge] Unbound externals on disable");
             }
         }
 
@@ -55,9 +72,12 @@ namespace TaallamGame.Dialogue
             if (story == dialogueManager.CurrentStory) return;
             story = dialogueManager.CurrentStory;
             // bind or rebind EXTERNAL
-            story.UnbindExternalFunction("teleport_to");
+            try { story.UnbindExternalFunction("teleport_to"); } catch { }
+            try { story.UnbindExternalFunction("fade_to_black"); } catch { }
+            
             story.BindExternalFunction("teleport_to", new System.Action<string>(TeleportTo));
-            if (debugLogs) Debug.Log("[TeleportBridge] Bound EXTERNAL teleport_to to current Story");
+            story.BindExternalFunction("fade_to_black", new System.Action<int>(FadeToBlack));
+            if (debugLogs) Debug.Log("[TeleportBridge] Bound EXTERNAL teleport_to and fade_to_black to current Story");
         }
 
         // Allow DialogueManager to bind immediately upon Story creation
@@ -65,9 +85,12 @@ namespace TaallamGame.Dialogue
         {
             if (s == null) return;
             story = s;
-            story.UnbindExternalFunction("teleport_to");
+            try { story.UnbindExternalFunction("teleport_to"); } catch { }
+            try { story.UnbindExternalFunction("fade_to_black"); } catch { }
+            
             story.BindExternalFunction("teleport_to", new System.Action<string>(TeleportTo));
-            if (debugLogs) Debug.Log("[TeleportBridge] Force-bound EXTERNAL teleport_to to new Story");
+            story.BindExternalFunction("fade_to_black", new System.Action<int>(FadeToBlack));
+            if (debugLogs) Debug.Log("[TeleportBridge] Force-bound EXTERNAL teleport_to and fade_to_black to new Story");
         }
 
         void BuildLookup()
@@ -96,6 +119,52 @@ namespace TaallamGame.Dialogue
             var rb = player.GetComponent<Rigidbody2D>();
             if (rb) { rb.linearVelocity = Vector2.zero; }
             if (debugLogs) Debug.Log($"[TeleportBridge] Teleported player to '{id}' at {t.position}");
+        }
+
+        public void FadeToBlack(int durationSeconds)
+        {
+            if (fadePanel == null)
+            {
+                Debug.LogWarning("[TeleportBridge] FadePanel not assigned, cannot fade to black");
+                return;
+            }
+            StartCoroutine(FadeToBlackCoroutine(durationSeconds));
+        }
+
+        private IEnumerator FadeToBlackCoroutine(int durationSeconds)
+        {
+            if (fadePanel == null) yield break;
+
+            // Ensure fade panel is active
+            fadePanel.gameObject.SetActive(true);
+            
+            // Phase 1: Fade to black
+            float elapsed = 0f;
+            while (fadePanel.alpha < 1f)
+            {
+                elapsed += Time.deltaTime * fadeInSpeed;
+                fadePanel.alpha = Mathf.Clamp01(elapsed);
+                yield return null;
+            }
+            fadePanel.alpha = 1f;
+
+            // Phase 2: Stay black (hold time)
+            yield return new WaitForSeconds(holdAtBlackTime);
+
+            // Phase 3: Fade back in
+            elapsed = 1f;
+            while (fadePanel.alpha > 0f)
+            {
+                elapsed -= Time.deltaTime * fadeOutSpeed;
+                fadePanel.alpha = Mathf.Clamp01(elapsed);
+                yield return null;
+            }
+            fadePanel.alpha = 0f;
+
+            // Deactivate panel to avoid blocking input
+            fadePanel.gameObject.SetActive(false);
+            
+            if (debugLogs) Debug.Log($"[TeleportBridge] Fade to black completed");
         }
     }
 
