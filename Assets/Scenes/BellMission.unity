@@ -6641,10 +6641,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TaallamGame.Dialogue.TeleportBridge
   dialogueManager: {fileID: 1046585763}
   player: {fileID: 1325426861}
-  debugLogs: 1
+  debugLogs: 0
   fadePanel: {fileID: 2005422067}
-  fadeInSpeed: 0.1
-  fadeOutSpeed: 0.1
+  fadeInSpeed: 5
+  fadeOutSpeed: 5
   holdAtBlackTime: 1
   points:
   - id: start
